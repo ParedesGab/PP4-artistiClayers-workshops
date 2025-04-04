@@ -14,199 +14,55 @@
 
 ### User Goals
 
-+ Find a casual and fun activity to pass time or to relax.
-+ Test memory skills with an enjoyable memory game. 
-+ Enhance memory, concentration, and problem-solving skills.
-+ Find a simple, accessible game that doesn't require downloads or setup.
-+ Find a vibrant, eye-catching game that provides a visually engaging experience.
++ 
 
-### Site Owner Goals
+### Developer Goals
 
-  + Provide a fun, relaxed and engaging User experience.
-  + Create an entertaining memory game that appeals to a broad audience.
-  + Create a game that helps users improve memory, focus, and cognitive abilities. 
-  + Develop a unique design and thematic experience, such as the galaxy theme, to stand out from generic memory games.
++ 
   
 ---
 ## User Experience
 
 ### Target audience
 
-+ Space enthusiasts, kids or adults.
-+ Parents looking for educational and fun games for their children.
-+ Children interested in games and space and galaxy themes. 
-+ Students or educators that seek tools to improve cognitive abilities.
-+ Casual gamers, casual web users or individuals looking for light, engaging games to pass the time.
++ 
 
 ### User expectations
 
-+ Accessible site.
-+ Understand clearly the purpose of the site.
-+ Quick and easy access to content and navigation.
-+ Clean and intuitive layout, overall a smooth experience.
-+ Have vibrant and eye-catching content that keeps the user engaged.
-+ Expect the game to work seamlessly on various devices, allowing them to enjoy it anytime, anywhere.
++ 
 
 ### User stories
 
 + **As a first-time user, I want to:**
 
-  + Quickly understand how the game works.
-  + Dive into the game without confusion.
-  + Have a smooth, enjoyable experience without delays or glitches.
-  + Easily navigate the website and find the content interesting.
-  + Be drawn into the game's theme by having an engaging and visually appealing experience.
-  + Know how many movements I am doing during and a summary after the game.
+  + 
 
 + **As a returning user, I want to:**
 
-  + See if my cognitive skills have improved by comparing the movements I made in one game versus another.
-  + See a more dynamic galaxy-themed background to make the page more immersive.
-  + Check if new space card-theme designs are being featured.
+  + 
 
 + **As the site ownser, I want:**
 
-  + To keep the users engaged and the website updated with newer themes.
-  + Deliver a smooth, accessible experience.
-  + Relaxed, stress-free experience: Without a timer and the possibility of losing, players can enjoy the game at their own pace, exploring and improving their memory without feeling rushed or pressured.
-  + Positive reinforcement and engagement: The "no-loss" design encourages players to keep playing and improving, offering a rewarding, fun experience where they can focus on achieving personal milestones and celebrating small victories.
+  + 
+
+### Agile Methods
+
+---
+## Entity Relationship Diagram (ERD)
 
 ---
 ## Features 
 
-### Game Header
-
-![Game Header up to Tablets](documentation/website-screenshots/game-name.png)
-
-+ It contains two titles (h1 and h2) positioned at the center of the page, and they are the first elements found across all pages.
-    + Clear and easy to read.
-    + It uses a futuristic Google font "Rajdhanithat" and a background style that conveys and embraces the cosmic-theme.
-  
-+ Therefore, the user understands directly that theme of the memory game is related to galaxy, space, universe.
-
-+ The header position and font-size are responsive across all devices. For example, it increases in size in larger screens (**Figure below**). However, it is made smaller in all the other pages.
-
-![Game Header Laptops and up](documentation/website-screenshots/game-name-laptops-up.png)
-       
----
-### Home Menu Page
+### Home Page
 
 ![Home menu main page](documentation/website-screenshots/home-menu-main-page.png)
 
-+ The main page of the Galaxy Memory Game, consists of the game heading and the home menu buttons. 
-
-+ The intention was to have a simple yet impactful background that would immediately introduce the galactic theme of the Memory Game.
-
-+ This same background is used across all pages and it allows the title and buttons to stand out.
-
-**Home Menu Buttons**
-
-![Home menu buttons](documentation/website-screenshots/home-menu-buttons.png)
-
-+ The home menu buttons are present on the main page of Memory Game, and they consist on two buttons: Play Game, and Play instructions. 
-  
-+ They are responsive, and across all devices the home menu buttons are found positioned on top of the other (flex-direction: column).
-
-+ The buttons will rotate slightly and change colors when hovered, creating a smooth, visually appealing interactive effect.
-
-+ Clear and easy to read.
-
-+ Consistent styling and easy navigation.
-
----
-### Game Indications Page
-
-- The user is redirected to this page when clicking to the "Play Instructions" button from the Home Menu page.
-
-- This section provides the user with an introductory explanation of the game, shows visual representations of the game cards, and gives them an option to return to the main menu.
-
-- This section is responsive and the images use the flex-wrap property. 
-
-Design for mobiles:
-
-![Game indications mobiles](documentation/website-screenshots/game-indications-mobile.png)
-
-Design for Tablets and larger devices:
-
-![Game indications tablets and up](documentation/website-screenshots/game-indications-tablets-up.png)
-
----
-### Memory Board Game Page
-
-![Memory board game card deck open](documentation/website-screenshots/memory-game-open.png)
-
-It contains two subsections, from top to bottom:
-
-**Subsection: Game Board**
-
-- This section presents the memory game itself: a relaxing and fun memory-matching game designed with a space-related theme.
-
-- Players are challenged to match 8 pairs of cards, with a total of 16 cards in the game.
-
-- The card deck array is created by Javascript within the Game Board section. 
-
- - The game offers a no-pressure environment where players never lose, ensuring a calm and enjoyable experience.
-
- - When the game starts (or if it is restarted) the cards will be shuffled and placed face down (**Figure below**), and they have the same hover effect as the home menu buttons. 
-
-![Memory board game card deck closed](documentation/website-screenshots/memory-game-closed.png)
-
-**Subsection: Control Area**
- 
- - This subsection displays the "Moves", "Score" and one button, the "Restart Game".
-
- - These elements are placed on top of the other. 
-
- - The Restart Game button has the same hover effects as the home menu buttons, and to encourage the user to restart the game as much as they want, the button stands out in orange. 
-
- - At the beginning of the game:
-    - The **Moves** are set to 0, and every time the user chooses two cards, the "moves" will increase by 1.
-    - The **Score** is set to 0, and every time there is a match, the player earns 100 points. When the user reaches 800 (i.e., all pairs are matched), the score will show 🎉 800! 🎉.
-
-- The Memory Board Game page is responsive. Namely:
-
-  -   The card grid maintains 4 columns and 4 rows across all devices, with the width and height of the cards increasing on larger screens.
-
-  - In tablets and larger screens, the memory card deck and control are placed next to each other (flex-direction: row).
-
-  - In mobiles: the Control Area is placed below the memory card deck. This was achieved because their container (id memory-game-container) was set to display property: flex, and flex-direction: column 
-
-![memory board game mobiles](documentation/website-screenshots/memory-game-mobiles.png)
-
----
-### Game Finished - Congratulations Page
-
-![congratulations page](documentation/website-screenshots/congratulations-message.png)
-
-- After 4 seconds, once the user has matched all the cards (score: 🎉 800! 🎉), they are redirected to a page that congratulates them on their victory.
-
-- The congratulations message also stands out in orange.
-
-- In addition, it displays in bold the amount of moves the user made.
-
-- This section contains two buttons:
-  - **Home Menu:** Directs you back to to the Home Menu page.
-  - **Play again!:** Starts a new game. 
-
-- The buttons use the same style as the home menu buttons. 
-
-- With Javascript, the class smaller-name was added to the header (i.e., game name), to make the whole page more visually organized. 
++ 
 
 ---
 ## Features left to implement
 
-- Implement a more dynamic galaxy-themed background (e.g., moving nebulas).
-
-- Add a space-themed sound effect by implementing an event listener in JavaScript that triggers whenever a match occurs.
-
-- Add animations for card flips and matches to enhance the user experience.
-
-- Implement visual feedback (e.g., a highlight) for matched pairs.
-- Allow users to navigate back to the home page directly from the memory game. Please note that for now this option was intentionally excluded to encourage players to stay on the game page longer, with the added flexibility to restart the game if they wish.
-
-- I intentionally left out a timer to keep the game relaxed and pressure-free. However, if feedback suggests it, I’d be happy to implement it with JavaScript.
-
-- Due to time constraints, I used onclick in all buttons of the HTML document for faster implementation. However, I recognize that mixing structure (HTML) with functionality (JS) is not best practice, as it can make the code harder to maintain and does not facilitate collaboration in team environments. After the project is graded, I plan to refactor the code by removing inline onclick attributes, and instead handling events via JavaScript by adding event listeners, ensuring better separation of concerns and improving maintainability.
+- 
 
 ---
 ## Design
@@ -217,25 +73,17 @@ It contains two subsections, from top to bottom:
 
 ![Main Color scheme](documentation/design/main-color-scheme.png)
 
-- The russian violet (blue), seasalt (white) and davy's gray color where used as the main colors of the website. Their choice was inspired by the universe background image and their used keeps the website cohesive.
-
-- The russian violet (blue) was used for the titles, button names and the paragraph within the Game indications section.
-
-- All buttons except for the button with class btn--restart, used as box shadow the color davy's gray color. 
+- 
 
 **Secondary color scheme**
 
 ![Secondary Color scheme](documentation/design/secondary-color-scheme.png)
 
-- To simulate colors of the universe the hover effect used two colors as gradient: Royal purple ( #7943af) and Sapphire ( #3455af). 
-
-- The button with the class btn--restart and the congratulatory message are styled in Sinopia orange to ensure that they stand out. This vibrant choice draws attention to the restart option, making it easy for users to replay the game, and highlights the victory message effectively, celebrating the user's success in a visually striking way.
+- 
 
 ### Typography
 
-- "Rajdhani" and "Roboto" from Google Fonts were used as the primary and secondary font of the website, respectively. 
-- The generic family name is "Sans-serif".
-- For the titles (h1 and h2) letter-spacing CSS property with a value of 0.3rem was used, to add a slight space between letters in the text.
+- 
 
 ![Primary Font](documentation/design/primary-font.png)
 ![Secondary Font](documentation/design/secondary-font.png)
@@ -269,7 +117,6 @@ It contains two subsections, from top to bottom:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Gitpod](https://www.gitpod.io/): the development environment to create the project files, folders and html, css and javascript codes.
 - [GitHub](https://github.com/): to store the repository, bug track and see the deployed version.
 - [Balsamiq](https://balsamiq.com/): to create the wireframes.
 - [Google Fonts](https://fonts.google.com/): to import the Rajdhani and Roboto family fonts.
@@ -284,6 +131,12 @@ It contains two subsections, from top to bottom:
 - [JSHint](https://jshint.com/): to detect errors and potential problems in the JavaScript code.
 - [WAVE](https://wave.webaim.org/): to test accessibility.
 - [DeepL Write](https://www.deepl.com/en/write): to spot spelling mistakes in the text. 
+
+---
+## Libraries and Framework
+
+---
+## Django Packages
 
 ---
 ## Testing
@@ -329,6 +182,8 @@ Lighthouse tool from Devtools was used to confirm that the website is performing
   - Iphone XR
   - Iphone 15 pro
   - Samsung Galaxy S8
+
+### Automated Testing
 
 ### Manual Testing
 
@@ -430,41 +285,26 @@ To have a copy of the project in your repositories:
 5. Run git clone in the terminal, paste the copied link, and press Enter.
 
 ---
+## Requirements
+
+---
+## Cloudinary
+
+---
 ## Credits 
 
 ### Content 
 
 - The Code institute ci-full-template was used to create the GitHub repository of the Cosmic Match Memory Game website.
 
-- [W3 Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) showed me how to use the setTimeout() method. 
+- [W3 Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) showed me how to 
 
-- [W3 Schools](https://www.w3schools.com/jsref/prop_html_id.asp) showed me how to return the id property. 
-
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) showed me how to create elliptical corner radius used in the Control Area of the Memory Board Game section.
-
-- I got further clarificaion on the used of Parameters vs Arguments from the from the YouTube channel [Anna McDougall](https://www.youtube.com/watch?v=5o4P8lESTF0).
-
-- Stack Overflow solutions was also used to resolve doubts.
-
-- Text was checked with DeepL Write for spelling mistakes. 
-
-- I learned how to add other pages (e.g., home menu page, games indications and congratulations pages) with Javascript by reading the project of [Kristyna Wach](https://github.com/Cushione/four-seasons-memory-game) and testing it myself within my javascript code.
-
-- Inspiration for memory game logic comes from the YouTube Channels [developedbyed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=3095s) and [Victor Talamantes](https://www.youtube.com/watch?v=c0eigGnotm0). However, I did  not relied on them and customized it my way.
-
-- ReadMe was inspired and guided by the ReadMe documents of my mentor Iuliia Konovalova, of my previous Kamil Wojciechowski, and of the love running project. 
 
 ### Media
   
 - The universe background image is from [Federico Beccari](https://unsplash.com/de/@federize?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash).
 
-- All memory card images are from [Icongeek26](https://www.flaticon.com/authors/icongeek26).
 
 ## Acknowledgments
 
-- My sincere gratitude to my mentor, Iuliia Konovalova, for her valuable feedback.  
-- Thank you to Code Institute, specially to Kamil, Kristyna, and Lane for the great tips and feedback.
-- Thank you to my brother Brando, Your beautiful piano music [Brando PR](https://www.youtube.com/@BrandoPR) accompanied me along this project as well.
-- I am deeply grateful to Geddi and Alexis for their insightful JavaScript fundamentals guidance.
-- A heartfelt thanks to my husband Johannes for "playing! (testing)
- the game more times than I can count. 
+- My sincere gratitude to 
