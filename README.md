@@ -6,7 +6,6 @@
 
 **Welcome to the ArtistiClayers Polymer Clay Workshops!**
 
-Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! This untimed, stress-free game lets you play at your own pace, ensuring everyone emerges a winner. Challenge your memory as you journey through the stars.
 
 + The site can be accessed via this [link](https://paredesgab.github.io/PP2-the-cosmic-match-memory-game/)
 
