@@ -20,9 +20,10 @@ from django.urls import path, include
 # from about import views as about_views
 
 urlpatterns = [
-    path("", include("home.urls"), name="home-urls"),
     # path("about/", include("about.urls"), name="about-urls"),
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
+    path("", include("home.urls"), name="home-urls"),
     # path('about/', about_views.about_me, name='about'),
     # path('', home_views.index, name='index'),
 ]
