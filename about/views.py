@@ -5,16 +5,7 @@ from .models import About
 # Create your views here.
 def about_me(request):
     """
-    Display an individual :model:`home.Post`.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`home.Post`.
-
-    **Template:**
-
-    :template:`home/post_detail.html`
+    Renders the About page
     """
     about = About.objects.all().order_by('-updated_on').first()
 

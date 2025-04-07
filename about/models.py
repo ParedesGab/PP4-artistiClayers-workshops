@@ -6,7 +6,7 @@ from django.db import models
 # Create your models here.
 class About(models.Model):
     """
-    Stores a single about me entry.
+    Renders the About page
     """
     title = models.CharField(max_length=200)
     # featured_image = CloudinaryField('image', default='placeholder')
