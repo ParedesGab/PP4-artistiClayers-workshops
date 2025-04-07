@@ -1,10 +1,25 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import About
 
 
 # Create your views here.
 def about_me(request):
-    if request.method == "POST":
-        return HttpResponse("You must have POSTed something")
-    else:
-        return HttpResponse(request.method)
+    """
+    Display an individual :model:`home.Post`.
+
+    **Context**
+
+    ``post``
+        An instance of :model:`home.Post`.
+
+    **Template:**
+
+    :template:`home/post_detail.html`
+    """
+    about = About.objects.all().order_by('-updated_on').first()
+
+    return render(
+            request,
+            "about/about.html",
+            {"about": about},
+            )
