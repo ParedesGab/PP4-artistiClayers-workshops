@@ -1,7 +1,6 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
-
-# Create your models here.
 
 # Create your models here.
 class About(models.Model):
@@ -9,12 +8,8 @@ class About(models.Model):
     Renders the About page
     """
     title = models.CharField(max_length=200)
-    # featured_image = CloudinaryField('image', default='placeholder')
-    content = models.TextField()
-    updated_on = models.DateTimeField(auto_now=True)
-    
-    class Meta:
-        ordering = ["-updated_on"]
+    image = CloudinaryField('image', default='placeholder')
+    description = models.TextField()
 
     def __str__(self):
-        return f"{self.title} | Updated on {self.updated_on}"
+        return self.title
