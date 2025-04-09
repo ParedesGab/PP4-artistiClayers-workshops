@@ -865,6 +865,7 @@ Any remaining open issues can be tracked [here](https://www.github.com/ParedesGa
 > There are no remaining bugs that I am aware of, though, even after thorough testing, I cannot rule out the possibility.
 
 
+
 ## Deployment
 
 The live deployed application can be found deployed on [Heroku](https://artisticlayers-d41862efab95.herokuapp.com).
