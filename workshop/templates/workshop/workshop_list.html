@@ -21,12 +21,9 @@
                                 <img class="card-img-top" src=" {{ workshop.image.url }}" alt="{{ workshop.name }}">
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="author">Author</p>
+                                    <p class="level">{{ workshop.name }}</p>
                                 </div>
                             </div>
-                            <!-- <a href="{% url 'workshop_detail' workshop.slug %}" class="workshop-link">
-                                <h2 class="card-title">{{ workshop.title }}</h2>
-                            </a> -->
                             <hr />
                         </div>
                     </div>
