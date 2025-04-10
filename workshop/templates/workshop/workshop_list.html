@@ -24,6 +24,9 @@
                                     <p class="level">{{ workshop.name }}</p>
                                 </div>
                             </div>
+                            <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
+                                <h2 class="card-title">{{ workshop.name }}</h2>
+                            </a>
                             <hr />
                         </div>
                     </div>
