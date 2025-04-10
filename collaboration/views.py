@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib import messages
 from .forms import ContactForm
 
 
@@ -14,10 +15,11 @@ def contact_form(request):
     :template:`collaboration/collaboration.html`
 
     """
-    # if request.method == "POST":
-    #     contact_form = ContactForm(data=request.POST)
-    #     if contact_form.is_valid():
-    #         contact_form.save()
+    if request.method == "POST":
+        contact_form = ContactForm(data=request.POST)
+        if contact_form.is_valid():
+            contact_form.save()
+            messages.add_message(request, messages.SUCCESS, "Thank you for contacting us!")
 
     contact_form = ContactForm()
     return render(
