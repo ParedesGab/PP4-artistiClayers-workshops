@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- index.html content starts here -->
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for workshop in workshop_list %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                {% if "placeholder" in workshop.image.url %}
+                                <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src=" {{ workshop.image.url }}" alt="{{ workshop.name }}">
+                                {% endif %}
+                                <div class="image-flash">
+                                    <p class="author">Author</p>
+                                </div>
+                            </div>
+                            <!-- <a href="{% url 'workshop_detail' workshop.slug %}" class="workshop-link">
+                                <h2 class="card-title">{{ workshop.title }}</h2>
+                            </a> -->
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+<!-- index.html content ends here -->
+
+<!-- footer content here -->
+{% endblock %}
+
+{% block copyright %}
+Copyright 2025 Gabriela F. Paredes
+{% endblock %}
