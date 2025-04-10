@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'home',
     'about',
     'workshop',
+    'collaboration',
 ]
 
 SITE_ID = 1
