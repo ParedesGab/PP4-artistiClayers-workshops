@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Level, Workshop
+from .models import Level, Workshop, Booking
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -18,3 +18,10 @@ class WorkshopAdmin(SummernoteModelAdmin):
     search_fields = ['level']
     # list_filter = ('level',)
     summernote_fields = ('description',)
+
+
+@admin.register(Booking)
+class BookingAdmin(admin.ModelAdmin):
+    list_display = ("booked_by", "workshop", "booking_date")
+    search_fields = ("booked_by", "workshop")
+    list_filter = ("workshop", "booking_date")
