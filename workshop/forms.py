@@ -1,17 +1,15 @@
-# from django import forms
-# from .models import Booking
+from django import forms
+from .models import Booking
 
 
-# class BookingForm(forms.ModelForm):
-#     class Meta:
-#         model = Booking
-#         fields = ('body',)
+class BookingForm(forms.ModelForm):
+    class Meta:
+        model = Booking
+        fields = ('workshop', 'participants', 'booking_date',)
+        widgets = {
+            'booking_date': forms.SplitDateTimeWidget(
+                date_attrs={'type': 'date'},
+                time_attrs={'type': 'time'}
+                ),
+        }
 
-# from django import forms
-# from .models import CollaborateRequest
-
-
-# class CollaborateForm(forms.ModelForm):
-#     class Meta:
-#         model = CollaborateRequest
-#         fields = ('name', 'email', 'message')
