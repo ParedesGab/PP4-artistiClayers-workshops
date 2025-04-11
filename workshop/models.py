@@ -43,6 +43,10 @@ class Booking(models.Model):
         Workshop, on_delete=models.CASCADE, related_name="workshop_bookings"
     )
     booking_date = models.DateTimeField(auto_now_add=True)
+    participants = models.PositiveBigIntegerField(
+        default=1,
+        help_text="Please indicate number of participants",
+    )
     approved = models.BooleanField(default=True)
 
     class Meta:
@@ -51,5 +55,17 @@ class Booking(models.Model):
     def __str__(self):
         return f"""
                 {self.booked_by.username} booked '{self.workshop.name}'
+                for {self.participants} participant(s)
                 on {self.booking_date.strftime('%Y-%m-%d %H:%M')}
         """
+# class CollaborateRequest(models.Model):
+#     """
+#     Stores a single collaboration request message.
+#     """
+#     name = models.CharField(max_length=200)
+#     email = models.EmailField()
+#     message = models.TextField()
+#     read = models.BooleanField(default=False)
+
+#     def __str__(self):
+#         return f"Collaboration request from {self.name}"
