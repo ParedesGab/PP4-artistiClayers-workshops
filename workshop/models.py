@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.utils import timezone
 
 
 # Create your models here.
@@ -42,7 +43,8 @@ class Booking(models.Model):
     workshop = models.ForeignKey(
         Workshop, on_delete=models.CASCADE, related_name="workshop_bookings"
     )
-    booking_date = models.DateTimeField(auto_now_add=True)
+    date_booked = models.DateTimeField(auto_now_add=True)
+    appointment_date = models.DateTimeField(default=timezone.now)
     participants = models.PositiveBigIntegerField(
         default=1,
         help_text="Please indicate number of participants",
@@ -50,11 +52,11 @@ class Booking(models.Model):
     approved = models.BooleanField(default=True)
 
     class Meta:
-        ordering = ["-booking_date"]
+        ordering = ["-appointment_date"]
 
     def __str__(self):
         return f"""
                 {self.booked_by.username} booked '{self.workshop.name}'
                 for {self.participants} participant(s)
-                on {self.booking_date.strftime('%Y-%m-%d %H:%M')}
+                on {self.appointment_date.strftime('%Y-%m-%d %H:%M')}
         """
