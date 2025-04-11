@@ -7,8 +7,10 @@ class BookingForm(forms.ModelForm):
         model = Booking
         fields = ('workshop', 'participants', 'appointment_date',)
         widgets = {
-            'appointment_date': forms.SplitDateTimeWidget(
-                date_attrs={'type': 'date'},
-                time_attrs={'type': 'time'}
-                ),
+            'appointment_date': forms.widgets.DateTimeInput(
+                attrs={
+                        'type': 'datetime-local',
+                        'required': 'required'
+                    }
+                )
         }

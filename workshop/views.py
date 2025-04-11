@@ -63,7 +63,7 @@ def booking_display(request):
         booking_form = BookingForm(data=request.POST)
         if booking_form.is_valid():
             booking = booking_form.save(commit=False)
-            booking.author = request.user
+            booking.booked_by = request.user
             booking.save()
             messages.add_message(
                 request, messages.SUCCESS,
