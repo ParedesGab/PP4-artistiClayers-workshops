@@ -1,8 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from django.contrib import messages
 from .models import Workshop
 from .forms import BookingForm
+from django.urls import reverse
 
 
 class WorkshopList(generic.ListView):
@@ -41,36 +42,19 @@ def workshop_detail(request, id):
 
 def booking_display(request):
     """
-    Display an individual :model:`blog.Post`.
-
-    **Context**
-
-    ``post``
-        An instance of :model:`blog.Post`.
-    ``comments``
-        All approved comments related to the post.
-    ``commment_count``
-        A count of approved comments related to the post.
-    ``commment_form``
-        An instance of :form:`blog.CommentForm`.
-
-    **Template:**
-
-    :template:`blog/post_detail.html`
+    Displays the booking form and handles booking submissions.
     """
-
     if request.method == "POST":
         booking_form = BookingForm(data=request.POST)
         if booking_form.is_valid():
             booking = booking_form.save(commit=False)
             booking.booked_by = request.user
             booking.save()
-            messages.add_message(
-                request, messages.SUCCESS,
-                'Thank you for your Booking! We look forward to seeing you!'
-            )
-
-    booking_form = BookingForm()
+            messages.success(
+                request, 'Thank you! We look forward to seeing you!')
+            return redirect(reverse('bookings'))
+    else:
+        booking_form = BookingForm()
 
     return render(
         request,

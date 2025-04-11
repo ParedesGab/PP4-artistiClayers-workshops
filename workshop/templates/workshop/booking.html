@@ -9,7 +9,8 @@
     <div class="col-sm-10 col-md-8 col-lg-6">
       <div class="card-body justify-content-center">
         {% if user.is_authenticated %}      
-        <p id="CREATE">Hi {{ user.username }}! Ready to Clay Around?</p>
+        <h3 id="CREATE">Hi {{ user.username }}!</h3>
+        <h4>Ready to Clay Around?</h4>
         <form method="post" class="mt-4 d-grid gap-3">
             <div>
                 {{ booking_form | crispy }}
