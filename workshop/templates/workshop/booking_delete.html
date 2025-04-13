@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+ <div class="container">
+  <div class="row shadow-lg p-3 mb-4 bg-body rounded justify-content-center">
+    <div class="col-md-6">
+      <div class="card-body justify-content-center">
+        {% if user.is_authenticated %}      
+        <p id="user-greeting">Welcome back {{ user }}, update your appointment below</p>
+        <form id="bookingForm" method="post"
+          style="margin-top: 1.3em; align-content: center">
+          {{ booking_form | crispy }}
+          {% csrf_token %}
+          <button id="submitButton" type="submit"
+            class="btn btn-signup btn-outline-success rounded-pill">Update Appointment</button>
+            |
+           <a href="{% url 'bookings' %}" class="btn btn-outline-warning rounded-pill" type="button"> Back to Bookings</a>
+        </form>
+        {% else %}
+        <p>Log in to make an appointment with us.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+ </div>
+
+ {% endblock %}

@@ -79,18 +79,20 @@ def booking_edit(request, id):
     """
     view to edit comments
     """
+
+    booking = get_object_or_404(Booking, pk=id)
+    booking_form = BookingForm(instance=booking)
+
     if request.method == "POST":
         # queryset = Workshop.objects.filter(is_public=True)
         # workshop = get_object_or_404(queryset, slug=slug)
-        booking = get_object_or_404(Booking, pk=id)
         booking_form = BookingForm(data=request.POST, instance=booking)
 
         if booking_form.is_valid() and booking.booked_by == request.user:
             booking = booking_form.save(commit=False)
-            # comment.workshop = booking
-            booking.approved = False
             booking.save()
             messages.add_message(request, messages.SUCCESS, 'booking Updated!')
+            return redirect(reverse('bookings'))
         else:
             messages.add_message(
                 request, messages.ERROR, 'Error updating booking!'
@@ -98,8 +100,7 @@ def booking_edit(request, id):
 
     return render(
         request,
-        "workshop/booking.html",
+        "workshop/booking_edit.html",
         {"booking_form": booking_form},
         )
 
-    # return HttpResponseRedirect(reverse('post_detail', args=[slug]))
