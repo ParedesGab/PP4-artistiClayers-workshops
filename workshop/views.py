@@ -71,13 +71,10 @@ def booking_display(request):
         },
     )
 
-# This view returns you to the ? webpage after you've edited the comment
-# This return is done with a HttpResponseRedirect and reverse to refresh the post_detail view.
-
 
 def booking_edit(request, id):
     """
-    view to edit comments
+    view to edit bookings.
     """
 
     booking = get_object_or_404(Booking, pk=id)
@@ -104,3 +101,26 @@ def booking_edit(request, id):
         {"booking_form": booking_form},
         )
 
+
+def booking_delete(request, id):
+    """
+    view to delete bookings
+    """
+
+    booking = get_object_or_404(Booking, pk=id)
+
+    if booking.booked_by == request.user:
+        if request.method == 'POST':
+            booking.delete()
+            messages.add_message(
+                request, messages.SUCCESS, 'Booking deleted!')
+            return redirect(reverse('bookings'))
+    else:
+        messages.add_message(
+            request, messages.ERROR, 'You can only delete your own comments!')
+
+    return render(
+        request,
+        "workshop/booking_delete.html",
+        {"booking": booking},
+        )

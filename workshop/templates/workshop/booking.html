@@ -2,6 +2,7 @@
 {% load static %}
 {% url 'account_login' as login_url %}
 {% url 'update_booking' as update_booking_url %}
+{% url 'delete_booking' as delete_booking_url %}
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -54,7 +55,8 @@
                     <td>{{ booking.workshop.name }}</td>
                     <td>{{ booking.participants }}</td>
                     <td>{{ booking.appointment_date }}</td>
-                    <td><a href="{% url 'update_booking' booking.id %}" class="btn btn-success mt-3 rounded-pill">Update Booking</a>
+                    <td><a href="{% url 'update_booking' booking.id %}" class="btn btn-success mt-2 rounded-pill">Update Booking</a>
+                    <td><a href="{% url 'delete_booking' booking.id %}" class="btn btn-warning mt-2 rounded-pill">Delete Booking</a>
                     </td>
                 </tr>
                 {% empty %}

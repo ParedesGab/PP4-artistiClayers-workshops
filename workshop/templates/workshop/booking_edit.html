@@ -9,7 +9,7 @@
     <div class="col-md-6">
       <div class="card-body justify-content-center">
         {% if user.is_authenticated %}      
-        <p id="user-greeting">Welcome back {{ user }}, update your appointment below</p>
+        <p id="user-greeting">Welcome back {{ user }}, are you sure you want to delete?</p>
         <form id="bookingForm" method="post"
           style="margin-top: 1.3em; align-content: center">
           {{ booking_form | crispy }}
