@@ -12,14 +12,14 @@
                 <h2 class = "about-title">{{ about.title }}</h2>
                 <p class ="about-description">{{ about.description | safe }}</p>
             </div>
-            <div class="about-image-box">
-                {% if "placeholder" in about.image.url %}
-                <img class="profile-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">
-                {% else %}
-                <img class="profile-image" src=" {{ about.image.url }}" alt="{{ about.title }}">
-                {% endif %}
-            </div>
+            {% if "placeholder" in about.image.url %}
+            <img class="profile-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">
+            {% else %}
+            <img class="profile-image" src=" {{ about.image.url }}" alt="{{ about.title }}">
+            {% endif %}
         </div>
-    </div>
+        <a href="{% url 'workshops' %}" class="workshop-button-about">Our Workshops</a>
+    </div>    
 </section>
+    <a href="{% url 'workshops' %}" class="workshop-button-about">Our Workshops</a>
 {% endblock content %}

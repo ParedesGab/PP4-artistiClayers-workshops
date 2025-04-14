@@ -190,27 +190,52 @@ body {
 .about-content-box {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
-    align-items: stretch;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.about-text-content {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    margin-right: 4rem;
+    margin-right: 4rem;
+    width: 50%;
 }
 
 .about-title {
     font-size: 3rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.about-image-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 3.5rem;
 }
 
 .profile-image {
-    width: 80%;
+    width: 30%;
     height: auto;
     border-radius: 8px;
+    margin-left: 4rem;
+}
+
+.workshop-button-about {
+    background-color: #ee6d3a;
+    color: white !important;
+    padding: 0.79rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase !important;
+    margin-top: 20px; /* Add space above the button */
+    display: block; /* Make it a block-level element */
+    text-align: center; /* Center the text within the button */
+    margin-left: auto;  /* Center the button horizontally */
+    margin-right: auto;
+    position: relative; /* Remove fixed positioning */
+    bottom: auto;
+    left: auto;
+    z-index: auto;
+    width: 30%;
 }
 
 
