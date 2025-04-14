@@ -2,28 +2,24 @@
 {% block content %}
 {% load static %}
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-4 text-center">
-            {% if "placeholder" in about.profile_image.url %}
-            <img class="profile-image" src="{% static 'images/nobody.jpg' %}"
-            alt="placeholder image">
-            {% else %}
-            <img class="profile-image" src=" {{ about.image.url }}" alt="{{ post.title }}">
-            {% endif %}
-        </div>
-        <div class="col-8">
-            <!-- Title goes between these h2 tags -->
-            <h2>{{ about.title }}</h2>
-            <!-- Content goes directly underneath this -->
-            {{ about.description | safe }}
+<div class = banner-image-container>
+    <img src="{% static 'images/hero-image2.png' %}" alt="banner image" class="banner-image">
+</div>
+<section class="about-page">
+    <div class="container">
+        <div class="about-content-box">
+            <div class="about-text-content">
+                <h2 class = "about-title">{{ about.title }}</h2>
+                <p class ="about-description">{{ about.description | safe }}</p>
+            </div>
+            <div class="about-image-box">
+                {% if "placeholder" in about.image.url %}
+                <img class="profile-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">
+                {% else %}
+                <img class="profile-image" src=" {{ about.image.url }}" alt="{{ about.title }}">
+                {% endif %}
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col text-right">
-            <!-- Updated on field goes in here -->
-            <p class="text-end"><em>Updated on:</em></p>
-        </div>
-      </div>
-</div>
+</section>
 {% endblock content %}

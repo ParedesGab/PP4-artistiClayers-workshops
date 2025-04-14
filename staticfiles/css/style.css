@@ -1,6 +1,6 @@
 body {
     background-color: #1b5ad6;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Logo  */
@@ -149,7 +149,6 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    
     padding: 1rem 0;
     text-align: center;
 }
@@ -164,7 +163,56 @@ body {
     color:  #ee6d3a;
 }
 
-/*  */
+/* About page  */
+
+.banner-image-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    align-items: stretch;
+}
+
+.about-title {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
 
 .light-bg {
     background-color: #fff;
