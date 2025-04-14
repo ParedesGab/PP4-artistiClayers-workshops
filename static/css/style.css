@@ -1,5 +1,13 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #eff3fc;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem; /* Add some space above the logo */
 }
 
 .brand {
@@ -10,7 +18,7 @@ body {
 }
 
 .red-o {
-    color: #E84610;
+    color: #2ea1d6;
 }
 
 .thin {

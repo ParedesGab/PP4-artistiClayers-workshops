@@ -43,18 +43,17 @@
     <header>
         <div class="logo-container">
             <a class="navbar-brand" href="{% url 'home' %}">
-                <span class="brand">Artisti<span class="red-o">C</span><span class="thin">layers</span>
-                </span>
+                <span class="brand">Artisti<span class="red-o">C</span>layers</span>
             </a>
         </div>
-         <nav class="navbar navbar-expand-lg navbar-light bg-white">
+         <nav class="navbar navbar-expand-md navbar-light bg-white">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
                                 href="{% url 'home' %}">HOME</a>

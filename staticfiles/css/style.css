@@ -1,20 +1,35 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #1b5ad6;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.4rem;
 }
 
 .brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
+    font-family: Roboto, sans-serif;
+    font-size: 2rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #4f4f4a;
 }
 
 .red-o {
-    color: #E84610;
+    color: #ee6d3a;
+    font-size: 4rem;
 }
 
-.thin {
+/* .thin {
     font-weight: 300;
+} */
+
+/* Navbar */
+
+.navbar-collapse {
+    justify-content: center;
 }
 
 .light-bg {
