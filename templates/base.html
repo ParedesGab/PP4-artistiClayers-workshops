@@ -40,56 +40,59 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">c<span class="red-o">o</span>de<span
-                        class="thin">|star</span></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'home' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'about' %}">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == workshops_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'workshops' %}">Workshops</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
-                        href="{% url 'contact' %}">Contact</a>
-                    </li>
-                    {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page" href="{% url 'bookings' %}">My Bookings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
-                    </li>
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'account_signup' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
-                    </li>
-                    {% endif %}
-                </ul>
-                <span class="navbar-text text-muted">
-                    adventures of a software developer
+    <header>
+        <div class="logo-container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <span class="brand">Artisti<span class="red-o">C</span><span class="thin">layers</span>
                 </span>
-            </div>
+            </a>
         </div>
-    </nav>
+         <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'home' %}">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'about' %}">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == workshops_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'workshops' %}">WORKSHOPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'contact' %}">CONTACT</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page" href="{% url 'bookings' %}">BOOKINGS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">LOGOUT</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                                href="{% url 'account_signup' %}">SIGN UP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">SIGN IN</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <!-- displaying Django messages -->
     <div class="container">
         <div class="row">
