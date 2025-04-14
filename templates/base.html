@@ -91,7 +91,7 @@
             </div>
         </nav>
         {% if not user.is_authenticated %}
-        <p class="text-end">
+        <p class="not-authenticated text-end">
             You are not logged in
         </p>
         {% endif %}
@@ -128,7 +128,6 @@
         <!-- <p class="m-0 text-center text-white">Made by Code Instituters</p> -->
         <p class="m-0 text-center text-white">
             {% block copyright %}
-                Made by Code Instituters
             {% endblock copyright %}
         </p>
         <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
