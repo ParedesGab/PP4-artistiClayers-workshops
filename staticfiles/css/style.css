@@ -2,24 +2,25 @@ body {
     background-color: #1b5ad6;
 }
 
-/* Logo Styles */
+/* Logo  */
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 0.4rem;
+    margin-bottom: 1rem;
 }
 
 .brand {
     font-family: Roboto, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #4f4f4a;
 }
 
 .red-o {
     color: #ee6d3a;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 /* .thin {
@@ -28,8 +29,15 @@ body {
 
 /* Navbar */
 
+.nav-link {
+    font-weight: 600;
+    padding-right: 18px !important;
+}
+
 .navbar-collapse {
     justify-content: center;
+    color: #ee6d3a;
+    font-size: 1.3rem;
 }
 
 .light-bg {
