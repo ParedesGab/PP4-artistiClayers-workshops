@@ -139,28 +139,32 @@ body {
     background-color: #6366f1;
 }
 
+/* Footer */
+
 .footer {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
+    
     padding: 1rem 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
 }
 
 .footer a {
-    color: white;
+    color: #1f0d06;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
 .footer a:hover {
-    color: #ff8c00;
+    color:  #ee6d3a;
 }
+
+/*  */
 
 .light-bg {
     background-color: #fff;
