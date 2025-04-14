@@ -39,7 +39,7 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
+    <!-- Header containing Logo and navigation -->
     <header>
         <div class="logo-container">
             <a class="navbar-brand" href="{% url 'home' %}">
@@ -90,6 +90,11 @@
                 </div>
             </div>
         </nav>
+        {% if not user.is_authenticated %}
+        <p class="text-end">
+            You are not logged in
+        </p>
+        {% endif %}
     </header>
 
     <!-- displaying Django messages -->
@@ -105,13 +110,12 @@
             </div>
         </div>
     </div>
-
     <main class="flex-shrink-0 main-bg">
-        {% if not user.is_authenticated %}
-        <p class="text-end m-3">
+        <!-- {% if not user.is_authenticated %}
+        <p class="text-end">
             You are not logged in
         </p>
-        {% endif %}
+        {% endif %} -->
         {% block content %}
         <!-- Content Goes here -->
           <p>This is my default paragraph</p>

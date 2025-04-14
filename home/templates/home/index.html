@@ -4,10 +4,24 @@
 {% block content %}
 
 <!-- index.html content starts here -->
-<div class="container-fluid">
-    <div class="row">
-
-        <!-- Blog Entries Column -->
+<div class="hero-image-container"> 
+    <img src="{% static 'images/default.jpg' %}" alt="hero image" class="hero-image">
+    <!-- {% if not user.is_authenticated %}
+    <div>
+        <p class="text-end m-3">You are not logged in</p>
+    </div>
+    {% endif %} -->
+    <div class="hero-text">
+        <p>HANDMADE IN VIENNA</p>
+        <h1>Welcome!</h1>
+        <p>
+            Let your artistic creativity flow with the art of polymer clay. 
+        </p>
+        <a href="{% url 'workshops' %}" class="workshop-button">
+            Explore our Workshops!
+        </a>
+    </div>
+        <!-- Blog Entries Column
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -26,7 +40,7 @@
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
-                                <!-- <p class="card-text">{{ post.excerpt }}</p> -->
+                                <p class="card-text">{{ post.excerpt }}</p>
                             </a>
 
                             <hr />
@@ -52,7 +66,7 @@
             {% endif %}
         </ul>
     </nav>
-    {% endif %}
+    {% endif %} -->
 </div>
 
 <!-- index.html content ends here -->
