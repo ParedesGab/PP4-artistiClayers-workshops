@@ -52,6 +52,24 @@ body {
     align-items: center;
 }
 
+/* Django messages */
+
+.row {
+    margin-top: 10px;
+}
+
+.alert  {
+    background-color: #fcded0 !important;
+    border-color: #f0fdf4 !important;
+    display:flex;
+    /* flex-direction: column;    
+    align-items: center; */
+    justify-content: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .light-bg {
     background-color: #fff;
 }
