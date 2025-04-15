@@ -215,23 +215,53 @@ body {
     justify-content: center
 }
 
-.container h2 {
-    position: absolute;
-    /* color: rgb(15, 36, 132); */
+#contact h2 {
     background-color: rgba(243, 239, 222, 0.8);
     padding: 0.5rem;
 }
 
-.container p {
-    margin-top: 6rem;
+#contact p {
+    margin-top: 3rem;
     background-color: rgba(243, 239, 222, 0.8);
     padding: 0.5rem;
 }
 
-.container form {
+#contact form {
+    background-color: rgba(243, 239, 222, 0.6);
+    padding: 0.5rem;
+}
+
+/* Sign In page */
+
+#sign-in {
+    height: calc(72vh - 4rem);
+    position: relative;
+    background: url("../images/IMG_1932.JPG") no-repeat center center/cover;
+    background-color: rgb(202, 90, 4);
+    justify-content: center;
+    align-items: center;
+}
+
+ #sign-in h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 40%;
     background-color: rgba(243, 239, 222, 0.8);
     padding: 0.5rem;
 }
+
+#sign-in .sign-in-text {
+    margin-top: 1.5rem;
+    background-color: rgba(243, 239, 222, 0.8);
+    padding: 0.3rem;
+    margin-bottom: 0px;
+}
+
+#sign-in form {
+    background-color: rgba(243, 239, 222, 0.7);
+    padding: 0.5rem;
+    /* width: 60%; */
+} 
 
 
 /* Media Query: Tablets and Up */
@@ -255,6 +285,10 @@ body {
         width: 35%;
         margin-left: 2rem;
     }
+
+    #sign-in h2 {
+        width: 30%;
+    }
 }
 
 /* Media Query: Laptops and Up */
@@ -266,6 +300,10 @@ body {
        
     .profile-image {
         width: 30%;
+    }
+
+    #sign-in h2 {
+        width: 20%;
     }
 }
 
