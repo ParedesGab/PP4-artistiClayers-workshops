@@ -210,7 +210,7 @@ body {
     position: relative;
     background: url("../images/IMG_7548.JPG") no-repeat center center/cover;
     /* background-size: 70% auto; */
-    background-color: rgb(202, 90, 4);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center
 }
@@ -231,7 +231,7 @@ body {
     padding: 0.5rem;
 }
 
-/* Sign In and Sign Out pages */
+/* Sign In; Sign Out and Sign Up pages */
 
 #sign-in,
 #sign-out, 
@@ -267,6 +267,11 @@ body {
 #sign-up form {
     background-color: rgba(243, 239, 222, 0.7);
     padding: 0.5rem;
+}
+
+#sign-up h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Media Query: Tablets and Up */
