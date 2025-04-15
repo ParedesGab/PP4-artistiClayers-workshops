@@ -207,9 +207,8 @@ body {
 /* Contact page */
 
 #contact {
-    /* width: 100%; */
     position: relative;
-    background: url("../images/IMG_1932.JPG") no-repeat center center/cover;
+    background: url("../images/IMG_1466.JPG") no-repeat center center/cover;
     background-color: rgb(202, 90, 4);
     display: flex;
     justify-content: center
@@ -231,9 +230,10 @@ body {
     padding: 0.5rem;
 }
 
-/* Sign In page */
+/* Sign In and Sign Out pages */
 
-#sign-in {
+#sign-in,
+#sign-out {
     height: calc(72vh - 4rem);
     position: relative;
     background: url("../images/IMG_1932.JPG") no-repeat center center/cover;
@@ -242,17 +242,19 @@ body {
     align-items: center;
 }
 
- #sign-in h2 {
+ #sign-in h2,
+ #sign-out h2 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     width: 40%;
-    background-color: rgba(243, 239, 222, 0.8);
+    background-color: rgba(243, 239, 222, 0.85);
     padding: 0.5rem;
 }
 
-#sign-in .sign-in-text {
+#sign-in .sign-in-text,
+#sign-out .sign-out-text {
     margin-top: 1.5rem;
-    background-color: rgba(243, 239, 222, 0.8);
+    background-color: rgba(243, 239, 222, 0.85);
     padding: 0.3rem;
     margin-bottom: 0px;
 }
@@ -260,9 +262,7 @@ body {
 #sign-in form {
     background-color: rgba(243, 239, 222, 0.7);
     padding: 0.5rem;
-    /* width: 60%; */
-} 
-
+}
 
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
@@ -305,6 +305,11 @@ body {
     #sign-in h2 {
         width: 20%;
     }
+
+    #sign-out h2,
+    #sign-out .sign-out-text {
+    width: 40%;
+}
 }
 
 /* Media query: Desktops and Up */
