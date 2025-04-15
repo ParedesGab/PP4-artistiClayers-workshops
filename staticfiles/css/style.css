@@ -208,25 +208,26 @@ body {
 
 #contact {
     position: relative;
-    background: url("../images/IMG_1466.JPG") no-repeat center center/cover;
+    background: url("../images/IMG_7548.JPG") no-repeat center center/cover;
+    /* background-size: 70% auto; */
     background-color: rgb(202, 90, 4);
     display: flex;
     justify-content: center
 }
 
 #contact h2 {
-    background-color: rgba(243, 239, 222, 0.8);
+    background-color: rgba(243, 239, 222, 0.5);
     padding: 0.5rem;
 }
 
 #contact p {
     margin-top: 3rem;
-    background-color: rgba(243, 239, 222, 0.8);
+    background-color: rgba(243, 239, 222, 0.5);
     padding: 0.5rem;
 }
 
 #contact form {
-    background-color: rgba(243, 239, 222, 0.6);
+    background-color: rgba(243, 239, 222, 0.5);
     padding: 0.5rem;
 }
 
