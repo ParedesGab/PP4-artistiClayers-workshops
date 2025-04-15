@@ -141,7 +141,6 @@ body {
 /* Footer */
 
 .footer {
-    /* position: fixed; */
     display: flex;
     justify-content: center;
     gap: 2.4rem;
