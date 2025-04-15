@@ -234,7 +234,8 @@ body {
 /* Sign In and Sign Out pages */
 
 #sign-in,
-#sign-out {
+#sign-out, 
+#sign-up {
     height: calc(72vh - 4rem);
     position: relative;
     background: url("../images/IMG_1932.JPG") no-repeat center center/cover;
@@ -244,7 +245,8 @@ body {
 }
 
  #sign-in h2,
- #sign-out h2 {
+ #sign-out h2,
+ #sign-up h2 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     width: 40%;
@@ -253,14 +255,16 @@ body {
 }
 
 #sign-in .sign-in-text,
-#sign-out .sign-out-text {
+#sign-out .sign-out-text,
+#sign-up .sign-up-text {
     margin-top: 1.5rem;
     background-color: rgba(243, 239, 222, 0.85);
     padding: 0.3rem;
     margin-bottom: 0px;
 }
 
-#sign-in form {
+#sign-in form,
+#sign-up form {
     background-color: rgba(243, 239, 222, 0.7);
     padding: 0.5rem;
 }
