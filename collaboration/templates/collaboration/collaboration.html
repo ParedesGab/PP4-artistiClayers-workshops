@@ -3,22 +3,17 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="container mt-5">
+<div class="container" id ="contact">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-6 my-5">
-            <h2>Contact Us!</h2>
-            <p>I believe in the power of shared knowledge and collective effort.
-                Whether you have a project in mind, wish to co-author
-                an article, or simply want to brainstorm some ideas,
-                I'm excited to hear from you. Fill out the form
-                and we can get the ball rolling!</p>
-
-            <!-- add your form here. Your submit button should 
-                                have the classes of btn, btn-secondary -->
+        <div class="col-12 col-md-6 my-2">
+            <h2 class = "mt-1 mb-3">Let's get in touch!</h2>
+            <p>Are you interested in collaborating on workshop projects or
+                bouncing around fun clay-related ideas? I'd be thrilled to connect.
+                Please fill out the form and let's get started!</p>
             <form method="post">
                 {{ contact_form | crispy }}
                 {% csrf_token %}
-                <button class="btn btn-secondary" type="submit">Submit</button>
+                <button class="btn btn-warning border border-dark" type="submit">Submit</button>
             </form>
         </div>
     </div>

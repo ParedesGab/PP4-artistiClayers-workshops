@@ -204,6 +204,36 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Contact page */
+
+#contact {
+    /* width: 100%; */
+    position: relative;
+    background: url("../images/IMG_1932.JPG") no-repeat center center/cover;
+    background-color: rgb(202, 90, 4);
+    display: flex;
+    justify-content: center
+}
+
+.container h2 {
+    position: absolute;
+    /* color: rgb(15, 36, 132); */
+    background-color: rgba(243, 239, 222, 0.8);
+    padding: 0.5rem;
+}
+
+.container p {
+    margin-top: 6rem;
+    background-color: rgba(243, 239, 222, 0.8);
+    padding: 0.5rem;
+}
+
+.container form {
+    background-color: rgba(243, 239, 222, 0.8);
+    padding: 0.5rem;
+}
+
+
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
     
