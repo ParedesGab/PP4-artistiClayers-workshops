@@ -38,37 +38,59 @@
 
 <!-- Visualize your Bookings -->
 {% if user.is_authenticated %}
-<div class="row justify-content-center" id="booking-table" style="margin-top: 20px;">
-    <div class="col-md-8">
-        <h2>My Bookings</h2>
-        <table class="table table-striped table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Workshop</th>
-                    <th scope="col">Participants</th>
-                    <th scope="col">Appointment date</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for booking in bookings %}
-                <tr>
-                    <td>{{ booking.workshop.name }}</td>
-                    <td>{{ booking.participants }}</td>
-                    <td>{{ booking.appointment_date }}</td>
-                    <td><a href="{% url 'update_booking' booking.id %}" class="btn btn-success mt-2 rounded-pill">Update Booking</a>
-                    <td><a href="{% url 'delete_booking' booking.id %}" class="btn btn-warning mt-2 rounded-pill">Delete Booking</a>
-                    </td>
-                </tr>
-                {% empty %}
-                <tr><td colspan="3">You haven't made any bookings yet.</td></tr>
-                {% endfor %}
-            </tbody>
-        </table>
+<div class="container">
+    <div class="row justify-content-center mt-5" id="booking-table">
+        <div class="col-md-8">
+            <h2>My Bookings</h2>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Workshop</th>
+                        <th scope="col">Participants</th>
+                        <th scope="col">Appointment date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for booking in bookings %}
+                    <tr>
+                        <td>{{ booking.workshop.name }}</td>
+                        <td>{{ booking.participants }}</td>
+                        <td>{{ booking.appointment_date }} <br><small class="text-muted">{{booking.appointment_time}}</small> </td>
+                        <td>
+                            {% now "Ymd" as today %}
+                            {% if booking.appointment_date|date:"Ymd" == today %}
+                                <span class="btn btn-info mt-2 rounded-pill">Today's Booking</span>
+                            {% elif booking.appointment_date|date:"Ymd" > today %}
+                                <a href="{% url 'update_booking' booking.id %}" class="btn btn-success mt-2 rounded-pill">Update Booking</a>
+                            {% else %} 
+                                <span class="btn btn-secondary mt-2 rounded-pill">Past Booking</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% now "Ymd" as today %}
+                            {% if booking.appointment_date|date:"Ymd" > today %}
+                                <a href="{% url 'delete_booking' booking.id %}" class="btn btn-warning mt-2 rounded-pill">Delete Booking</a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr><td colspan="3">You haven't made any bookings yet.</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 {% endif %}
 </div>
+ {% endblock %}
 
- 
-
+ {% block js %}
+ <script>
+    // ensure appointment booking date is not before "tomorrow"
+    let now = new Date();
+    now.setDate(now.getDate() + 1);
+    let minDate = now.toISOString().substring(0,10);
+    document.getElementById("id_appointment_date").min = minDate;
+</script>
  {% endblock %}

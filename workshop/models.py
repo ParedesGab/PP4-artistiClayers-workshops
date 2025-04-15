@@ -1,10 +1,16 @@
+from datetime import date
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
+from django.core.exceptions import ValidationError
 from cloudinary.models import CloudinaryField
-from django.utils import timezone
 
 
-# Create your models here.
+def validate_date_not_in_past(value):
+    today = date.today()
+    if value < today:
+        raise ValidationError("The date cannot be in the past")
+
 
 class Level(models.Model):
     """
@@ -37,6 +43,11 @@ class Booking(models.Model):
     """
     Stores a single Booking entry.
     """
+    APPOINTMENT_TIMES = [
+        ("9am-11am", "9am - 11am"),
+        ("1pm-3pm", "1pm - 3pm"),
+        ("7pm-9pm", "7pm - 9pm")
+    ]
     booked_by = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="bookings"
     )
@@ -44,10 +55,16 @@ class Booking(models.Model):
         Workshop, on_delete=models.CASCADE, related_name="workshop_bookings"
     )
     date_booked = models.DateTimeField(auto_now_add=True)
-    appointment_date = models.DateTimeField(default=timezone.now)
-    participants = models.PositiveBigIntegerField(
+    appointment_date = models.DateField(validators=[validate_date_not_in_past])
+    appointment_time = models.CharField(
+        max_length=10,
+        choices=APPOINTMENT_TIMES,
+        default="9am-11am"
+    )
+    participants = models.PositiveIntegerField(
         default=1,
-        help_text="Please indicate number of participants",
+        validators=[MinValueValidator(1), MaxValueValidator(10)],
+        help_text="Please indicate number of participants up to 10",
     )
     approved = models.BooleanField(default=True)
 

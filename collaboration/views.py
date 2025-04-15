@@ -19,7 +19,9 @@ def contact_form(request):
         contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            messages.add_message(request, messages.SUCCESS, "Thank you for contacting us!")
+            messages.add_message(
+                request, messages.SUCCESS,
+                "Thank you for contacting us! We reply within two working days")
 
     contact_form = ContactForm()
     return render(
