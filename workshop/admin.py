@@ -16,7 +16,6 @@ class WorkshopAdmin(SummernoteModelAdmin):
 
     list_display = ('name', 'is_public')
     search_fields = ['level']
-    # list_filter = ('level',)
     summernote_fields = ('description',)
 
 

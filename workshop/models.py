@@ -30,8 +30,12 @@ class Workshop(models.Model):
         Level, on_delete=models.CASCADE, related_name="workshops"
     )
     name = models.CharField(max_length=50, blank=False, null=False,
-                            default="New Workshop")
+                            default="New Workshop"
+                            )
     description = models.TextField()
+    excerpt = models.TextField(blank=False, null=False,
+                               default="Default excerpt"
+                               )
     image = CloudinaryField('image', default='placeholder')
     is_public = models.BooleanField(default=True)
 

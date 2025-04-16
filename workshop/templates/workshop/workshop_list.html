@@ -22,6 +22,7 @@
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="level">{{ workshop.name }}</p>
+                                    <p class="level">{{ workshop.excerpt }}</p>
                                 </div>
                             </div>
                             <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
