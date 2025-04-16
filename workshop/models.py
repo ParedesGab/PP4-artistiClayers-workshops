@@ -73,7 +73,7 @@ class Booking(models.Model):
     approved = models.BooleanField(default=True)
 
     class Meta:
-        ordering = ["-appointment_date"]
+        ordering = ["appointment_date"]
 
     def __str__(self):
         return f"""

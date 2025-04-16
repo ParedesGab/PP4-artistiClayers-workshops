@@ -3,11 +3,9 @@
 
 {% block content %}
 
-<!-- index.html content starts here -->
-<div class="container-fluid">
-    <div class="row">
-
-        <!-- Blog Entries Column -->
+<!-- workshop_list.html content starts here -->
+<div class="container-fluid" id ="workhops-content-box">
+    <div class="row" >
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for workshop in workshop_list %}
@@ -16,19 +14,21 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in workshop.image.url %}
-                                <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                                <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
+                                    <img class="card-img-top border border-dark more-rounded" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                                </a>
                                 {% else %}
-                                <img class="card-img-top" src=" {{ workshop.image.url }}" alt="{{ workshop.name }}">
+                                <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
+                                    <img class="card-img-top border border-dark more-rounded" src=" {{ workshop.image.url }}" alt="{{ workshop.name }}">
+                                </a>
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="level">{{ workshop.name }}</p>
-                                    <p class="level">{{ workshop.excerpt }}</p>
+                                    <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
+                                        <h2 class="card-title">{{ workshop.name }}</h2>
+                                    </a>
                                 </div>
                             </div>
-                            <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
-                                <h2 class="card-title">{{ workshop.name }}</h2>
-                            </a>
-                            <hr />
+                            <p class="level">{{ workshop.excerpt | safe }}</p>
                         </div>
                     </div>
                 </div>
@@ -37,16 +37,16 @@
             <div class="row">
                 {% endif %}
                 {% endfor %}
-
             </div>
         </div>
     </div>
+</div>
+
 
 <!-- index.html content ends here -->
-
-<!-- footer content here -->
 {% endblock %}
 
+<!-- footer content here -->
 {% block copyright %}
 Copyright 2025 Gabriela F. Paredes
 {% endblock %}

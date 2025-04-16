@@ -16,7 +16,7 @@ class WorkshopAdmin(SummernoteModelAdmin):
 
     list_display = ('name', 'is_public')
     search_fields = ['level']
-    summernote_fields = ('description',)
+    summernote_fields = ('description', 'excerpt')
 
 
 @admin.register(Booking)

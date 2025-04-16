@@ -231,7 +231,7 @@ body {
     padding: 0.5rem;
 }
 
-/* Sign In; Sign Out and Sign Up pages */
+/* Sign In, Sign Out and Sign Up pages */
 
 #sign-in,
 #sign-out, 
@@ -274,6 +274,69 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Workshops page  */
+
+#workhops-content-box {
+    background-color: #fddeca;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#workhops-content-box h1 {
+    font-size: 2rem;
+    margin-top: 1.6rem;
+    background-color: rgba(243, 141, 104, 0.3);
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+.container-fluid .row {
+    margin-top: 0px !important;
+}
+
+.card-body {
+    margin-top: 0px !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.4rem;
+    border-radius: 10px;
+    height: 530px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.4rem;
+    border-radius: 10px;
+}
+
+.workshop-link {
+    color: black;
+    text-decoration: none;
+}
+
+.more-rounded {
+    border-width: 2.5px !important;
+    border-radius: 10px;
+    border-color: #6e2609 !important;
+    box-shadow: 3px 3px 7px #f4e1da;
+}
+
+.more-rounded:hover {
+    transform: scale(1.05);
+}
+
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
     
@@ -299,6 +362,17 @@ body {
     #sign-in h2 {
         width: 30%;
     }
+
+    .card-body {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+        height: 560px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+    
 }
 
 /* Media Query: Laptops and Up */
@@ -319,7 +393,25 @@ body {
     #sign-out h2,
     #sign-out .sign-out-text {
     width: 40%;
-}
+    }
+    #workhops-content-box {
+        background-color: #fddeca;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-body {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        height: 500px;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
 }
 
 /* Media query: Desktops and Up */
@@ -328,8 +420,6 @@ body {
         width: 25%;
     }
 }
-
-
 
 
 
@@ -348,18 +438,6 @@ body {
 .card {
     border: none;
     background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #188181;
 }
 
 .scale {
