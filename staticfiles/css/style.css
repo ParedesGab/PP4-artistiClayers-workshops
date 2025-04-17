@@ -210,7 +210,7 @@ body {
     position: relative;
     background: url("../images/IMG_7548.JPG") no-repeat center center/cover;
     /* background-size: 70% auto; */
-    background-color: rgb(202, 90, 4);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center
 }
@@ -231,7 +231,7 @@ body {
     padding: 0.5rem;
 }
 
-/* Sign In and Sign Out pages */
+/* Sign In, Sign Out and Sign Up pages */
 
 #sign-in,
 #sign-out, 
@@ -269,6 +269,114 @@ body {
     padding: 0.5rem;
 }
 
+#sign-up h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Workshops page  */
+
+#workhops-content-box {
+    background-color: #f5d1b8;    
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid .row {
+    margin-top: 0px !important;
+}
+
+.card-body {
+    margin-top: 0px !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.4rem;
+    border-radius: 10px;
+    height: 530px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.4rem;
+    border-radius: 10px;
+}
+
+.workshop-link {
+    color: black;
+    text-decoration: none;
+}
+
+.more-rounded {
+    border-width: 2.5px !important;
+    border-radius: 10px;
+    border-color: #36160a !important;
+    box-shadow: 3px 3px 7px #f4e1da;
+}
+
+.more-rounded:hover {
+    transform: scale(1.1);
+}
+
+/* Workshop details page */
+
+.banner-workshop-image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-title-overlay {
+    position: absolute;
+    min-width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 8px;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.workshop-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.workshop-content-box {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffebde;
+    align-items: center;
+    justify-content: center;
+}
+
+.workshop-text-content {
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.workshop-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
     
@@ -294,6 +402,39 @@ body {
     #sign-in h2 {
         width: 30%;
     }
+
+    .card-body {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+        height: 560px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .about-content-box {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .banner-title-overlay {
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .workshop-text-content {
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .workshop-image {
+        width: 50%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        margin-left: 1.5rem;
+    }
 }
 
 /* Media Query: Laptops and Up */
@@ -314,7 +455,44 @@ body {
     #sign-out h2,
     #sign-out .sign-out-text {
     width: 40%;
-}
+    }
+
+    .card-body {
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+        height: 500px;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .about-text-content {
+        margin-bottom: 1.5rem;
+    } 
+
+    .banner-title-overlay {
+        padding: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .workshop-content-box {
+        flex-direction: row;
+        background-color: #ffebde;
+        align-items: center;
+    }
+    
+    .workshop-text-content {
+        padding: 1rem;
+        width: 50%;
+    }
+    
+    .workshop-image {
+        width: 40%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+    }
 }
 
 /* Media query: Desktops and Up */
@@ -323,8 +501,6 @@ body {
         width: 25%;
     }
 }
-
-
 
 
 
@@ -343,18 +519,6 @@ body {
 .card {
     border: none;
     background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #188181;
 }
 
 .scale {
