@@ -3,33 +3,27 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="masthead">
+<div class = banner-workshop-image-container>
+    <img src="{% static 'images/hero-image2.png' %}" alt="banner image" class="banner-image">
+    <h1 class="banner-title-overlay">{{ workshop.name }}</h1>
+</div>
+<section class="workshop-page">
     <div class="container">
-        <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- workshop title goes in these h1 tags -->
-                <h1 class="workshop-title">{{ workshop.name }}</h1>
+        <div class="workshop-content-box">
+            <div class="workshop-text-content">
+                <p class ="workshop-description">{{ workshop.description | safe }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
-            </div>
+            {% if "placeholder" in workshop.image.url %}
+            <img class="workshop-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">
+            {% else %}
+            <img class="workshop-image" src=" {{ workshop.image.url }}" alt="{{ workshop.name }}">
+            {% endif %}
         </div>
     </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <!-- The workshop content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
-                <article class="card-text">
-                    {{ workshop.description| safe }}
-                </article>
-            </div>
-        </div>
-    </div>
-</div>
+    <div class ="book-workshop">
+        <a href="{% url 'bookings' %}" class="workshop-button">Book workshop</a>
+    </div>    
+</section>
 
 {% endblock content %}
 
