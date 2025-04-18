@@ -100,6 +100,7 @@ body {
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 4rem;
 }
 
 .hero-text .handmade {
@@ -140,7 +141,8 @@ body {
 
 /* Footer */
 
-.footer {
+.footer, 
+.non-fixed-footer  {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -153,14 +155,20 @@ body {
     align-items: center;
 }
 
-.footer a {
+.footer a, 
+.non-fixed-footer a {
     color: #1f0d06;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
-.footer a:hover {
+.footer a:hover, 
+.non-fixed-footer a:hover {
     color:  #ee6d3a;
+}
+
+.non-fixed-footer {
+    position: static !important;
 }
 
 /* About page  */
@@ -300,7 +308,7 @@ body {
 }
 
 #workshop-list{
-    height: 490px;
+    height: 470px;
 }
 
 .image-container {
@@ -422,10 +430,18 @@ body {
     color: #060606;
 }
 
+#my-bookings-container {
+    height: calc(100vh - 4rem);
+}
+
 .update-workshop {
     border: 1px solid #05230c;
     border-radius: 20px;
     background-color: #dfffbd;
+}
+
+.update-workshop:hover {
+    background-color: #b0db83;
 }
 
 .past-workshop {
@@ -440,11 +456,19 @@ body {
     background-color: #ebcccf;
 }
 
+.delete-workshop:hover {
+    background-color: #e4a0a8;
+}
+
 .today-workshop {
     border: 1px solid #05230c;
     border-radius: 20px;
     background-color: #96e3f6;
     font-weight: bold;
+}
+
+.today-workshop:hover {
+    background-color: #20d6f6;
 }
 
 /* Media Query: Tablets and Up */
@@ -491,6 +515,10 @@ body {
     .banner-title-overlay {
         padding: 1.5rem;
         font-size: 2rem;
+    }
+
+    #workshop-list{
+        height: 520px;
     }
 
     .workshop-text-content {
@@ -542,7 +570,7 @@ body {
     }
 
     .card-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .about-text-content {

@@ -440,6 +440,10 @@ body {
     background-color: #dfffbd;
 }
 
+.update-workshop:hover {
+    background-color: #b0db83;
+}
+
 .past-workshop {
     border: 1px solid #05230c;
     border-radius: 20px;
@@ -452,11 +456,19 @@ body {
     background-color: #ebcccf;
 }
 
+.delete-workshop:hover {
+    background-color: #e4a0a8;
+}
+
 .today-workshop {
     border: 1px solid #05230c;
     border-radius: 20px;
     background-color: #96e3f6;
     font-weight: bold;
+}
+
+.today-workshop:hover {
+    background-color: #20d6f6;
 }
 
 /* Media Query: Tablets and Up */

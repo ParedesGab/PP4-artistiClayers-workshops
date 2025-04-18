@@ -25,17 +25,16 @@
       </table>
         {% if user.is_authenticated %}            
         <form method="post">
-            <p id="user-greeting">Are you sure you want to delete this booking?</p>  
+            <p class="fw-bold text-center mt-4">Do you wish to proceed with deleting this booking?</p>  
             {% csrf_token %}
-            <button id="submitButton" type="submit"
-            class="btn btn-signup btn-danger rounded-pill">Yes</button>
-             | 
-            <a href="{% url 'bookings' %}" class="btn btn-warning rounded-pill" type="button">No</a>
-         </form>       
+            <div class="text-center">
+              <button id="submitButton" type="submit" class="btn delete-workshop fw-bold">Yes</button> 
+              <a href="{% url 'bookings' %}" class="btn update-workshop fw-bold" type="button">No</a>
+            </div>
+         </form> 
         {% endif %}
       </div>
     </div>
   </div>
  </div>
-
  {% endblock %}
