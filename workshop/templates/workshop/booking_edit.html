@@ -5,19 +5,18 @@
 {% block content %}
 
  <div class="container">
-  <div class="row shadow-lg p-3 mb-4 bg-body rounded justify-content-center">
-    <div class="col-md-6">
-      <div class="card-body justify-content-center">
+  <div class="row justify-content-center bg-customize">
+    <div class="col-sm-10 col-md-8 col-lg-6">
+      <div class="card-body">
         {% if user.is_authenticated %}      
-        <p id="user-greeting">Welcome back {{ user }}, are you sure you want to delete?</p>
-        <form id="bookingForm" method="post"
-          style="margin-top: 1.3em; align-content: center">
+        <p class="fw-bold text-center mt-4 fs-5">Need to make changes? Update your booking below</p>
+        <form method="post">
           {{ booking_form | crispy }}
           {% csrf_token %}
-          <button id="submitButton" type="submit"
-            class="btn btn-signup btn-outline-success rounded-pill">Update Appointment</button>
-            |
-           <a href="{% url 'bookings' %}" class="btn btn-outline-warning rounded-pill" type="button"> Back to Bookings</a>
+          <button id="submitButton" type="submit" class="btn update-workshop fw-bold">
+            Update Booking
+          </button>
+           <a href="{% url 'bookings' %}" class="btn today-workshop fw-bold" type="button"> My Bookings</a>
         </form>
         {% else %}
         <p>Log in to make an appointment with us.</p>
@@ -27,3 +26,31 @@
   </div>
  </div>
  {% endblock %}
+
+ {% block footer %}
+<footer class="non-fixed-footer mt-auto py-3 main-bg">
+    <p class="m-0 text-center">&copy; 2025 Gabriela F. Paredes
+    </p>
+    <p class="m-0 text-center">Let's keep in touch:
+        <a href="https://facebook.com/" target="_blank" aria-label="Visit our Facebook page">
+            <i class="fab fa-facebook-square ms-3"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Visit our instagram page">
+            <i class="fab fa-instagram-square ms-3"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="Visit our Youtube page">
+            <i class="fab fa-youtube-square ms-3"></i>
+        </a>
+    </p>
+</footer>
+{% endblock %}
+
+{% block js %}
+<script>
+   // ensure appointment booking date is not before "tomorrow"
+   let now = new Date();
+   now.setDate(now.getDate() + 1);
+   let minDate = now.toISOString().substring(0,10);
+   document.getElementById("id_appointment_date").min = minDate;
+</script>
+{% endblock %}

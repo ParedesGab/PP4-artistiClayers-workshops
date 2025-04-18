@@ -19,13 +19,13 @@
               <tr>
                   <td>{{ booking.workshop.name }}</td>
                   <td>{{ booking.participants }} attendee(s)</td>
-                  <td>{{ booking.appointment_date }}</td>
+                  <td>{{ booking.appointment_date }} <br><small class="text-muted">{{booking.appointment_time}}</small> </td>
               </tr>
           </tbody>
       </table>
         {% if user.is_authenticated %}            
         <form method="post">
-            <p class="fw-bold text-center mt-4">Do you wish to proceed with deleting this booking?</p>  
+            <p class="fw-bold text-center mt-4 fs-5">Do you wish to proceed with deleting this booking?</p>  
             {% csrf_token %}
             <div class="text-center">
               <button id="submitButton" type="submit" class="btn delete-workshop fw-bold">Yes</button> 
