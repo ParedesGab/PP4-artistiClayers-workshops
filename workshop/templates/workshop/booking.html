@@ -34,7 +34,7 @@
 {% if user.is_authenticated %}
 <div class="container">
     <div class="row justify-content-center mt-5">
-        <div class="">
+        <div>
             <h2>My Bookings</h2>
             <table class="table table-sm table-striped table-hover">
                 <thead>
@@ -48,7 +48,7 @@
                     {% for booking in bookings %}
                     <tr>
                         <td>{{ booking.workshop.name }}</td>
-                        <td>{{ booking.participants }}</td>
+                        <td>{{ booking.participants }} attendee(s)</td>
                         <td>{{ booking.appointment_date }} <br><small class="text-muted">{{booking.appointment_time}}</small> </td>
                         <td>
                             {% now "Ymd" as today %}
@@ -76,6 +76,24 @@
     </div>
 </div>
 {% endif %}
+{% endblock %}
+
+{% block footer %}
+<footer class="non-fixed-footer mt-auto py-3 main-bg">
+    <p class="m-0 text-center">&copy; 2025 Gabriela F. Paredes
+    </p>
+    <p class="m-0 text-center">Let's keep in touch:
+        <a href="https://facebook.com/" target="_blank" aria-label="Visit our Facebook page">
+            <i class="fab fa-facebook-square ms-3"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Visit our instagram page">
+            <i class="fab fa-instagram-square ms-3"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="Visit our Youtube page">
+            <i class="fab fa-youtube-square ms-3"></i>
+        </a>
+    </p>
+</footer>
 {% endblock %}
 
  {% block js %}

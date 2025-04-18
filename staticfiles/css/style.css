@@ -141,7 +141,7 @@ body {
 /* Footer */
 
 .footer {
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     justify-content: center;
     gap: 2.4rem;
@@ -183,6 +183,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .about-text-content {
@@ -283,6 +284,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .container-fluid .row {
@@ -294,7 +296,11 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0.4rem;
     border-radius: 10px;
-    height: 530px;
+    height: 540px;
+}
+
+#workshop-list{
+    height: 490px;
 }
 
 .image-container {
@@ -353,7 +359,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 6.2rem;
 }
 
 .workshop-content-box {
@@ -368,6 +374,8 @@ body {
 .workshop-text-content {
     width: 95%;
     background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 0.8rem;
+    margin: 0.8rem 0;
 }
 
 .workshop-image {
@@ -429,13 +437,13 @@ body {
 .delete-workshop {
     border: 1px solid #05230c;
     border-radius: 20px;
-    background-color: #eed4d6;
+    background-color: #ebcccf;
 }
 
 .today-workshop {
     border: 1px solid #05230c;
     border-radius: 20px;
-    background-color: #75d3e1;
+    background-color: #96e3f6;
     font-weight: bold;
 }
 
@@ -548,8 +556,6 @@ body {
 
     .workshop-content-box {
         flex-direction: row;
-        background-color: #ffebde;
-        align-items: center;
     }
     
     .workshop-text-content {

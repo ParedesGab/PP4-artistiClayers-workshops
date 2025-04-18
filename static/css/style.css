@@ -100,6 +100,7 @@ body {
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 4rem;
 }
 
 .hero-text .handmade {
@@ -140,7 +141,8 @@ body {
 
 /* Footer */
 
-.footer {
+.footer, 
+.non-fixed-footer  {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -153,14 +155,20 @@ body {
     align-items: center;
 }
 
-.footer a {
+.footer a, 
+.non-fixed-footer a {
     color: #1f0d06;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
-.footer a:hover {
+.footer a:hover, 
+.non-fixed-footer a:hover {
     color:  #ee6d3a;
+}
+
+.non-fixed-footer {
+    position: static !important;
 }
 
 /* About page  */
@@ -284,6 +292,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .container-fluid .row {
@@ -295,7 +304,11 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0.4rem;
     border-radius: 10px;
-    height: 530px;
+    height: 540px;
+}
+
+#workshop-list{
+    height: 470px;
 }
 
 .image-container {
@@ -354,7 +367,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 6.2rem;
 }
 
 .workshop-content-box {
@@ -369,6 +382,8 @@ body {
 .workshop-text-content {
     width: 95%;
     background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 0.8rem;
+    margin: 0.8rem 0;
 }
 
 .workshop-image {
@@ -413,6 +428,10 @@ body {
 .book-workshop:hover{   
     background-color: #f8a84d;
     color: #060606;
+}
+
+#my-bookings-container {
+    height: calc(100vh - 4rem);
 }
 
 .update-workshop {
@@ -486,6 +505,10 @@ body {
         font-size: 2rem;
     }
 
+    #workshop-list{
+        height: 520px;
+    }
+
     .workshop-text-content {
         width: 80%;
         background-color: rgba(255, 255, 255, 0.8);
@@ -535,7 +558,7 @@ body {
     }
 
     .card-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .about-text-content {
@@ -549,8 +572,6 @@ body {
 
     .workshop-content-box {
         flex-direction: row;
-        background-color: #ffebde;
-        align-items: center;
     }
     
     .workshop-text-content {
