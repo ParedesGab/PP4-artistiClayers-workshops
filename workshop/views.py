@@ -56,7 +56,9 @@ def booking_display(request):
             booking.booked_by = request.user
             booking.save()
             messages.success(
-                request, 'Thank you! We look forward to seeing you!')
+                request,
+                'Thank you for your booking! We look forward to seeing you!'
+                )
             return redirect(reverse('bookings'))
     else:
         booking_form = BookingForm()
