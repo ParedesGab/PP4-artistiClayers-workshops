@@ -21,8 +21,17 @@
         </div>
     </div>
     <div>
-        <a href="{% url 'bookings' %}" class="workshop-button">Book workshop</a>
-    </div>    
+        {% if user.is_authenticated %}
+            <a href="{% url 'bookings' %}" class="workshop-button" aria-label="Book workshop">
+                Book workshop
+            </a>
+        {% else %}
+            <a href="{% url 'account_login'  %}" class="workshop-button"
+                aria-label="Sign in or Sign up to book a workshop">
+                Please Sign in to book
+            </a>
+        {% endif %}
+    </div>  
 </section>
 
 {% endblock content %}
