@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Workshop, Booking
 from .forms import BookingForm
 
@@ -39,6 +40,7 @@ def workshop_detail(request, id):
     )
 
 
+@login_required
 def booking_display(request):
     """
     Displays the booking form and handles booking submissions.
@@ -73,6 +75,7 @@ def booking_display(request):
     )
 
 
+@login_required
 def booking_edit(request, id):
     """
     view to edit bookings.
@@ -82,8 +85,6 @@ def booking_edit(request, id):
     booking_form = BookingForm(instance=booking)
 
     if request.method == "POST":
-        # queryset = Workshop.objects.filter(is_public=True)
-        # workshop = get_object_or_404(queryset, slug=slug)
         booking_form = BookingForm(data=request.POST, instance=booking)
 
         if booking_form.is_valid() and booking.booked_by == request.user:
@@ -103,6 +104,7 @@ def booking_edit(request, id):
         )
 
 
+@login_required
 def booking_delete(request, id):
     """
     view to delete bookings

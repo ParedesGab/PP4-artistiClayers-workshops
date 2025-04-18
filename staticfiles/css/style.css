@@ -472,6 +472,10 @@ body {
     background-color: #20d6f6;
 }
 
+.no-hand-cursor {
+    cursor: default !important;
+  }
+
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
     

@@ -57,7 +57,7 @@
                             {% elif booking.appointment_date|date:"Ymd" > today %}
                                 <a href="{% url 'update_booking' booking.id %}" class="btn update-workshop">Update Booking</a>
                             {% else %} 
-                                <span class="btn past-workshop">Past Booking</span>
+                                <span class="btn no-hand-cursor past-workshop">Past Booking</span>
                             {% endif %}
                         </td>
                         <td>
