@@ -379,9 +379,9 @@ body {
 
 /* Bookings page */
 
-.bg-coral {
-    background-color: rgb(245, 190, 171);
-    border-radius: 20px;;
+.bg-customize {
+    border-radius: 20px;
+    background: url("../images/IMG_7548.JPG") no-repeat center center/cover;
 }
 
 .table {
@@ -401,11 +401,12 @@ body {
 }
 
 .book-workshop {
-    border: 3px dashed #8c28a7;
+    border: 3px dashed #e05f1a;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     background-color:  #f9f996;
     font-weight: bold;
+    font-size: 1.05rem;
 }
 
 .book-workshop:hover{   

@@ -377,6 +377,68 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Bookings page */
+
+.bg-customize {
+    border-radius: 20px;
+    background: url("../images/IMG_7548.JPG") no-repeat center center/cover;
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead {
+    display: none;
+}
+
+.table tbody td {
+    display: block;
+    border: none;
+    padding: 0.25rem 0;
+    position: relative;
+    text-align: left;
+}
+
+.book-workshop {
+    border: 3px dashed #e05f1a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color:  #f9f996;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.book-workshop:hover{   
+    background-color: #f8a84d;
+    color: #060606;
+}
+
+.update-workshop {
+    border: 1px solid #05230c;
+    border-radius: 20px;
+    background-color: #dfffbd;
+}
+
+.past-workshop {
+    border: 1px solid #05230c;
+    border-radius: 20px;
+    background-color: #cacaca;
+}
+
+.delete-workshop {
+    border: 1px solid #05230c;
+    border-radius: 20px;
+    background-color: #eed4d6;
+}
+
+.today-workshop {
+    border: 1px solid #05230c;
+    border-radius: 20px;
+    background-color: #75d3e1;
+    font-weight: bold;
+}
+
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
     
@@ -434,6 +496,14 @@ body {
         border-radius: 8px;
         margin-bottom: 1.5rem;
         margin-left: 1.5rem;
+    }
+
+    .table thead {
+        display: table-header-group;
+    }
+    
+    .table tbody td {
+        display: table-cell;
     }
 }
 
