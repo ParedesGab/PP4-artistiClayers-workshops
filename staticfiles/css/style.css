@@ -168,7 +168,7 @@ body {
 }
 
 .non-fixed-footer {
-    position: static !important;
+    position: static;
 }
 
 /* About page  */
