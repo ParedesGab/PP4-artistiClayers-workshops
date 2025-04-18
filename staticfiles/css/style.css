@@ -126,7 +126,7 @@ body {
 .workshop-button {
     background-color: #ee6d3a;
     color: white !important;
-    padding: 0.79rem;
+    padding: 0.85rem;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
@@ -428,6 +428,7 @@ body {
 .book-workshop:hover{   
     background-color: #f8a84d;
     color: #060606;
+    transform: scale(1.1);    
 }
 
 #my-bookings-container {
