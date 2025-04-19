@@ -2,18 +2,18 @@
 {% block content %}
 {% load static %}
 
-<div class = banner-image-container>
-    <img src="{% static 'images/hero-image2.png' %}" alt="banner image" class="banner-image">
+<div class = "banner-image-container">
+    <img src="{% static 'images/banner-image.png' %}" alt="banner image" class="banner-image">
 </div>
-<section class="about-page">
+<section>
     <div class="container">
         <div class="about-content-box">
             <div class="about-text-content">
                 <h2 class = "about-title">{{ about.title }}</h2>
-                <p class ="about-description">{{ about.description | safe }}</p>
+                <p>{{ about.description | safe }}</p>
             </div>
             {% if "placeholder" in about.image.url %}
-            <img class="profile-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">
+            <img class="profile-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder profile image">
             {% else %}
             <img class="profile-image" src=" {{ about.image.url }}" alt="{{ about.title }}">
             {% endif %}
