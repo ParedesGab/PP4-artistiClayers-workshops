@@ -8,7 +8,6 @@
   <div class="row justify-content-center bg-customize">
     <div class="col-sm-10 col-md-8 col-lg-6">
       <div class="card-body">
-        {% if user.is_authenticated %}      
         <p class="fw-bold text-center mt-4 fs-5">Need to make changes? Update your booking below</p>
         <form method="post">
           {{ booking_form | crispy }}
@@ -18,9 +17,6 @@
           </button>
            <a href="{% url 'bookings' %}" class="btn today-workshop fw-bold" type="button"> My Bookings</a>
         </form>
-        {% else %}
-        <p>Log in to make an appointment with us.</p>
-        {% endif %}
       </div>
     </div>
   </div>

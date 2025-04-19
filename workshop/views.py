@@ -45,11 +45,8 @@ def booking_display(request):
     """
     Displays the booking form and handles booking submissions.
     """
-    if request.user.is_authenticated:
-        user_bookings = Booking.objects.filter(
-            booked_by=request.user).order_by('-appointment_date')
-    else:
-        user_bookings = None
+    user_bookings = Booking.objects.filter(
+        booked_by=request.user).order_by('-appointment_date')
 
     if request.method == "POST":
         booking_form = BookingForm(data=request.POST)
@@ -82,6 +79,14 @@ def booking_edit(request, id):
     """
 
     booking = get_object_or_404(Booking, pk=id)
+
+    if booking.booked_by != request.user:
+        messages.add_message(
+                request, messages.ERROR,
+                'You do not have permission to edit this booking'
+                )
+        return redirect(reverse('bookings'))
+
     booking_form = BookingForm(instance=booking)
 
     if request.method == "POST":

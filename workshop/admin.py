@@ -21,7 +21,7 @@ class WorkshopAdmin(SummernoteModelAdmin):
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ("workshop", "booked_by", "appointment_date",
+    list_display = ("id", "workshop", "booked_by", "appointment_date",
                     "participants", "date_booked",)
     search_fields = ("booked_by__username", "workshop__name")
     list_filter = ("workshop", "appointment_date")
