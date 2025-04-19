@@ -28,10 +28,28 @@
           value="{{ redirect_field_value }}" />
         {% endif %}
         <button class="btn btn-signup right border border-dark" type="submit">
-          {% trans "Sign Up" %} &raquo;</button>
+          {% trans "Sign Up" %}</button>
       </form>
     </div>
   </div>
 </div>
+{% endblock %}
+
+{% block footer %}
+<footer class="non-fixed-footer mt-auto py-3 main-bg">
+    <p class="m-0 text-center">&copy; 2025 Gabriela F. Paredes
+    </p>
+    <p class="m-0 text-center">Let's keep in touch:
+        <a href="https://facebook.com/" target="_blank" aria-label="Visit our Facebook page">
+            <i class="fab fa-facebook-square ms-3"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Visit our instagram page">
+            <i class="fab fa-instagram-square ms-3"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="Visit our Youtube page">
+            <i class="fab fa-youtube-square ms-3"></i>
+        </a>
+    </p>
+</footer>
 {% endblock %}
 
