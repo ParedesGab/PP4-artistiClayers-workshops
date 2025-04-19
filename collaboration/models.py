@@ -1,9 +1,11 @@
 from django.db import models
 
-# Create your models here.
-
 
 class ContactRequest(models.Model):
+    """
+    Represents a contact request
+    submitted by a user through the website.
+    """
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     email = models.EmailField()

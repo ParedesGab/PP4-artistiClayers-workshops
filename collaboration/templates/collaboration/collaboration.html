@@ -6,10 +6,12 @@
 <div class="container" id ="contact">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-2">
-            <h2 class = "mt-1 mb-3">Let's connect ✨  </h2>
-            <p>Are you interested in collaborating on workshop projects or
+            <h2 class = "mt-1 mb-3">Let's connect ✨</h2>
+            <p>
+                Are you interested in collaborating on workshop projects or
                 bouncing around fun clay-related ideas? or simply if you have any questions, I'd be thrilled to connect!
-                Please fill out the form and let's get started!</p>
+                Please fill out the form and let's get started!
+            </p>
             <form method="post">
                 {{ contact_form | crispy }}
                 {% csrf_token %}
@@ -19,3 +21,21 @@
     </div>
 </div>
 {% endblock content %}
+
+{% block footer %}
+<footer class="non-fixed-footer mt-auto py-3 main-bg">
+    <p class="m-0 text-center">&copy; 2025 Gabriela F. Paredes
+    </p>
+    <p class="m-0 text-center">Let's keep in touch:
+        <a href="https://facebook.com/" target="_blank" aria-label="Visit our Facebook page">
+            <i class="fab fa-facebook-square ms-3"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Visit our instagram page">
+            <i class="fab fa-instagram-square ms-3"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="Visit our Youtube page">
+            <i class="fab fa-youtube-square ms-3"></i>
+        </a>
+    </p>
+</footer>
+{% endblock %}

@@ -218,7 +218,6 @@ body {
 #contact {
     position: relative;
     background: url("../images/IMG_7548.JPG") no-repeat center center/cover;
-    /* background-size: 70% auto; */
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center
