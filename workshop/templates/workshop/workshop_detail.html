@@ -3,15 +3,15 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class = banner-workshop-image-container>
-    <img src="{% static 'images/hero-image2.png' %}" alt="banner image" class="banner-image">
+<div class = "banner-workshop-image-container">
+    <img src="{% static 'images/banner-image.png' %}" alt="banner image" class="banner-image">
     <h1 class="banner-title-overlay">{{ workshop.name }}</h1>
 </div>
 <section class="workshop-page">
     <div class="container">
         <div class="workshop-content-box">
             <div class="workshop-text-content">
-                <p class ="workshop-description">{{ workshop.description | safe }}</p>
+                <p>{{ workshop.description | safe }}</p>
             </div>
             {% if "placeholder" in workshop.image.url %}
             <img class="workshop-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">

@@ -15,7 +15,7 @@
                             <div class="image-container">
                                 {% if "placeholder" in workshop.image.url %}
                                 <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
-                                    <img class="card-img-top border border-dark more-rounded" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                                    <img class="card-img-top border border-dark more-rounded" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
@@ -41,12 +41,5 @@
         </div>
     </div>
 </div>
-
-
-<!-- index.html content ends here -->
 {% endblock %}
-
-<!-- footer content here -->
-{% block copyright %}
-Copyright 2025 Gabriela F. Paredes
-{% endblock %}
+<!-- workshop_list.html content ends here -->

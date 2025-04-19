@@ -22,7 +22,6 @@
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -62,34 +61,45 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                                href="{% url 'home' %}">HOME</a>
+                                href="{% url 'home' %}">HOME
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'about' %}">ABOUT</a>
+                                href="{% url 'about' %}">ABOUT
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == workshops_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'workshops' %}">WORKSHOPS</a>
+                                href="{% url 'workshops' %}">WORKSHOPS
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'contact' %}">CONTACT</a>
+                                href="{% url 'contact' %}">CONTACT
+                            </a>
                         </li>
                         {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page" href="{% url 'bookings' %}">BOOKINGS</a>
+                            <a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page" 
+                                href="{% url 'bookings' %}">BOOKINGS
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">LOGOUT</a>
+                            <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" 
+                                href="{% url 'account_logout' %}">LOGOUT
+                            </a>
                         </li>
                         {% else %}
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-                                href="{% url 'account_signup' %}">SIGN UP</a>
+                                href="{% url 'account_signup' %}">SIGN UP
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">SIGN IN</a>
+                            <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" 
+                                href="{% url 'account_login' %}">SIGN IN
+                            </a>
                         </li>
                         {% endif %}
                     </ul>
@@ -124,7 +134,7 @@
 
     </main>
 
-    <!-- Footer -->
+    <!-- Footer content Goes here -->
     {% block footer %}
     <footer class="footer mt-auto py-3 main-bg">
         <p class="m-0 text-center">&copy; 2025 Gabriela F. Paredes

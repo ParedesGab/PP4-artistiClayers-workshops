@@ -7,6 +7,12 @@ from cloudinary.models import CloudinaryField
 
 
 def validate_date_not_in_past(value):
+    """
+    Validates that the provided date value is not in the past.
+
+    Raises:
+    ValidationError: If the provided date is earlier than the current date.
+    """
     today = date.today()
     if value < today:
         raise ValidationError("The date cannot be in the past")

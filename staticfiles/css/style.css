@@ -23,10 +23,6 @@ body {
     font-size: 5rem;
 }
 
-/* .thin {
-    font-weight: 300;
-} */
-
 /* Navbar */
 
 .nav-link {
@@ -612,16 +608,28 @@ body {
 
 
 
-.light-bg {
+/* .light-bg {
     background-color: #fff;
 }
 
 .dark-bg {
     background-color: #445261;
-}
+} */
 
 .main-bg {
     background-color: #F9FAFC;
+}
+
+.btn-signup,
+.btn-edit {
+    background-color: #188181;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
 }
 
 .card {
@@ -629,6 +637,7 @@ body {
     background-color: transparent;
 }
 
+/* 
 .scale {
     width: 100%;
     height: auto;
@@ -674,38 +683,6 @@ body {
     z-index: 100;
 }
 
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
 .link {
     color: #23BBBB;
     text-decoration: none;
@@ -741,4 +718,4 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
-}
+} */

@@ -43,7 +43,24 @@ def workshop_detail(request, id):
 @login_required
 def booking_display(request):
     """
-    Displays the booking form and handles booking submissions.
+    Displays the booking form for authenticated users
+    and lists their existing bookings.
+
+    **Context**
+
+    ``booking_form``
+        An instance of :form:`workshop.forms.BookingForm`,
+        either an empty form for GET requests or
+        a populated form with user input for POST requests.
+
+    ``bookings``
+        A queryset of :model:`workshop.Booking` instances
+        associated with the currently logged-in user,
+        ordered by appointment date in descending order.
+
+    **Template:**
+
+    :template:`workshop/booking.html`
     """
     user_bookings = Booking.objects.filter(
         booked_by=request.user).order_by('-appointment_date')
@@ -75,7 +92,24 @@ def booking_display(request):
 @login_required
 def booking_edit(request, id):
     """
-    view to edit bookings.
+    Handles the editing of a single :model:`workshop.Booking` instance.
+
+    Allows an authenticated user to modify their own booking
+    identified by the provided ID.
+    If the user does not own the booking, they are redirected
+    with an error message.
+    On successful form submission (POST request), the booking is updated.
+
+    **Context**
+
+    ``booking_form``
+        An instance of :form:`workshop.forms.BookingForm`,
+        initialized with the existing booking data for
+        GET requests or populated with user input for POST requests.
+
+    **Template:**
+
+    :template:`workshop/booking_edit.html`
     """
 
     booking = get_object_or_404(Booking, pk=id)
@@ -112,7 +146,23 @@ def booking_edit(request, id):
 @login_required
 def booking_delete(request, id):
     """
-    view to delete bookings
+    Handles the deletion of a single :model:`workshop.Booking` instance.
+
+    Allows an authenticated user to delete their own booking
+    identified by the provided ID.
+    If the user does not own the booking, they are redirected
+    with an error message.
+    Deletion occurs upon a POST request.
+
+    **Context**
+
+    ``booking``
+        An instance of :model:`workshop.Booking` to be deleted,
+        retrieved based on the provided ID.
+
+    **Template:**
+
+    :template:`workshop/booking_delete.html`
     """
 
     booking = get_object_or_404(Booking, pk=id)
