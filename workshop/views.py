@@ -117,15 +117,18 @@ def booking_delete(request, id):
 
     booking = get_object_or_404(Booking, pk=id)
 
-    if booking.booked_by == request.user:
-        if request.method == 'POST':
-            booking.delete()
-            messages.add_message(
-                request, messages.SUCCESS, 'Booking deleted!')
-            return redirect(reverse('bookings'))
-    else:
+    if booking.booked_by != request.user:
         messages.add_message(
-            request, messages.ERROR, 'You can only delete your own comments!')
+                request, messages.ERROR,
+                'You do not have permission to delete this booking'
+                )
+        return redirect(reverse('bookings'))
+
+    if request.method == 'POST':
+        booking.delete()
+        messages.add_message(
+            request, messages.SUCCESS, 'Booking deleted!')
+        return redirect(reverse('bookings'))
 
     return render(
         request,

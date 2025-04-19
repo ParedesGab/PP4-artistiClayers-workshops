@@ -22,8 +22,7 @@
                   <td>{{ booking.appointment_date }} <br><small class="text-muted">{{booking.appointment_time}}</small> </td>
               </tr>
           </tbody>
-      </table>
-        {% if user.is_authenticated %}            
+      </table>     
         <form method="post">
             <p class="fw-bold text-center mt-4 fs-5">Do you wish to proceed with deleting this booking?</p>  
             {% csrf_token %}
@@ -32,7 +31,6 @@
               <a href="{% url 'bookings' %}" class="btn update-workshop fw-bold" type="button">No</a>
             </div>
          </form> 
-        {% endif %}
       </div>
     </div>
   </div>
