@@ -34,9 +34,9 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 - Registered Users: Need the ability to view, create and manage (edit and/or delete) their bookings, and receive confirmation messages of their actions.
 
 ##### Business Goals
-- Foster a dynamic blogging platform with active user participation.
-- Build a sense of community through discussions and user engagement.
-- Ensure easy blog content management for owners.
+- Captivate users with inspiring polymer clay visuals showcased throughout the website to encourage workshop booking and selection.
+- Create an engaging platform that empowers users to easily book and manage their polymer clay workshop experiences.
+- Ensure easy booking and booking management for owners.
 
 #### 2. Scope Plane
 ##### Features
