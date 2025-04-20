@@ -51,10 +51,10 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 #### 3. Structure Plane
 ##### Information Architecture
 - **Navigation Menu**:
-  - Links to Home, Blog Posts, Login/Register, and Dashboard (for blog owners).
+  - Links to Home, About, Workshops, Contact, Bookings, Sign in, Sign up, Sign out.
 - **Hierarchy**:
-  - Blog content displayed prominently for easy browsing.
-  - Clear call-to-action buttons for account creation and engagement (e.g., commenting).
+  - Clear call-to-action buttons for display of available workshops.
+  - Clear call-to-action buttons for booking creations and management (e.g., update or delete a booking).
 
 ##### User Flow
 1. Guest users browse blog content → read posts and see commenter names.
