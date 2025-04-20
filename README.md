@@ -10,7 +10,7 @@
 
 **Welcome to ArtistiClayers!**
 
-Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your go-to spot for booking fun and inspiring polymer clay workshops right here in the beautiful Herrsching region! Explore our range of classes for all skill levels and unleash your inner artist. Let's get crafting!
+Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your go-to spot for booking fun and inspiring polymer clay workshops in the beautiful Vienna! Explore our range of classes for all skill levels and unleash your inner artist. Let's get crafting!
 
 + The site can be accessed via this [link](https://artisticlayers-d41862efab95.herokuapp.com)
 
