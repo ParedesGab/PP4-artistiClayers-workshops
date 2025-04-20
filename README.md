@@ -6,6 +6,8 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops)
 
+![Responsive Mockup image](documentation/website-screenshots/responsive-mockup.png)
+
 **Welcome to ArtistiClayers!**
 
 Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your go-to spot for booking fun and inspiring polymer clay workshops right here in the beautiful Herrsching region! Explore our range of classes for all skill levels and unleash your inner artist. Let's get crafting!
