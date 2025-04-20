@@ -16,14 +16,6 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 
 ---
 
-Alternatively, open your project in Gitpod and run the server. Once the site is running, click the `Ports` tab from your Gitpod Terminal. Click the padlock on the appropriate port for your project (`Flask: 5000`, `Django: 8000`). This will make your local page public temporarily. Now, copy the URL of your live-preview page into the responsive tool above. You should find your site rendering in the various devices.
-
-🛑 --- END ---- 🛑
-
-![screenshot](documentation/mockup.png)
-
-source: [PP4-artistiClayers-workshops amiresponsive](https://ui.dev/amiresponsive?url=https://artisticlayers-d41862efab95.herokuapp.com)
-
 > [!IMPORTANT]
 > The examples in these templates are strongly influenced by the Code Institute walkthrough project called "I Think Therefore I Blog".
 
