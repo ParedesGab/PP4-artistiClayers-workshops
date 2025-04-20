@@ -43,10 +43,9 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 - A full list of [Features](#features) can be viewed in detail below.
 
 ##### Content Requirements
-- Blog post management (create, update, delete, and preview).
-- Comment moderation and management tools.
-- User account features (register, log in, edit/delete comments).
-- Notification system for comment approval status.
+- Booking workshop management (create, update, delete, and view).
+- User account features (register, log in, edit/delete own bookings).
+- Notification system when editing/deleting bookings.
 - 404 error page for lost users.
 
 #### 3. Structure Plane
