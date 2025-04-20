@@ -25,8 +25,9 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 
 #### 1. Strategy Plane
 ##### Purpose
-- Provide blog owners with tools to create, manage, and moderate engaging blog content and user interactions.
-- Offer users and guests an intuitive platform to explore, engage, and contribute to blog discussions.
+- Provide users a booking platform for polymer clay workshops in Vienna, catering to all skill levels: beginner, intermediate, and advanced. We offer a workshop designed for everyone.
+- Provide workshop owners with tools to create, view and manage their own bookings. 
+- Offer users an intuitive platform to explore and book our available polymer clay workshops, and the possibility of contacting us for any questions.
 
 ##### Primary User Needs
 - Blog owners need seamless tools for publishing and managing posts and comments.
