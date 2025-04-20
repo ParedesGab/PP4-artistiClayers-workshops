@@ -1,14 +1,16 @@
 # [PP4-artistiClayers-workshops](https://artisticlayers-d41862efab95.herokuapp.com)
 
+(Developer: Gabriela Fabiola Paredes Rojas)
+
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops)
 
-⚠️ INSTRUCTIONS ⚠️
+**Welcome to ArtistiClayers!**
 
-In this section, include a few paragraphs providing an overview of your project. Essentially, this part is your "sales pitch". Describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
+Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your go-to spot for booking fun and inspiring polymer clay workshops right here in the beautiful Herrsching region! Explore our range of classes for all skill levels and unleash your inner artist. Let's get crafting!
 
-⚠️ --- END --- ⚠️
++ The site can be accessed via this [link](https://artisticlayers-d41862efab95.herokuapp.com)
 
 🛑 NOTES 🛑
 
