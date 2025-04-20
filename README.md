@@ -30,9 +30,8 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 - Offer users an intuitive platform to explore and book our available polymer clay workshops, and the possibility of contacting us for any questions.
 
 ##### Primary User Needs
-- Blog owners need seamless tools for publishing and managing posts and comments.
-- Registered users need the ability to engage with blog content through comments and account features.
-- Guests need the ability to browse and enjoy blog content without registration.
+- Potential Workshop Attendees: Need an intuitive platform to explore available polymer clay workshops (beginner, intermediate, advanced), and easily book their desired sessions.
+- Registered Users: Need the ability to view, create and manage (edit and/or delete) their bookings, and receive confirmation messages of their actions.
 
 ##### Business Goals
 - Foster a dynamic blogging platform with active user participation.
