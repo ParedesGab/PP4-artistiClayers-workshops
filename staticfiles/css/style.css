@@ -245,6 +245,10 @@
     align-items: center;
 }
 
+#sign-up {
+    height: auto;
+}
+
  #sign-in h2,
  #sign-out h2,
  #sign-up h2 {
@@ -634,16 +638,21 @@
     background-color: transparent;
 }
 
+.link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
 /* 
 .scale {
     width: 100%;
     height: auto;
-}
-
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
 }
 
 .masthead {
@@ -680,16 +689,6 @@
     z-index: 100;
 }
 
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
 
 .btn-like {
     color: #E84610;
