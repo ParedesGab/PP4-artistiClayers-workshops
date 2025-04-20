@@ -99,7 +99,7 @@
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 5.5rem;
+    margin-top: 8rem;
 }
 
 .hero-text .handmade {
@@ -508,6 +508,10 @@
 
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
+
+    .hero-text {
+        margin-top: 6rem;
+    }
     
     .about-content-box {
         flex-direction: row;
