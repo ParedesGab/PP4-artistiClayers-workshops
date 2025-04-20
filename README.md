@@ -57,11 +57,10 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
   - Clear call-to-action buttons for booking creations and management (e.g., update or delete a booking).
 
 ##### User Flow
-1. Guest users browse blog content → read posts and see commenter names.
-2. Guest users register for an account → log in to leave comments.
-3. Registered users leave comments → receive a pending approval notification.
-4. Blog owners create, update, and manage posts → moderate comments.
-5. Blog owners approve or reject comments → manage user interactions.
+1. Registered users create a booking for a workshop → receive a confirmation message on top of the page and the booking appears now in "My bookings".
+2. Booking owners update, and manage own bookings.
+3. Workshop owners create, update, and manage workshop levels (i.e., beginner, intermediate and advanced).
+5. Workshop owners approve or reject collaboration requests.
 
 #### 4. Skeleton Plane
 ##### Wireframe Suggestions
