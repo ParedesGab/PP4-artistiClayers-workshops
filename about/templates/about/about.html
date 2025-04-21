@@ -10,7 +10,7 @@
         <div class="about-content-box">
             <div class="about-text-content">
                 <h2 class = "about-title">{{ about.title }}</h2>
-                <p>{{ about.description | safe }}</p>
+                {{ about.description | safe }}
             </div>
             {% if "placeholder" in about.image.url %}
             <img class="profile-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder profile image">
