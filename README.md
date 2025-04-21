@@ -251,21 +251,11 @@ I was able to apply "MoSCoW" prioritization and labels to my User Stories within
 
 ### HTML
 
-
-Unfortunately, pages that require a user to be "logged-in" and authenticated (CRUD functionality) will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have access to login to an account on your project. In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
-
-- Navigate to the deployed pages which require authentication.
-- Right-click anywhere on the page, and select **View Page Source** (usually `CTRL+U` or `⌘+U` on Mac).
-- This will display the entire "compiled" code, without any Jinja syntax.
-- Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
-- Repeat this process for every page that requires a user to be logged-in/authenticated (e.g.: CRUD functionality).
-
-🛑 ---- END --- 🛑
-
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
+| home | [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2F) | Link (if applicable) | ![screenshot](documentation/validation/html-home-index.png) | Notes (if applicable)
 | about | [about.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/templates/about/about.html) | Link (if applicable) | ![screenshot](documentation/validation/html-about-about.png) | Notes (if applicable) |
 | home | [index.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/index.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-index.png) | Notes (if applicable) |
 | home | [post_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_detail.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_detail.png) | Notes (if applicable) |
