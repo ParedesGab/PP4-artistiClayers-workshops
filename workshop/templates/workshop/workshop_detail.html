@@ -11,7 +11,7 @@
     <div class="container">
         <div class="workshop-content-box">
             <div class="workshop-text-content">
-                {{ workshop.description | safe }}
+                <article>{{ workshop.description | safe }}</article>
             </div>
             {% if "placeholder" in workshop.image.url %}
             <img class="workshop-image" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">

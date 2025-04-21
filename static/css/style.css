@@ -337,7 +337,7 @@
     background-color: transparent;
 }
 
-#workshop-list{
+.workshop-list{
     height: 470px;
 }
 
@@ -556,7 +556,7 @@
         font-size: 2rem;
     }
 
-    #workshop-list{
+    .workshop-list{
         height: 520px;
     }
 

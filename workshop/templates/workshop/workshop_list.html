@@ -11,7 +11,7 @@
                 {% for workshop in workshop_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="card-body" id="workshop-list">
+                        <div class="card-body workshop-list">
                             <div class="image-container">
                                 {% if "placeholder" in workshop.image.url %}
                                 <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
@@ -28,7 +28,7 @@
                                     </a>
                                 </div>
                             </div>
-                            {{ workshop.excerpt | safe }}
+                            <article>{{ workshop.excerpt | safe }}</article>
                         </div>
                     </div>
                 </div>
