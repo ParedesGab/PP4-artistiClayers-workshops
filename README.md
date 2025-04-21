@@ -75,32 +75,19 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 
 ⚠️INSTRUCTIONS ⚠️
 
-Explain your colors and color scheme. Consider adding a link and screenshot for your color scheme using [coolors](https://coolors.co/generate).
+**Main color scheme**
 
-When you add a color to the palette, the URL is dynamically updated, making it easier for you to return back to your color palette later if needed. See example below:
+![Color Scheme](documentation/website-screenshots/coolors.png)
 
-⚠️ --- END --- ⚠️
+- The website's color scheme features a vibrant orange and a soft champagne pink as cohesive elements. This choice was deliberate to complement the colorful background images, providing a nude-toned contrast that allows the imagery to stand out prominently.
 
-I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to generate my color palette.
-
-- `#000000` primary text.
-- `#3772FF` primary highlights.
-- `#DF2935` secondary text.
-- `#FDCA40` secondary highlights.
-
-![screenshot](documentation/coolors.png)
+- The buttons are styled in vibrant colors to ensure that they stand out.
 
 ### Typography
 
-⚠️ INSTRUCTIONS ⚠️
-
-Explain any fonts and icon libraries used, like **Google Fonts**, **Font Awesome**, etc. Consider adding a link to each font used, the Font Awesome site (if used), or similar icon library.
-
-⚠️ --- END --- ⚠️
-
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+- [Roboto](https://fonts.google.com/specimen/Roboto) from Google Fonts was used for the logo (i.e., ArtistiClayers).
+- [bs-font-sans-serif](https://getbootstrap.com/docs/5.1/customize/css-variables/) The rest of the website's typography utilizes Bootstrap's $font-family-sans-serif variable (bs-font-sans-serif) for its primary sans-serif font stack, ensuring consistency with the Bootstrap design system.
+- [Font Awesome](https://fontawesome.com) icons were used throughout the site in the footer (social media icons).
 
 ## User Stories
 
