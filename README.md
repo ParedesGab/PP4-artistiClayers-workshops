@@ -218,20 +218,23 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ### GitHub Projects
 
-Consider adding screenshots of your Projects Board(s), Issues (open and closed), and Milestone tasks.
-
-[GitHub Projects](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
+[GitHub Projects](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/projects) served as an Agile tool for this project. Through it, User Stories, issues, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
 
 ![screenshot](documentation/gh-projects.png)
 
 ### GitHub Issues
 
-[GitHub Issues](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
+[GitHub Issues](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks.
 
 | Link | Screenshot |
 | --- | --- |
-| [![GitHub issues](https://img.shields.io/github/issues/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/issues) | ![screenshot](documentation/gh-issues-open.png) |
 | [![GitHub closed issues](https://img.shields.io/github/issues-closed/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/gh-issues-closed.png) |
+
+### GitHub Milestones
+
+[GitHub Milestones ](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/projects) served as an Agile tool for this project.
+
+![screenshot](documentation/gh-milestones.png)
 
 ### MoSCoW Prioritization
 
