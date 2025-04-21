@@ -103,7 +103,7 @@ Let's get claying! 🎉
 | As a User | I would like to find an intuitive and user-friendly About page | so that I learn about the workshop's tutor experience and further understand the concept of ArtistiClayers. |
 | As a User | I would like to see the available workshops | so that I can gather detailed information and choose the best fit for my learning needs. |
 | As a User | I would like to be able to click each workshop card | so that I can be directed to a more detailed page of each workshop. |
-| As a Logged in User | I would like to see and click a button to book a workshop a | so that I can book my desired workshop. |
+| As a Logged in User | I would like to see and click a button to book a workshop | so that I can book my desired workshop. |
 | As a Non-logged in User | I would like to see and click a button stating that to book a workshop Log in and/or Register is first required | so that I am aware I need to log in or register to book a workshop.|
 | As a User | I would like to be able to submit a contact form | so that I can request a collaboration with the site owner or ask questions I might have. |
 | As a User | I would like to receive a notification or message saying my contact request is pending approval | so that I understand it hasn't been posted immediately. |
@@ -135,12 +135,17 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 | Page | Mobile | Tablet | Desktop |
 | --- | --- | --- | --- |
-| Register | ![screenshot](documentation/wireframes/mobile-register.png) | ![screenshot](documentation/wireframes/tablet-register.png) | ![screenshot](documentation/wireframes/desktop-register.png) |
-| Login | ![screenshot](documentation/wireframes/mobile-login.png) | ![screenshot](documentation/wireframes/tablet-login.png) | ![screenshot](documentation/wireframes/desktop-login.png) |
 | Home | ![screenshot](documentation/wireframes/mobile-home.png) | ![screenshot](documentation/wireframes/tablet-home.png) | ![screenshot](documentation/wireframes/desktop-home.png) |
-| Add Blog | ![screenshot](documentation/wireframes/mobile-add-blog.png) | ![screenshot](documentation/wireframes/tablet-add-blog.png) | ![screenshot](documentation/wireframes/desktop-add-blog.png) |
-| Edit Blog | ![screenshot](documentation/wireframes/mobile-edit-blog.png) | ![screenshot](documentation/wireframes/tablet-edit-blog.png) | ![screenshot](documentation/wireframes/desktop-edit-blog.png) |
-| Blog Post | ![screenshot](documentation/wireframes/mobile-blog-post.png) | ![screenshot](documentation/wireframes/tablet-blog-post.png) | ![screenshot](documentation/wireframes/desktop-blog-post.png) |
+| About | ![screenshot](documentation/wireframes/mobile-about.png) | ![screenshot](documentation/wireframes/tablet-about.png) | ![screenshot](documentation/wireframes/desktop-about.png) |
+| Worshops list | ![screenshot](documentation/wireframes/mobile-workshops.png) | ![screenshot](documentation/wireframes/tablet-workshops.png) | ![screenshot](documentation/wireframes/desktop-workshops.png) |
+| Each workshop | ![screenshot](documentation/wireframes/mobile-workshop.png) | ![screenshot](documentation/wireframes/tablet-workshop.png) | ![screenshot](documentation/wireframes/desktop-workshop.png) |
+| Contact | ![screenshot](documentation/wireframes/mobile-contact.png) | ![screenshot](documentation/wireframes/tablet-contact.png) | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Bookings | ![screenshot](documentation/wireframes/mobile-bookings.png) | ![screenshot](documentation/wireframes/tablet-bookings.png) | ![screenshot](documentation/wireframes/desktop-bookings.png) |
+| Update Booking | ![screenshot](documentation/wireframes/mobile-edit-booking.png) | ![screenshot](documentation/wireframes/tablet-edit-booking.png) | ![screenshot](documentation/wireframes/desktop-edit-booking.png) |
+| Delete Booking | ![screenshot](documentation/wireframes/mobile-delete-booking.png) | ![screenshot](documentation/wireframes/tablet-delete-booking.png) | ![screenshot](documentation/wireframes/desktop-delete-booking.png) |
+| Sign in | ![screenshot](documentation/wireframes/mobile-sign-in.png) | ![screenshot](documentation/wireframes/tablet-sign-in.png) | ![screenshot](documentation/wireframes/desktop-sign-in.png) |
+| Logout | ![screenshot](documentation/wireframes/mobile-logout.png) | ![screenshot](documentation/wireframes/tablet-logout.png) | ![screenshot](documentation/wireframes/desktop-logout.png) |
+| Sign up | ![screenshot](documentation/wireframes/mobile-sign-up.png) | ![screenshot](documentation/wireframes/tablet-sign-up.png) | ![screenshot](documentation/wireframes/desktop-sign-up.png) |
 | 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
 ## Features
