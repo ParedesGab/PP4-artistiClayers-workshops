@@ -213,49 +213,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ![screenshot](documentation/erd.png)
 
-Looking for an interactive version of your ERD? Consider using a [`Mermaid flowchart`](https://mermaid.live). To simplify the process, you can ask ChatGPT (or similar) the following prompt:
-
-> ChatGPT Prompt:
-> "Generate a Markdown syntax Mermaid ERD using my Django models"
-> [paste-your-django-models-into-ChatGPT]
-
-I have used `Mermaid` to generate an interactive ERD of my project.
-
-```mermaid
-erDiagram
-    USER ||--o{ POST : "authors"
-    USER ||--o{ COMMENT : "commenters"
-    POST ||--o{ COMMENT : "has"
-    POST {
-        string title
-        string slug
-        cloudinary featured_image
-        text content
-        text excerpt
-        datetime created_on
-        datetime updated_on
-        int status
-    }
-    COMMENT {
-        text body
-        datetime created_on
-        bool approved
-    }
-    ABOUT {
-        string title
-        cloudinary profile_image
-        text content
-        datetime updated_on
-    }
-    COLLABORATEREQUEST {
-        string name
-        string email
-        text message
-        bool read
-    }
-```
-
-source: [Mermaid](https://mermaid.live/edit#pako:eNqNUstuwjAQ_BVrz6EiVIiSG21zg9LyuFSRkImXxGpsR45TkQb-vU4C5REq4Yut2dnZnfWWECqG4AHqV04jTUUgiT3LuT8ju12no0ryPp0viEcCoLmJlc4CaHNeppOJ_9bQQiUESoMnZq1wgxnTS0rZvKuTGc1lRAw3CbbQLMmjExgmKmdcUl2QDVKTa2QrLmh0lmdwa0iobFPSXKG4DVGnZyijBg0XSEJt1ayWkjeCecpaQS6N7dB2kDXYvrmOjsurymvFijvLrpVKCE1Trb6RXYiPnqfLOwZ3NiMrsuEJ3jeif_3-eRuPbQuz0cKf-R9L_-YnSiraf4iC8uSqvMAsu2iq9m3ncfQMDgjUNpPZla0LBWBitPJQ7ROj-qtaqIpnl1XNCxmCZ3SODjQGDksO3oYmmUVTKsErYQue-zR8cN2B2-t3h73BY2_Qd6AAr7t34Ecpm-HW7M_63UhqlUfxQWr_C_zI_7I)
 
 ## Agile Development Process
 
