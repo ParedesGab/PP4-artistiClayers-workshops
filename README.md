@@ -258,10 +258,16 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | home | [index.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/index.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2F | ![screenshot](documentation/validation/html-home-index.png) |
 | about | [about.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/tree/main/about/templates/about) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fabout%2F | ![screenshot](documentation/validation/html-about-about.png) |
 | workshop list | [workshop_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/workshop_list.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fworkshops%2F | ![screenshot](documentation/validation/html-workshop-workshop-list.png) |
-| workshop detail | [workshop_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/workshop_detail.html) | Link (if applicable) | ![screenshot](documentation/validation/html-workshop-workshop-detail.png) |
+| workshop detail | [workshop_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/workshop_detail.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fworkshops%2Fworkshop%2F15%2F | ![screenshot](documentation/validation/html-workshop-workshop-detail.png) |
+| contact | [collaboration.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/collaboration/templates/collaboration/collaboration.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fcontact%2F | ![screenshot](documentation/validation/html-contact.png) |
 
-| home | [post_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_detail.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_detail.png) | Notes (if applicable) |
-| home | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) | Notes (if applicable) |
+| sign up | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| sign in | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+
+| bookings | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| update booking | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| delete booking | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| Log out | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
 
 
 ### CSS
