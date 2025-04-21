@@ -262,40 +262,24 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | workshop intermediate | [workshop_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/workshop_detail.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fworkshops%2Fworkshop%2F15%2F | ![screenshot](documentation/validation/html-workshop-workshop-detail-intermediate.png) |
 | workshop advanced | [workshop_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/workshop_detail.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fworkshops%2Fworkshop%2F16%2F | ![screenshot](documentation/validation/html-workshop-workshop-detail-advanced.png) |
 | contact | [collaboration.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/collaboration/templates/collaboration/collaboration.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fcontact%2F | ![screenshot](documentation/validation/html-contact.png) |
+| sign in | [login.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/login.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Faccounts%2Flogin%2F | ![screenshot](documentation/validation/html-login.png) |
+| sign up | [signup.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/signup.html) | [Link (if applicable)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/validation/html-home-post_list.png) |
 
-| sign up | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
-| sign in | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
 
-| bookings | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
-| update booking | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
-| delete booking | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
-| Log out | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| bookings | [booking.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| update booking | [booking_edit.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_edit.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| delete booking | [booking_delete.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_delete.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| Log out | [logout.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/logout.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
+| 404 | [404.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/404.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) |
 
 
 ### CSS
 
-⚠️ INSTRUCTIONS ⚠️
-
-1. [*recommended*] If you are using the live deployed site, use this link: https://jigsaw.w3.org/css-validator/#validate_by_uri
-2. If you are copying/pasting your CSS code, use this link: https://jigsaw.w3.org/css-validator/#validate_by_input
-
-It's recommended to validate the live site for your primary CSS file on the deployed URL. This will give you a custom URL as well, which you can use below on your testing documentation. It makes it easier to return back to a page for validating it again in the future. The URL will look something like this:
-
-- https://jigsaw.w3.org/css-validator/validator?uri=https://artisticlayers-d41862efab95.herokuapp.com
-
-If you have additional/multiple CSS files, then individual "[validation by input](https://jigsaw.w3.org/css-validator/#validate_by_input)" is recommended for the extra CSS files.
-
-**IMPORTANT**: Third-Party tools
-
-If you're using external libraries/frameworks (e.g: Bootstrap, Materialize, Font Awesome, etc.), then sometimes the tool will attempt to also validate these, even though it's not part of your own actual code that you wrote. You are not required to validate the external libraries or frameworks!
-
-⚠️ --- END --- ⚠️
-
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-| Directory | File | URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
-| static | [style.css](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/static/css/style.css) | Link (if applicable) | ![screenshot](documentation/validation/css-static-style.png) | Notes (if applicable) |
+| Directory | File | URL | Screenshot |
+| --- | --- | --- | --- |
+| static | [style.css](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/static/css/style.css) | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en | ![screenshot](documentation/validation/css-static-style.png) |
 
 
 ### JavaScript
