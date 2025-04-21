@@ -238,7 +238,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ### MoSCoW Prioritization
 
-I've decomposed my Epics into User Stories for prioritizing and implementing them. Using this approach, I was able to apply "MoSCoW" prioritization and labels to my User Stories within the Issues tab.
+I was able to apply "MoSCoW" prioritization and labels to my User Stories within the Issues tab.
 
 - **Must Have**: guaranteed to be delivered - required to Pass the project (*max ~60% of stories*)
 - **Should Have**: adds significant value, but not vital (*~20% of stories*)
@@ -247,52 +247,10 @@ I've decomposed my Epics into User Stories for prioritizing and implementing the
 
 ## Testing
 
-> [!NOTE]
-> For all testing, please refer to the [TESTING.md](TESTING.md) file.
-
-# Testing
-
-> [!NOTE]
-> Return back to the [README.md](README.md) file.
-
-⚠️ INSTRUCTIONS ⚠️
-
-In the following sections, you need to convince the assessors that you have conducted enough manual testing to legitimately believe that the site works well. Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-⚠️ --- END --- ⚠️
-
 ## Code Validation
-
-⚠️ INSTRUCTIONS ⚠️
-
-Use the space below to discuss code validation for all of your own code files (*where applicable*). You are not required to validate external libraries/frameworks.
-
-**MANDATORY**: You must provide a screenshot for each file you validate.
-
-**PRO TIP**: Where possible, always validate the live URL pages/files, not your local code using copy/paste. There could be subtle/hidden differences.
-
-⚠️ --- END --- ⚠️
 
 ### HTML
 
-⚠️ INSTRUCTIONS ⚠️
-
-1. [*recommended*] If you are using the live deployed site URLs, validate using this link: https://validator.w3.org/#validate_by_uri
-2. Otherwise, if you are copying/pasting your HTML code manually, use this link: https://validator.w3.org/#validate_by_input
-
-It's recommended to validate the live pages (all of them) using the deployed URL. This will give you a custom URL as well, which you can use below on your testing documentation. It makes it easier to return back to a page for validating it again in the future. The URL will look something like this:
-
-- https://validator.w3.org/nu/?doc=https://ParedesGab.github.io/PP4-artistiClayers-workshops/index.html
-
-⚠️ --- END --- ⚠️
-
-🛑 IMPORTANT 🛑
-
-RE: Python/Jinja syntax in HTML
-
-Python projects that use Jinja syntax, such as `{% for loops %}`, `{% url 'home' %}`, and `{{ variable|filter }}` will not validate properly if you're copying/pasting into the HTML validator.
-
-In order to properly validate these types of files, it's recommended to [validate by uri](https://validator.w3.org/#validate_by_uri) from the deployed Heroku pages.
 
 Unfortunately, pages that require a user to be "logged-in" and authenticated (CRUD functionality) will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have access to login to an account on your project. In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
 
