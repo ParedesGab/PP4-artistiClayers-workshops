@@ -253,11 +253,12 @@ I was able to apply "MoSCoW" prioritization and labels to my User Stories within
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-| Directory | File | URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
-| home | [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2F) | Link (if applicable) | ![screenshot](documentation/validation/html-home-index.png) | Notes (if applicable)
-| about | [about.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/templates/about/about.html) | Link (if applicable) | ![screenshot](documentation/validation/html-about-about.png) | Notes (if applicable) |
-| home | [index.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/index.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-index.png) | Notes (if applicable) |
+| Directory | File | URL | Screenshot |
+| --- | --- | --- | --- |
+| home | [index.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/index.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2F | ![screenshot](documentation/validation/html-home-index.png) |
+| about | [about.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/tree/main/about/templates/about) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fabout%2F | ![screenshot](documentation/validation/html-about-about.png) |
+| workshop | [index.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/index.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-index.png) |
+
 | home | [post_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_detail.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_detail.png) | Notes (if applicable) |
 | home | [post_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/post_list.html) | Link (if applicable) | ![screenshot](documentation/validation/html-home-post_list.png) | Notes (if applicable) |
 
