@@ -10,7 +10,9 @@
 
 **Welcome to ArtistiClayers!**
 
-Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your go-to spot for booking fun and inspiring polymer clay workshops in the beautiful Vienna! Explore our range of classes for all skill levels and unleash your inner artist. Let's get claying!
+Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your go-to spot for booking fun and inspiring polymer clay workshops in the beautiful Vienna! Explore our range of classes for all skill levels and unleash your inner artist. 
+
+Let's get claying! 🎉
 
 + The site can be accessed via this [link](https://artisticlayers-d41862efab95.herokuapp.com)
 
@@ -73,8 +75,6 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 
 ### Colour Scheme
 
-⚠️INSTRUCTIONS ⚠️
-
 **Main color scheme**
 
 ![Color Scheme](documentation/website-screenshots/coolors.png)
@@ -91,42 +91,44 @@ Ready to mold, sculpt, and bake your way to amazing creations? Welcome to your g
 
 ## User Stories
 
-⚠️ INSTRUCTIONS ⚠️
-
-In this section, list all of your possible user stories for the project. Samples have been provided below using the example walkthrough project for your inspiration. Make sure to adjust to match your own project features!
-
-⚠️ --- END --- ⚠️
-
 | Target | Expectation | Outcome |
 | --- | --- | --- |
-| As a blog owner | I would like to create new blog posts with a title, featured image, and content | so that I can share my experiences with my audience. |
-| As a blog owner | I would like to update existing blog posts | so that I can correct or add new information to my previous stories. |
-| As a blog owner | I would like to delete blog posts | so that I can remove outdated or irrelevant content from my blog. |
-| As a blog owner | I would like to retrieve a list of all my published blog posts | so that I can manage them from a central dashboard. |
-| As a blog owner | I would like to preview a post as draft before publishing it | so that I can ensure formatting and content appear correctly. |
-| As a blog owner | I would like to review comments before they are published | so that I can filter out spam or inappropriate content. |
-| As a blog owner | I would like to approve or reject comments from users | so that I can maintain control over the discussion on my posts. |
-| As a blog owner | I would like to view a list of all comments (both approved and pending) | so that I can manage user engagement effectively. |
-| As a blog owner | I would like to edit or delete user comments | so that I can clean up or remove inappropriate responses after they've been posted. |
-| As a registered user | I would like to log in to the site | so that I can leave comments on blog posts. |
-| As a registered user | I would like to register for an account | so that I can become part of the community and engage with the blog. |
-| As a registered user | I would like to leave a comment on a blog post | so that I can share my thoughts or ask questions about the owner's experiences. |
-| As a registered user | I would like my comment to show my name and the timestamp | so that others can see who I am and when I left the comment. |
-| As a registered user | I would like to receive a notification or message saying my comment is pending approval | so that I understand it hasn't been posted immediately. |
-| As a registered user | I would like to edit or delete my own comments | so that I can fix mistakes or retract my statement. |
-| As a guest user | I would like to read blog posts without registering | so that I can enjoy the content without needing to log in. |
-| As a guest user | I would like to browse past posts | so that I can explore the blog's full content history. |
-| As a guest user | I would like to register for an account | so that I can participate in the community by leaving comments on posts. |
-| As a guest user | I would like to see the names of other commenters on posts | so that I can get a sense of community interaction before registering. |
+| As a User | I would like to regardless of the page I am in, I can click on the ArtistiClayers logo | so that I am taken back to the Home page. |
+| As a User | I would like to easily locate the navbar across all website pages | so that I can efficiently access different sections of the website. |
+| As a User | I would like to easily recognized which navbar link I clicked | so that I can efficiently see in which section of the website I am. |
+| As a User | I would like to have a footer across all website pages | so that I can  see the different social media links that ArtistiClayers have. |
+| As a User | I would like to click on the social media links| so that I can  efficiently access different social media links to connect and engage with ArtistiClayers social platforms. |
+| As a User | I would like to find an intuitive, welcoming and enjoyable Home page | so that I can easily understand the purpose of the website and remain on it. |
+| As a User | I would like to be drawn to click the button "Our Workshops" in the home page | so that I can easily have access to the list of workshops. |
+| As a User | I would like to find an intuitive and user-friendly About page | so that I learn about the workshop's tutor experience and further understand the concept of ArtistiClayers. |
+| As a User | I would like to see the available workshops | so that I can gather detailed information and choose the best fit for my learning needs. |
+| As a User | I would like to be able to click each workshop card | so that I can be directed to a more detailed page of each workshop. |
+| As a Logged in User | I would like to see and click a button to book a workshop a | so that I can book my desired workshop. |
+| As a Non-logged in User | I would like to see and click a button stating that to book a workshop Log in and/or Register is first required | so that I am aware I need to log in or register to book a workshop.|
+| As a User | I would like to be able to submit a contact form | so that I can request a collaboration with the site owner or ask questions I might have. |
+| As a User | I would like to receive a notification or message saying my contact request is pending approval | so that I understand it hasn't been posted immediately. |
+| As a Site Admin | I would like to accept or reject contact/collaboration requests | so that I can manage collaboration requests|
+| As a Site Admin | I would like to access the Admin panel | so that I can manage bookings, collaboration requests, user accounts and the about me page |
+| As a Site Admin | I would like to access the workshops content in the Admin panel | so that I can manage them and display them with the desired content in the website. |
+| As a User | I would like to register an account | so that I log in to my private account and manage my bookings or book a desired workshop |
+| As a User | I would like to Sign in to my account | so that I log in to my private account and manage my bookings or book a desired workshop |
+| As a Logged in User | I would like to be able to choose for my booking: one of the available workshop levels, choose the number of people participating (min 0, max 10), and choose the appointment date and appointment time | so that I can participate to one of the workshops with my desired selection. |
+| As a Logged in User | I would like to receive clear and specific error messages if I make a mistake in any of the booking fields | so that I can easily identify and correct the errors to successfully complete my booking. |
+| As a Logged in User | I would like to book from only three pre selected time slots | so that scheduling is simplified with a few clear choices. |
+| As a Logged in User | I would like to see a "Thank you for you booking" message displayed | so that I know that my booking was successfully created. |
+| As a Logged in User | I would like to see all bookings I created | so that I can visualize them and update them or delete them if desired. |
+| As a Logged in User | I would like to distinguis the update from the delete button, and the past from the "today" bookings | so that I can visualize them and, if possible, update them or delete them if desired. |
+| As a Site owner | I would like the booking system to prevent users from selecting appointment dates that are in the past or the current day | so that booking errors are avoided and the workshop tutor has adequate preparation time based on the number of attendees. |
+| As a Site owner | I would like to not allow updates or deletions of past bookings | so that I can maintain control over the past bookings. |
+| As a Site owner | I would like to not allow updates or deletions of bookings made for the current day | so that the Tutor receives timely notification of any changes with adequate advance notice.|
+| As a Site owner | I would like the booking system to prevent users from selecting either 0 or more than 10 participants for workshop | so that adequate materials and proper attention can be provided to each attendee. |
+| As a Logged in User | I would like to log out | so that my account is secured from unauthorized use. |
+| As a Logged in User | I would like to create a booking | so that  I can participate to one of the workshops. |
+| As a Logged in User | I would like to, before logging out, be presented with a confirmation message to ensur I wish to end my session | so that I can rethink whether I want to log out or maybe I clicked it by mistake.|
+| As a Logged out User | I would like to see a confirmation message that I logged out, and be redirected to the Home page | so that I know the log out was succesful and that I am not redirected to an unkown website. |
 | As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |
 
 ## Wireframes
-
-⚠️ INSTRUCTIONS ⚠️
-
-If you've created wireframes or mock-ups, use this section to display screenshots of your wireframes. The example table below uses sample pages from the walkthrough project to give you some inspiration for your own project, so please adjust accordingly.
-
-⚠️ --- END --- ⚠️
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
