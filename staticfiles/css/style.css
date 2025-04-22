@@ -216,7 +216,7 @@
 
 #contact {
     position: relative;
-    background: url("../images/background-earrings.JPG") no-repeat center center/cover;
+    background: url("../images/background-earrings.webp") no-repeat center center/cover;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center
@@ -245,7 +245,7 @@
 #sign-up {
     height: calc(72vh - 4rem);
     position: relative;
-    background: url("../images/flower-earrings.JPG") no-repeat center center/cover;
+    background: url("../images/flower-earrings.webp") no-repeat center center/cover;
     background-color: rgb(202, 90, 4);
     justify-content: center;
     align-items: center;
@@ -428,7 +428,7 @@
 
 .bg-customize {
     border-radius: 20px;
-    background: url("../images/background-earrings.JPG") no-repeat center center/cover;
+    background: url("../images/background-earrings.webp") no-repeat center center/cover;
 }
 
 .table {

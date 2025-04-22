@@ -50,7 +50,7 @@
                         <td>
                             {% now "Ymd" as today %}
                             {% if booking.appointment_date|date:"Ymd" == today %}
-                                <span class="btn today-workshop">Today's Booking</span>
+                                <span class="btn no-hand-cursor today-workshop">Today's Booking</span>
                             {% elif booking.appointment_date|date:"Ymd" > today %}
                                 <a href="{% url 'update_booking' booking.id %}" class="btn update-workshop">Update Booking</a>
                             {% else %} 
