@@ -42,12 +42,18 @@
 {% endblock %}
 
 {% block js %}
-<script>
-  `/* jshint esversion: 11 */`
-   // ensure appointment booking date is not before "tomorrow"
-   let now = new Date();
-   now.setDate(now.getDate() + 1);
-   let minDate = now.toISOString().substring(0,10);
-   document.getElementById("id_appointment_date").min = minDate;
+ <script>
+    /* jshint esversion: 11 */
+    // ensure appointment booking date is not before "tomorrow"
+    let now = new Date();
+    now.setDate(now.getDate() + 1);
+    let minDate = now.toISOString().substring(0,10);
+    let appointmentDate = document.getElementById("id_appointment_date");
+    appointmentDate.min = minDate;
+
+    // ensure participants min is 1 and max is 10
+    let participants = document.getElementById("id_participants");
+    participants.min = "1";
+    participants.max = "10";
 </script>
-{% endblock %}
+ {% endblock %}
