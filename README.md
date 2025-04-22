@@ -354,7 +354,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Booking | ![screenshot](documentation/lighthouse/mobile-booking.png) | ![screenshot](documentation/lighthouse/desktop-booking.png) |
 | Update Booking | ![screenshot](documentation/lighthouse/mobile-update-booking.png) | ![screenshot](documentation/lighthouse/desktop-update-booking.png) |
 | Delete Booking | ![screenshot](documentation/lighthouse/mobile-delete-booking.png) | ![screenshot](documentation/lighthouse/desktop-delete-booking.png) |
-| Sign in | ![screenshot](documentation/lighthouse/mobile-sign-in.png) | ![screenshot](documentation/lighthouse/desktop-sign-in.png) |
+| Sign in | ![screenshot](documentation/lighthouse/mobile-signin.png) | ![screenshot](documentation/lighthouse/desktop-signin.png) |
 | Sign up | ![screenshot](documentation/lighthouse/mobile-register.png) | ![screenshot](documentation/lighthouse/desktop-register.png) |
 | Log out| ![screenshot](documentation/lighthouse/mobile-logout.png) | ![screenshot](documentation/lighthouse/desktop-logout.png) |
 | 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) |
