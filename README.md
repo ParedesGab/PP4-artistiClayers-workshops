@@ -264,11 +264,11 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | contact | [collaboration.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/collaboration/templates/collaboration/collaboration.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fcontact%2F | ![screenshot](documentation/validation/html-contact.png) |
 | sign in | [login.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/login.html) | https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Faccounts%2Flogin%2F | ![screenshot](documentation/validation/html-login.png) |
 | sign up | [signup.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/signup.html) | [Link (if applicable)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/validation/html-home-post_list.png) |
-| bookings | [booking.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking.html) | Link (if applicable) | ![screenshot](documentation/validation/html-booking.png) |
-| update booking | [booking_edit.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_edit.html) | https://validator.w3.org/nu/#textarea | ![screenshot](documentation/validation/html-booking-edit.png) |
-| delete booking | [booking_delete.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_delete.html) | Link (if applicable) | ![screenshot](documentation/validation/html-booking-delete.png) |
-| Log out | [logout.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/logout.html) | Link (if applicable) | ![screenshot](documentation/validation/html-logout.png) |
-| 404 | [404.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/404.html) | Link (if applicable) | ![screenshot](documentation/validation/html-404.png) |
+| bookings | [booking.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking.html) | Link (not applicable) | ![screenshot](documentation/validation/html-booking.png) |
+| update booking | [booking_edit.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_edit.html) | Link (not applicable)  | ![screenshot](documentation/validation/html-booking-edit.png) |
+| delete booking | [booking_delete.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_delete.html) | Link (not aplicable)| ![screenshot](documentation/validation/html-booking-delete.png) |
+| Log out | [logout.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/logout.html) | Link (not applicable) | ![screenshot](documentation/validation/html-logout.png) |
+| 404 | [404.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/404.html) | Link (not applicable) | ![screenshot](documentation/validation/html-404.png) |
 
 
 ### CSS
