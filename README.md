@@ -179,7 +179,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - **Notifications**: Implement a notification system that alerts users when their booking appointment is soon coming.
 - **Email Subscriptions**: Allow users to subscribe to receive email notifications for updates, and booking confirmations.
 - **Multilingual Support**: Add the ability to write and view the workshops in multiple languages, broadening the audience.
-- **SEO Optimization**: Implement features for SEO, such as meta tags, custom URLs, and keywords for better search engine ranking.
 - **Custom Themes for Users**: Allow users to customize the visual theme of the site (colors, fonts, etc.) to suit their preferences.
 - **Online payment implementation**: Implement secure payment using various payment methods so that users can conveniently finalize their booking and guarantee their spot without needing to handle cash or payment in person.
 - **Guest booking capability**: Enable users who are not registered or logged in to book workshops by providing necessary contact and booking details, offering a quick and easy way to secure a spot without account creation.
