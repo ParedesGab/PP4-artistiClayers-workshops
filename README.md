@@ -277,7 +277,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | URL | Screenshot |
 | --- | --- | --- | --- |
-| static | [style.css](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/static/css/style.css) | https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en | ![screenshot](documentation/validation/css-static-style.png) |
+| static | [style.css](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/static/css/style.css) | [CSS style Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/validation/css-static-style.png) |
 
 
 ### JavaScript
