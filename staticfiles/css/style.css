@@ -22,7 +22,7 @@
 }
 
 .red-o {
-    color: #ee6d3a;
+    color: #c7582c;
     font-size: 5rem;
 }
 
@@ -36,11 +36,11 @@
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-    color: #ee6d3a !important;
+    color: #c7582c !important;
 }
 
 .navbar-toggler{
-    border-color: #ee6d3a !important;
+    border-color: #c7582c !important;
     margin-left: auto;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .workshop-button {
-    background-color: #ee6d3a;
+    background-color: #c7582c;
     color: white !important;
     padding: 0.85rem;
     border: none;
@@ -163,7 +163,7 @@
 
 .footer a:hover, 
 .non-fixed-footer a:hover {
-    color:  #ee6d3a;
+    color:  #c7582c;
 }
 
 .non-fixed-footer {
@@ -329,7 +329,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0.4rem;
     border-radius: 10px;
-    /* min-height: 540px; */
+    /* min-height:  540px; */
 }
 
 .card {
