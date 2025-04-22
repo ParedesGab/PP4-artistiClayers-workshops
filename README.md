@@ -264,11 +264,11 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | contact | [collaboration.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/collaboration/templates/collaboration/collaboration.html) | [W3 contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fcontact%2F) | ![screenshot](documentation/validation/html-contact.png) |
 | sign in | [login.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/login.html) | [W3 sign in](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/validation/html-login.png) |
 | sign up | [signup.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/signup.html) | [W3 sign up](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/validation/html-home-post_list.png) |
-| bookings | [booking.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking.html) | | ![screenshot](documentation/validation/html-booking.png) |
-| update booking | [booking_edit.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_edit.html) | | ![screenshot](documentation/validation/html-booking-edit.png) |
-| delete booking | [booking_delete.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_delete.html) | | ![screenshot](documentation/validation/html-booking-delete.png) |
-| Log out | [logout.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/logout.html) || ![screenshot](documentation/validation/html-logout.png) |
-| 404 | [404.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/404.html) | | ![screenshot](documentation/validation/html-404.png) |
+| bookings | [booking.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking.html) | N/A | ![screenshot](documentation/validation/html-booking.png) |
+| update booking | [booking_edit.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_edit.html) | N/A | ![screenshot](documentation/validation/html-booking-edit.png) |
+| delete booking | [booking_delete.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_delete.html) | N/A | ![screenshot](documentation/validation/html-booking-delete.png) |
+| Log out | [logout.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/account/logout.html) | N/A | ![screenshot](documentation/validation/html-logout.png) |
+| 404 | [404.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/templates/404.html) | N/A | ![screenshot](documentation/validation/html-404.png) |
 
 
 ### CSS
@@ -282,11 +282,11 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 ### JavaScript
 
-I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+I have used the recommended [JShint Validator](https://jshint.com) to validate my JS code inserted in the templates [booking.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking.html) and [booking_edit.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_edit.html). 
 
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| static | [script.js](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/static/js/script.js) | N/A | ![screenshot](documentation/validation/js-static-script.png) | Notes (if applicable) |
+| workshop | [booking.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking.html) [booking_edit.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/booking_edit.html)  | N/A | ![screenshot](documentation/validation/js-script.png) | Both, booking.html and booking_edit.html templates have the same JS code.
 
 
 ### Python
