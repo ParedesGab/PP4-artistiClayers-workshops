@@ -36,11 +36,11 @@
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-    color: #c7582c !important;
+    color: #df612f !important;
 }
 
 .navbar-toggler{
-    border-color: #c7582c !important;
+    border-color: #df612f !important;
     margin-left: auto;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .workshop-button {
-    background-color: #c7582c;
+    background-color: #df612f;
     color: white !important;
     padding: 0.85rem;
     border: none;
@@ -163,7 +163,7 @@
 
 .footer a:hover, 
 .non-fixed-footer a:hover {
-    color:  #c7582c;
+    color:  #df612f;
 }
 
 .non-fixed-footer {
