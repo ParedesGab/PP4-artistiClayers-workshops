@@ -24,6 +24,9 @@ class Level(models.Model):
     """
     name = models.CharField(max_length=20, blank=False, null=False)
 
+    class Meta:
+        ordering = ["id"]
+
     def __str__(self):
         return self.name
 
@@ -44,6 +47,9 @@ class Workshop(models.Model):
                                )
     image = CloudinaryField('image', default='placeholder')
     is_public = models.BooleanField(default=True)
+
+    class Meta:
+        ordering = ["level"]
 
     def __str__(self):
         return self.name

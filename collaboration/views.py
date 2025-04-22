@@ -21,7 +21,7 @@ def contact_form(request):
             contact_form.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                "Thank you for contacting us!"
+                "Thank you for contacting us! "
                 "We will reply within two working days")
 
     contact_form = ContactForm()
