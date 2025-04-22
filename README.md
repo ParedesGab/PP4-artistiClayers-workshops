@@ -361,75 +361,44 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-⚠️ INSTRUCTIONS ⚠️
-
-Defensive programming (defensive design) is extremely important! When building projects that accept user inputs or forms, you should always test the level of security for each form field. Examples of this could include (but not limited to):
-
-All Projects:
-
-- Users cannot submit an empty form (add the `required` attribute)
-- Users must enter valid field types (ensure the correct input `type=""` is used)
-- Users cannot brute-force a URL to navigate to a restricted pages
-
-Python Projects:
-
-- Users cannot perform CRUD functionality if not authenticated (if login functionality exists)
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers/admins
-
-You'll want to test all functionality on your application, whether it's a standard form, or CRUD functionality, for data manipulation on a database. Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser). You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable (can someone else replicate the same outcome?). Ideally, tests cases should focus on each individual section of every page on the website. Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine, consider documenting tests on each element of the page (eg. button clicks, input box validation, navigation links, etc.) by testing them in their "happy flow", their "bad/exception flow", mentioning the expected and observed results, and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-- Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-⚠️ --- END --- ⚠️
-
-Defensive programming was manually tested with the below user acceptance testing:
-
-| Page | Expectation | Test | Result | Screenshot |
+| Page | Expectation | Test | Result | Passed |
 | --- | --- | --- | --- | --- |
-| Blog Management | Feature is expected to allow the blog owner to create new posts with a title, featured image, and content. | Created a new post with valid title, image, and content data. | Post was created successfully and displayed correctly in the blog. | ![screenshot](documentation/defensive/create-post.png) |
-| | Feature is expected to allow the blog owner to update existing posts. | Edited the content of an existing blog post. | Post was updated successfully with the new content. | ![screenshot](documentation/defensive/update-post.png) |
-| | Feature is expected to allow the blog owner to delete blog posts. | Attempted to delete a blog post, confirming the action before proceeding. | Blog post was deleted successfully. | ![screenshot](documentation/defensive/delete-post.png) |
-| | Feature is expected to retrieve a list of all published posts. | Accessed the blog owner dashboard to view all published posts. | All published posts were displayed in a list view. | ![screenshot](documentation/defensive/published-posts.png) |
-| | Feature is expected to preview posts as drafts before publishing. | Created a draft post and previewed it. | Draft was displayed correctly in preview mode. | ![screenshot](documentation/defensive/preview-draft.png) |
-| Comments Management | Feature is expected to allow the blog owner to approve or reject comments. | Approved and rejected comments from the dashboard. | Approved comments were published; rejected comments were removed. | ![screenshot](documentation/defensive/review-comments.png) |
-| | Feature is expected to allow the blog owner to edit or delete comments. | Edited and deleted existing comments. | Comments were updated or removed successfully. | ![screenshot](documentation/defensive/edit-delete-comments.png) |
-| User Authentication | Feature is expected to allow registered users to log in to the site. | Attempted to log in with valid and invalid credentials. | Login was successful with valid credentials; invalid credentials were rejected. | ![screenshot](documentation/defensive/login.png) |
-| | Feature is expected to allow users to register for an account. | Registered a new user with unique credentials. | User account was created successfully. | ![screenshot](documentation/defensive/register.png) |
-| | Feature is expected to allow users to log out securely. | Logged out and tried accessing a restricted page. | Access was denied after logout, as expected. | ![screenshot](documentation/defensive/logout.png) |
-| User Comments | Feature is expected to allow registered users to leave comments on blog posts. | Logged in and added comments to a blog post. | Comments were successfully added and marked as pending approval. | ![screenshot](documentation/defensive/add-comment.png) |
-| | Feature is expected to display a notification that comments are pending approval. | Added a comment and checked the notification message. | Notification was displayed as expected. | ![screenshot](documentation/defensive/pending-approval.png) |
-| | Feature is expected to allow users to edit their own comments. | Edited personal comments. | Comments were updated as expected. | ![screenshot](documentation/defensive/edit-user-comments.png) |
-| | Feature is expected to allow users to delete their own comments. | Deleted personal comments. | Comments were removed as expected. | ![screenshot](documentation/defensive/delete-user-comments.png) |
-| Guest Features | Feature is expected to allow guest users to read blog posts without registering. | Opened blog posts as a guest user. | Blog posts were fully accessible without logging in. | ![screenshot](documentation/defensive/view-posts-guest.png) |
-| | Feature is expected to display the names of other commenters on posts. | Checked the names of commenters on posts as a guest user. | Commenter names were displayed as expected. | ![screenshot](documentation/defensive/commenter-names.png) |
-| | Feature is expected to block standard users from brute-forcing admin pages. | Attempted to navigate to admin-only pages by manipulating the URL (e.g., `/admin`). | Access was blocked, and a message was displayed showing denied access. | ![screenshot](documentation/defensive/brute-force.png) |
-| 404 Error Page | Feature is expected to display a 404 error page for non-existent pages. | Navigated to an invalid URL (e.g., `/test`). | A custom 404 error page was displayed as expected. | ![screenshot](documentation/defensive/404.png) |
+| About | The title of the About information should be a string with a maximum length. | Attempted to create/edit the About information with a title exceeding 200 characters | The form in the admin interface prevented saving, displaying a validation error for the title field | Yes |
+| About | The image field should handle various image file types | Created/edited the About information by uploading different valid image file types (.webp .jpg, .png, etc.). | The image was uploaded successfully and displayed on the About page | Yes |
+| About | TThe image field should handle the default placeholder. | Ensured no image was uploaded during creation/edit | The About page displayed the 'placeholder' image as defined in the model | Yes |
+| About | The description field should handle various text inputs, including special characters and HTML (due to Summernote). | Created/edited the About information. | The description was saved and rendered correctly on the About page, preserving the special characters and HTML formatting | Yes |
+| Contact | Administrators can accept or reject (Delete) a collaboration request. | As an admin, attempted to accept a pending collaboration request and then attempted to reject another pending collaboration request. | The Admin accepts or rejects a contact request | Yes |
+| Contact | Administrators can makr collaboration requests as read or not read | Create a collaboration request | The Admin sees in the admin panel which collaboration requests have not been read and which have | Yes |
+| Contact | Users should be able to submit the contact form only if all required fields are filled. | Attempted to submit the contact form leaving one or more required fields blank. | The form validation prevented submission and indicated which fields needed to be filled out still | Yes |
+| Contact | Users should receive a clear notification upon successful submission of the contact form, indicating they will receive a response. | Successfully filled out all required fields in the contact form and submitted it. | Upon successful submission, the user was presented with a confirmation message | Yes |
+| Contact | If a user makes an error during contact form submission, their already filled-out information in other valid fields should be preserved. | Filled out several fields in the contact form correctly, then intentionally made an error in one required field and attempted to submit. After the validation error, navigated back to the form. | The correctly filled-out values in the other fields of the contact form remained populated after the failed submission due to the validation error, preventing the user from having to re-enter all their information. | Yes |
+| Bookings | All fields are required to create a booking | Attempted to submit a booking form empty fields | The form validation prevented this selection and indicated the empty field that was missing | Yes |
+| Bookings | When creating a booking, the 'appointment_date' field should prevent users from selecting a date in the past | Attempted to submit a booking form with a date prior to the current date.| The form validation prevented this selection as it greys out all dates in the past | Yes |
+| Bookings | When creating a booking, the 'appointment_date' field should prevent users from selecting the today's date | Attempted to submit a booking form with the today's date | The form validation prevented this selection as it greys out all same-day dates | Yes |
+| Bookings | When creating a booking, the 'participants' field should only accept positive integers within the specified range (i.e, 1-10).| Attempted to submit a booking form with 0 participants and more than 10 participants| The form validation prevented these selections as the participants field can only take from 1 to 10 people | Yes |
+| Bookings | Authenticated users should be associated only with their bookings and automatically. | Logged in as a user and submitted a booking form. | The new booking is displayed correctly| Yes |
+| Bookings | Authenticated users should be associated with their bookings automatically. | Logged in as a user and submitted a booking form. | The new booking is displayed correctly and automatically | Yes |
+| Bookings | If all fields are correctly selected clicking the "Book your Spot" button should create a booking | Clicking the "Book your Spot" button | A message appears indicating that the booking was successfuly created, and the newly created booking is now displayed in "My bookings"  | Yes |
+| Bookings | clicking the "Book your Spot" button should create a booking | Clicking the "Book your Spot" button | A message appears indicating that the booking was successfuly created, and the newly created booking is now displayed in "My bookings"  | Yes |
+| Bookings | Users can view all their bookings. Upcoming bookings allow updating or deletion, while same-day and past bookings are non-editable/deletable. | Attempted to update/delete a same-day booking and a past booking. | The application prevented modification/deletion of same-day and past bookings but allowed it for upcoming ones. | Yes |
+| Bookings/id/update | Only the user who created a booking or the Admin should be allowed to edit it. | Logged in as one user, created a booking. Then logged in as a different user and attempted to access the edit URL for the first user's booking. | The system identified the second user as someone other than the booking owner. Consequently, they were sent back to their personal list of bookings and received the message: "You do not have permission to edit this booking" | Yes |
+| Bookings/id/update | When trying to update a booking, the 'appointment_date' field should prevent users from selecting a date in the past. | Attempted to submit a booking form with a date prior to the current date.| The form validation prevented this selection as it greys out all dates in the past | Yes |
+| Bookings/id/update | When trying to update a booking, the 'appointment_date' field should prevent users from selecting the today's date | Attempted to submit a booking form with the today's date | The form validation prevented this selection as it greys out all same-day dates | Yes |
+| Bookings/id/update | When trying to update a booking, the 'participants' field should only accept positive integers within the specified range (i.e, 1-10).| Attempted to submit a booking form with 0 participants and more than 10 participants| The form validation prevented these selections as the participants field can only take from 1 to 10 people | Yes |
+| Bookings/id/update | When trying to update a booking, clicking the "Update Booking" button should update teh booking correctly | Clicking the "Update Booking" button | A message appeares indicating that the the booking was successfuly updated , and the updated booking is now displayed in "My bookings"  | Yes |
+| Bookings/id/update | If a booking update is not desired clicking the "My Bookings" button should redirect the user to the 'Bookings' page | Clicking the "My Bookings" button | User is redirected to 'Bookings' page  | Yes |
+| Bookings/id/delete | Before user deletes a booking a clear question confirming whether they want to delete it or not should be presented | User clicked the "Delete Booking" button | Before deleting the booking, the user is presented with the question prompting them to confirm if they want to proceed or not with the deletion.  | Yes |
+| Bookings/id/delete | Only the user who created a booking or the Admin should be allowed to delete a booking | Logged in as one user, created a booking. Then logged in as a different user and attempted to access the delete URL for the first user's booking. | The system identified the second user as someone other than the booking owner. Consequently, they were sent back to their personal list of bookings and received the message: "You do not have permission to edit this booking"   | Yes |
+| Bookings/id/delete | When trying to delete a booking, clicking the "Yes" button should update erase it correctly | Clicking the "Yes" button | A message appeares indicating that the the booking was deleted, and the deleted booking is no longer displayed in "My bookings"  | Yes |
+| Bookings/id/delete | When trying to delete a booking, clicking the "No" button should prevent the booking from being deleted, and redirect the user to the 'Bookings' page | Clicking the "No" button | User is redirected to the 'Bookings' page and the booking is still displayed in "My bookings"  | Yes |
+| Workshops | Administrators can create, delete, or update a workshop. | As an admin, attempted to create a new workshop, delete an existing workshop, and update the details of a workshop. | The admin interface allowed creating, deleting, updateing a workshop, when trying to delete a dialog equiring explicit confirmation to proceed is presented.  | Yes |
+| Sign in | Feature is expected to allow registered users to log in to the site. | Attempted to log in with valid and invalid credentials. | Login was successful with valid credentials; invalid credentials were rejected. | Yes |
+| Sign up | Feature is expected to allow users to register for an account. | Registered a new user with unique credentials. | User account was created successfully. | Yes |
+| Log out | Feature is expected to allow users to log out securely. | Logged out and tried accessing a restricted page. | Access was denied after logout, as expected. | Yes |
+| | Feature is expected to block standard users from brute-forcing admin pages. | Attempted to navigate to admin-only pages by manipulating the URL (e.g., `/admin`). | Access was blocked, and a message was displayed showing denied access. | Yes |
+| 404 Error Page | Feature is expected to display a 404 error page for non-existent pages. | Navigated to an invalid URL (e.g., `/test`). | A custom 404 error page was displayed as expected. | Yes |
 
 ## User Story Testing
-
-⚠️ INSTRUCTIONS ⚠️
-
-Testing User Stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **Features** should already align with the **User Stories**, so this should be as simple as creating a table with the User Story, matching with the re-used screenshot from the respective Feature.
-
-⚠️ --- END --- ⚠️
 
 | Target | Expectation | Outcome | Screenshot |
 | --- | --- | --- | --- |
