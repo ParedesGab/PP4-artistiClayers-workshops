@@ -291,37 +291,25 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate m
 
 ### Python
 
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix all Python lines that are too long (>80 characters). In rare cases where you cannot break the lines [*without breaking the functionality*], adding "`  # noqa`" (*NO Quality Assurance*) to the end of those lines will ignore linting validation. Do not use "`  # noqa`" all over your project just to clear down validation errors! This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes variables can get too long, or excessive `if/else` conditional statements. These are acceptable instances to use the "`  # noqa`" comment.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines. A better approach would be to use any type of opening bracket, and hit `<Enter>` just after that. Any opening bracket type will work: `(`, `[`, `{`. By using an opening bracket, Python knows where to appropriately indent the next line of code, without having to *guess* for yourself and attempt to "tab" to the correct indentation level.
-
-
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| Directory | File | URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
-| about | [admin.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/admin.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/about/admin.py) | ![screenshot](documentation/validation/py-about-admin.png) | Notes (if applicable) |
-| about | [models.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/models.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/about/models.py) | ![screenshot](documentation/validation/py-about-models.png) | Notes (if applicable) |
-| about | [tests.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/tests.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/about/tests.py) | ![screenshot](documentation/validation/py-about-tests.png) | Notes (if applicable) |
-| about | [urls.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/about/urls.py) | ![screenshot](documentation/validation/py-about-urls.png) | Notes (if applicable) |
-| about | [views.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/views.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/about/views.py) | ![screenshot](documentation/validation/py-about-views.png) | Notes (if applicable) |
+| Directory | File | URL | Screenshot |
+| --- | --- | --- | --- |
+| about | [admin.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/admin.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/about/admin.py) | ![screenshot](documentation/validation/py-about-admin.png) |
+| about | [models.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/models.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/about/models.py) | ![screenshot](documentation/validation/py-about-models.png) |
+| about | [tests.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/tests.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/about/tests.py) | ![screenshot](documentation/validation/py-about-tests.png) |
+| about | [urls.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/about/urls.py) | ![screenshot](documentation/validation/py-about-urls.png) |
+| about | [views.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/views.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/about/views.py) | ![screenshot](documentation/validation/py-about-views.png) |
+| --- | --- | --- | --- |
 | artisticlayers | [settings.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/artisticlayers/settings.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/artisticlayers/settings.py) | ![screenshot](documentation/validation/py-artisticlayers-settings.png) | Notes (if applicable) |
 | artisticlayers | [urls.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/artisticlayers/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/artisticlayers/urls.py) | ![screenshot](documentation/validation/py-artisticlayers-urls.png) | Notes (if applicable) |
+| --- | --- | --- | --- |
 | home | [admin.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/admin.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/home/admin.py) | ![screenshot](documentation/validation/py-home-admin.png) | Notes (if applicable) |
 | home | [models.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/models.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/home/models.py) | ![screenshot](documentation/validation/py-home-models.png) | Notes (if applicable) |
 | home | [tests.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/tests.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/home/tests.py) | ![screenshot](documentation/validation/py-home-tests.png) | Notes (if applicable) |
 | home | [urls.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/home/urls.py) | ![screenshot](documentation/validation/py-home-urls.png) | Notes (if applicable) |
 | home | [views.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/views.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/home/views.py) | ![screenshot](documentation/validation/py-home-views.png) | Notes (if applicable) |
-|  | [manage.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/manage.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/manage.py) | ![screenshot](documentation/validation/py--manage.png) | Notes (if applicable) |
+| workshop  | [manage.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/manage.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/main/manage.py) | ![screenshot](documentation/validation/py--manage.png) | Notes (if applicable) |
 
 
 ## Responsiveness
