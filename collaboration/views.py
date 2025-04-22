@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import ContactForm
 
@@ -15,20 +15,26 @@ def contact_form(request):
     :template:`collaboration/collaboration.html`
 
     """
+    contact_form = ContactForm(request.POST or None)
+
     if request.method == "POST":
-        contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            messages.add_message(
-                request, messages.SUCCESS,
+            messages.success(
+                request,
                 "Thank you for contacting us! "
-                "We will reply within two working days")
+                "We will reply within two working days"
+            )
+            return redirect("contact")
 
-    contact_form = ContactForm()
-    return render(
-            request,
-            "collaboration/collaboration.html",
-            {
-                "contact_form": contact_form
-            },
-    )
+        else:
+            messages.error(
+                request,
+                "Error: Please Try Again."
+            )
+
+    template = "collaboration/collaboration.html"
+    context = {
+        "contact_form": contact_form,
+    }
+    return render(request, template, context)
