@@ -210,8 +210,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | Workshops Page | The homepage displays basic information about blog posts, including image, title, author, date, and a brief excerpt. | ![screenshot](documentation/features/about.png) |
 | Workshop Page | Users can view the full blog post details, including any comments. | ![screenshot](documentation/features/view-post.png) |
 
-
-
 ### Future Features
 
 - **User Profiles**: Create personalized user profiles where authenticated users can view their bookings and account information.

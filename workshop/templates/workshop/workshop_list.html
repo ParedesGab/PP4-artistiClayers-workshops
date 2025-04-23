@@ -6,13 +6,13 @@
 <!-- workshop_list.html content starts here -->
 <div class="container-fluid" id ="workhops-content-box">
     <div class="row" >
-        <div class="col-12 mt-3 left">
-            <div class="row">
+        <div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
                 {% for workshop in workshop_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body workshop-list">
-                            <div class="image-container">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body my-3">
+                            <div class="image-container my-3">
                                 {% if "placeholder" in workshop.image.url %}
                                 <a href="{% url 'workshop_detail' workshop.id %}" class="workshop-link">
                                     <img class="card-img-top border border-dark more-rounded" src="{% static 'images/nobody.jpg' %}" alt="placeholder image">
