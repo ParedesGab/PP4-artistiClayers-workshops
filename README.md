@@ -451,26 +451,41 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Target | Expectation | Outcome | Screenshot |
 | --- | --- | --- | --- |
-| As a blog owner | I would like to create new blog posts with a title, featured image, and content | so that I can share my experiences with my audience. | ![screenshot](documentation/features/feature01.png) |
-| As a blog owner | I would like to update existing blog posts | so that I can correct or add new information to my previous stories. | ![screenshot](documentation/features/feature02.png) |
-| As a blog owner | I would like to delete blog posts | so that I can remove outdated or irrelevant content from my blog. | ![screenshot](documentation/features/feature03.png) |
-| As a blog owner | I would like to retrieve a list of all my published blog posts | so that I can manage them from a central dashboard. | ![screenshot](documentation/features/feature04.png) |
-| As a blog owner | I would like to preview a post as draft before publishing it | so that I can ensure formatting and content appear correctly. | ![screenshot](documentation/features/feature05.png) |
-| As a blog owner | I would like to review comments before they are published | so that I can filter out spam or inappropriate content. | ![screenshot](documentation/features/feature06.png) |
-| As a blog owner | I would like to approve or reject comments from users | so that I can maintain control over the discussion on my posts. | ![screenshot](documentation/features/feature07.png) |
-| As a blog owner | I would like to view a list of all comments (both approved and pending) | so that I can manage user engagement effectively. | ![screenshot](documentation/features/feature08.png) |
-| As a blog owner | I would like to edit or delete user comments | so that I can clean up or remove inappropriate responses after they've been posted. | ![screenshot](documentation/features/feature09.png) |
-| As a registered user | I would like to log in to the site | so that I can leave comments on blog posts. | ![screenshot](documentation/features/feature10.png) |
-| As a registered user | I would like to register for an account | so that I can become part of the community and engage with the blog. | ![screenshot](documentation/features/feature11.png) |
-| As a registered user | I would like to leave a comment on a blog post | so that I can share my thoughts or ask questions about the owner's experiences. | ![screenshot](documentation/features/feature12.png) |
-| As a registered user | I would like my comment to show my name and the timestamp | so that others can see who I am and when I left the comment. | ![screenshot](documentation/features/feature13.png) |
-| As a registered user | I would like to receive a notification or message saying my comment is pending approval | so that I understand it hasn't been posted immediately. | ![screenshot](documentation/features/feature14.png) |
-| As a registered user | I would like to edit or delete my own comments | so that I can fix mistakes or retract my statement. | ![screenshot](documentation/features/feature15.png) |
-| As a guest user | I would like to read blog posts without registering | so that I can enjoy the content without needing to log in. | ![screenshot](documentation/features/feature16.png) |
-| As a guest user | I would like to browse past posts | so that I can explore the blog's full content history. | ![screenshot](documentation/features/feature17.png) |
-| As a guest user | I would like to register for an account | so that I can participate in the community by leaving comments on posts. | ![screenshot](documentation/features/feature18.png) |
-| As a guest user | I would like to see the names of other commenters on posts | so that I can get a sense of community interaction before registering. | ![screenshot](documentation/features/feature19.png) |
-| As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. | ![screenshot](documentation/features/feature20.png) |
+| As a User | I would like to regardless of the page I am in, I can click on the ArtistiClayers logo | so that I am taken back to the Home page. | ![screenshot](documentation/features/website-logo.png) |
+| As a User | I would like to easily locate the navbar across all website pages | so that I can efficiently access different sections of the website. | ![screenshot](documentation/features/website-navigation-bar.png) |
+| As a User | I would like to easily recognized which navbar link I clicked | so that I can efficiently see in which section of the website I am. | ![screenshot](documentation/features/website-navigation-bar.png) |
+| As a User | I would like to have a footer across all website pages | so that I can  see the different social media links that ArtistiClayers have. | ![screenshot](documentation/features/website-footer.png) |
+| As a User | I would like to click on the social media links| so that I can  efficiently access different social media links to connect and engage with ArtistiClayers social platforms. | ![screenshot](documentation/features/website-footer.png) |
+| As a User | I would like to find an intuitive, welcoming and enjoyable Home page | so that I can easily understand the purpose of the website and want to remain on it and explore further. | ![screenshot](documentation/features/website-homepage.png) |
+| As a User | I would like to be drawn to click the button "Our Workshops" in the home page | so that I can easily have access to the list of workshops. | ![screenshot](documentation/features/website-homepage.png) |
+| As a User | I would like to find an intuitive and user-friendly About page | so that I learn about the workshop's tutor experience and further understand the concept of ArtistiClayers. | ![screenshot](documentation/features/website-about.png) |
+| As a User | I would like to see the available workshops | so that I can gather detailed information and choose the best fit for my learning needs. | ![screenshot](documentation/features/website-workshops-tablets.png) |
+| As a User | I would like to be able to click each workshop card | so that I can be directed to a more detailed page of each workshop (example of one workshop in the screenshot)| ![screenshot](documentation/features/website-workshop-beginner.png) |
+| As a Logged in User | I would like to see and click a button to book a workshop | so that I can book my desired workshop. | ![screenshot](documentation/features/website-workshop-beginner-loggedin.png) |
+| As a Non-logged in User | I would like to see and click a button stating that to book a workshop Log in and/or Register is first required | so that I am aware I need to log in or register to book a workshop.| ![screenshot](documentation/features/website-workshop-beginner.png) |
+| As a User | I would like to be able to submit a contact form | so that I can request a collaboration with the site owner or ask questions I might have. | ![screenshot](documentation/features/website-contact.png) |
+| As a User | I would like to receive a notification or message saying my contact request is pending approval | so that I understand it hasn't been read immediately. | ![screenshot](documentation/features/website-contact-message.png) |
+| As a Site Admin | I would like to accept or reject contact/collaboration requests | so that I can manage collaboration requests | ![screenshot](documentation/features/admin-contact-requests.png) |
+| As a Site Admin | I would like to access the Admin panel | so that I can manage bookings, collaboration requests, user accounts and the about me page (example of the bookings administration in the screenshot) | ![screenshot](documentation/features/admin-bookings.png) |
+| As a Site Admin | I would like to access the workshops content in the Admin panel | so that I can manage them and display them with the desired content in the website. | ![screenshot](documentation/features/admin-workshop.png) |
+| As a User | I would like to register an account | so that I log in to my private account and manage my bookings or book a desired workshop | ![screenshot](documentation/features/website-signup.png) |
+| As a User | I would like to Sign in to my account | so that I log in to my private account and manage my bookings or book a desired workshop | ![screenshot](documentation/features/website-login.png) |
+| As a Logged in User | I would like to create a booking | so that  I can participate to one of the workshops. | ![screenshot](documentation/features/website-create-booking.png) |
+| As a Logged in User | I would like to be able to choose for my booking: one of the available workshop levels, choose the number of people participating (min 0, max 10), and choose the appointment date and appointment time | so that I can participate to one of the workshops with my desired selection. | ![screenshot](documentation/features/website-create-booking.png) |
+| As a Logged in User | I would like to receive clear and specific error messages if I make a mistake in any of the booking fields | so that I can easily identify and correct the errors to successfully complete my booking. | ![screenshot](documentation/features/website-booking-error.png) |
+| As a Logged in User | I would like to book from only three pre selected time slots | so that scheduling is simplified with a few clear choices. | ![screenshot](documentation/features/website-booking-times.png) |
+| As a Logged in User | I would like to see a "Thank you for you booking" message displayed | so that I know that my booking was successfully created. | ![screenshot](documentation/features/website-navigation-bar.png) |
+| As a Logged in User | I would like to see all bookings I created | so that I can visualize them and update them or delete them if desired. | ![screenshot](documentation/features/website-bookings.png) |
+| As a Logged in User | I would like to distinguish the update from the delete button, and the past from the "today" bookings | so that I can visualize them and, if possible, update them or delete them if desired. | ![screenshot](documentation/features/website-bookings.png) |
+| As a Site owner | I would like the booking system to prevent users from selecting appointment dates that are in the past or the current day | so that booking errors are avoided and the workshop tutor has adequate preparation time based on the number of attendees. | ![screenshot](documentation/features/website-past-bookings-not-allowed.png) |
+| As a Site owner | I would like to not allow updates or deletions of past bookings (workshops that already took place) | so that I can maintain control over the past bookings. | ![screenshot](documentation/features/website-my-bookings.png)  |
+| As a Site owner | I would like to not allow updates or deletions of bookings made for the current day | so that the Tutor receives timely notification of any changes with adequate advance notice. | ![screenshot](documentation/features/website-my-bookings.png) |
+| As a Site owner | I would like the booking system to prevent users from selecting either 0 or more than 10 participants for workshop | so that adequate materials and proper attention can be provided to each attendee. | ![screenshot](documentation/features/website-from1-10-participants.png) |
+| As a Logged in User | I would like to log out | so that my account is secured from unauthorized use. | ![screenshot](documentation/features/website-logout.png) |
+| As a Logged in User | I would like to, before logging out, be presented with a confirmation message to ensure I wish to end my session | so that I can reconsider whether it was accidental or my intended action was to log out. | ![screenshot](documentation/features/website-logout.png) |
+| As a Logged out User | I would like to see a confirmation message that I logged out, and be redirected to the Home page | so that I know the log out was succesful and that I am not redirected to an unkown website. | ![screenshot](documentation/features/website-logout-message.png) |
+| As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |![screenshot](documentation/features/404.png)  |
+
 
 ## Automated Testing
 
