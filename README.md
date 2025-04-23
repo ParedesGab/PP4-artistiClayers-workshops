@@ -28,7 +28,7 @@ Let's get claying! 🎉
 #### 1. Strategy Plane
 ##### Purpose
 - Provide users a booking platform for polymer clay workshops in Vienna, catering to all skill levels: beginner, intermediate, and advanced. We offer a workshop designed for everyone.
-- Provide workshop owners with tools to create, view and manage their own bookings. 
+- Provide users who have booked workshops with the functionality to create, view, and manage their own bookings.
 - Offer users an intuitive platform to explore and book our available polymer clay workshops, and the possibility of contacting us for any questions.
 
 ##### Primary User Needs
@@ -38,7 +38,7 @@ Let's get claying! 🎉
 ##### Business Goals
 - Captivate users with inspiring polymer clay visuals showcased throughout the website to encourage workshop booking and selection.
 - Create an engaging platform that empowers users to easily book and manage their polymer clay workshop experiences.
-- Ensure easy booking and booking management for owners.
+- Ensure easy booking and booking management for both registered users and the site owner.
 
 #### 2. Scope Plane
 ##### Features
@@ -46,16 +46,17 @@ Let's get claying! 🎉
 
 ##### Content Requirements
 - Booking workshop management (create, update, delete, and view).
-- User account features (register, log in, edit/delete own bookings).
+- Contact request management by Site owner.
+- User account features (sign up, sign in, log out, create a booking, view/edit/delete own bookings).
 - Notification system when editing/deleting bookings.
 - 404 error page for lost users.
 
 #### 3. Structure Plane
 ##### Information Architecture
 - **Navigation Menu**:
-  - Links to Home, About, Workshops, Contact, Bookings, Sign in, Sign up, Sign out.
+  - Links to Home, About, Workshops, Contact, Bookings, Sign in, Sign up, Logout.
 - **Hierarchy**:
-  - Clear call-to-action buttons for display of available workshops.
+  - Clear call-to-action buttons for display of available workshops when creating a booking.
   - Clear call-to-action buttons for booking creations and management (e.g., update or delete a booking).
 
 ##### User Flow
@@ -79,15 +80,15 @@ Let's get claying! 🎉
 
 ![Color Scheme](documentation/website-screenshots/coolors.png)
 
-- The website's color scheme features a vibrant orange and a soft champagne pink as cohesive elements. This choice was deliberate to complement the colorful background images, providing a nude-toned contrast that allows the imagery to stand out prominently.
+- The website's color scheme features a vibrant orange and a soft champagne pink as cohesive elements. This choice was deliberate to complement the colorful background images found across all pages, providing a nude-toned contrast that allows the polymer clay imagery to stand out prominently.
 
 - The buttons are styled in vibrant colors to ensure that they stand out.
 
 ### Typography
 
-- [Roboto](https://fonts.google.com/specimen/Roboto) from Google Fonts was used for the logo (i.e., ArtistiClayers).
+- [Roboto](https://fonts.google.com/specimen/Roboto) from Google Fonts, was used for the logo (i.e., ArtistiClayers).
 - [bs-font-sans-serif](https://getbootstrap.com/docs/5.1/customize/css-variables/) The rest of the website's typography utilizes Bootstrap's $font-family-sans-serif variable (bs-font-sans-serif) for its primary sans-serif font stack, ensuring consistency with the Bootstrap design system.
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site in the footer (social media icons).
+- [Font Awesome](https://fontawesome.com) Icons were used throughout the site, including social media icons in the footer and a hamburger icon in the mobile navbar.
 
 ## User Stories
 
@@ -98,7 +99,7 @@ Let's get claying! 🎉
 | As a User | I would like to easily recognized which navbar link I clicked | so that I can efficiently see in which section of the website I am. |
 | As a User | I would like to have a footer across all website pages | so that I can  see the different social media links that ArtistiClayers have. |
 | As a User | I would like to click on the social media links| so that I can  efficiently access different social media links to connect and engage with ArtistiClayers social platforms. |
-| As a User | I would like to find an intuitive, welcoming and enjoyable Home page | so that I can easily understand the purpose of the website and remain on it. |
+| As a User | I would like to find an intuitive, welcoming and enjoyable Home page | so that I can easily understand the purpose of the website and want to remain on it and explore further. |
 | As a User | I would like to be drawn to click the button "Our Workshops" in the home page | so that I can easily have access to the list of workshops. |
 | As a User | I would like to find an intuitive and user-friendly About page | so that I learn about the workshop's tutor experience and further understand the concept of ArtistiClayers. |
 | As a User | I would like to see the available workshops | so that I can gather detailed information and choose the best fit for my learning needs. |
@@ -106,25 +107,25 @@ Let's get claying! 🎉
 | As a Logged in User | I would like to see and click a button to book a workshop | so that I can book my desired workshop. |
 | As a Non-logged in User | I would like to see and click a button stating that to book a workshop Log in and/or Register is first required | so that I am aware I need to log in or register to book a workshop.|
 | As a User | I would like to be able to submit a contact form | so that I can request a collaboration with the site owner or ask questions I might have. |
-| As a User | I would like to receive a notification or message saying my contact request is pending approval | so that I understand it hasn't been posted immediately. |
+| As a User | I would like to receive a notification or message saying my contact request is pending approval | so that I understand it hasn't been read immediately. |
 | As a Site Admin | I would like to accept or reject contact/collaboration requests | so that I can manage collaboration requests|
 | As a Site Admin | I would like to access the Admin panel | so that I can manage bookings, collaboration requests, user accounts and the about me page |
 | As a Site Admin | I would like to access the workshops content in the Admin panel | so that I can manage them and display them with the desired content in the website. |
 | As a User | I would like to register an account | so that I log in to my private account and manage my bookings or book a desired workshop |
 | As a User | I would like to Sign in to my account | so that I log in to my private account and manage my bookings or book a desired workshop |
+| As a Logged in User | I would like to create a booking | so that  I can participate to one of the workshops. |
 | As a Logged in User | I would like to be able to choose for my booking: one of the available workshop levels, choose the number of people participating (min 0, max 10), and choose the appointment date and appointment time | so that I can participate to one of the workshops with my desired selection. |
 | As a Logged in User | I would like to receive clear and specific error messages if I make a mistake in any of the booking fields | so that I can easily identify and correct the errors to successfully complete my booking. |
 | As a Logged in User | I would like to book from only three pre selected time slots | so that scheduling is simplified with a few clear choices. |
 | As a Logged in User | I would like to see a "Thank you for you booking" message displayed | so that I know that my booking was successfully created. |
 | As a Logged in User | I would like to see all bookings I created | so that I can visualize them and update them or delete them if desired. |
-| As a Logged in User | I would like to distinguis the update from the delete button, and the past from the "today" bookings | so that I can visualize them and, if possible, update them or delete them if desired. |
+| As a Logged in User | I would like to distinguish the update from the delete button, and the past from the "today" bookings | so that I can visualize them and, if possible, update them or delete them if desired. |
 | As a Site owner | I would like the booking system to prevent users from selecting appointment dates that are in the past or the current day | so that booking errors are avoided and the workshop tutor has adequate preparation time based on the number of attendees. |
-| As a Site owner | I would like to not allow updates or deletions of past bookings | so that I can maintain control over the past bookings. |
+| As a Site owner | I would like to not allow updates or deletions of past bookings (workshops that already took place) | so that I can maintain control over the past bookings. |
 | As a Site owner | I would like to not allow updates or deletions of bookings made for the current day | so that the Tutor receives timely notification of any changes with adequate advance notice.|
 | As a Site owner | I would like the booking system to prevent users from selecting either 0 or more than 10 participants for workshop | so that adequate materials and proper attention can be provided to each attendee. |
 | As a Logged in User | I would like to log out | so that my account is secured from unauthorized use. |
-| As a Logged in User | I would like to create a booking | so that  I can participate to one of the workshops. |
-| As a Logged in User | I would like to, before logging out, be presented with a confirmation message to ensur I wish to end my session | so that I can rethink whether I want to log out or maybe I clicked it by mistake.|
+| As a Logged in User | I would like to, before logging out, be presented with a confirmation message to ensure I wish to end my session | so that I can reconsider whether it was accidental or my intended action was to log out. |
 | As a Logged out User | I would like to see a confirmation message that I logged out, and be redirected to the Home page | so that I know the log out was succesful and that I am not redirected to an unkown website. |
 | As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |
 
