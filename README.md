@@ -536,8 +536,6 @@ This resulted in the same ID being assigned to multiple elements, violating the 
 ![Bug lighthouse](documentation/bugs/bug-lighthouse-about.png)
     - Solution: This was corrected by adding in settings.py -> cloudinary.config(secure=True)
 
-![screenshot](documentation/bugs/gh-issues-closed.png)
-
 ### Unfixed Bugs
 
 > [!IMPORTANT]
