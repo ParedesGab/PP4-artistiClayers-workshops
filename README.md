@@ -199,12 +199,13 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | 404 | The 404 error page will indicate when a user has navigated to a page that doesn't exist, replacing the default Heroku 404 page with one that ties into the site's feel but that it is yet distinctive, and it has a "Take me to Homepage" button. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/404.png) |
 | 404 | The 404 page  is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-404-mobiles.png) |
 | 404 | The 404 page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-404-tablets.png) |
+| Admin page | Site owners can create/publish the About content, including setting a profile image using Cloudinary, all from the Django admin dashboard. | ![screenshot](documentation/features/admin-create-about.png) |
+| Admin page | Site owners can see contact requests, open them and mark them as read | ![screenshot](documentation/features/admin-contact-requests.png) |
+| Admin page | Site owners have the ability to view, manage and set to public all workshops | ![screenshot](documentation/features/admin-workshops.png) |
+| Admin page | Site owners can create, publish and manage workshop levels (beginner, intermediate, advanced) that users can then select when booking. | ![screenshot](documentation/features/admin-level.png) |
+| Admin page | Site owners can can create, publish and manage the Workshops content, including setting a workshop image using Cloudinary, all from the Django admin dashboard. | ![screenshot](documentation/features/admin-workshop.png) |
+| Admin page | Site owners have the ability to view and manage all user bookings. | ![screenshot](documentation/features/admin-bookings.png) |
 | Heroku Deployment | The site is fully deployed to Heroku, making it accessible online and easy to manage. | ![screenshot](documentation/features/heroku.png) |
-
-| Create Post | Site owners can create/publish blog posts, including setting a featured image using Cloudinary, all from the Django admin dashboard. | ![screenshot](documentation/features/create-post.png) |
-| Update Post | Site owners can update/manage blog posts from the Django admin dashboard. | ![screenshot](documentation/features/update-post.png) |
-| Delete Post | Site owners can delete blog posts from the Django admin dashboard. | ![screenshot](documentation/features/delete-post.png) |
-
 
 | Workshops Page | The homepage displays basic information about blog posts, including image, title, author, date, and a brief excerpt. | ![screenshot](documentation/features/about.png) |
 | Workshop Page | Users can view the full blog post details, including any comments. | ![screenshot](documentation/features/view-post.png) |
