@@ -108,7 +108,9 @@ class TestBookingViews(TestCase):
         response = self.logged_in_client.post(reverse('bookings'),
                                               booking_data, follow=True)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(Booking.objects.filter(booked_by=self.user).count(), 2)
+        self.assertEqual(Booking.objects.filter(
+            booked_by=self.user).count(), 2
+            )
         self.assertIn(b'Thank you for your booking!', response.content)
         self.assertTemplateUsed(response, 'workshop/booking.html')
 
@@ -122,7 +124,7 @@ class TestBookingViews(TestCase):
             'appointment_time': '7pm-9pm'
         }
         response = self.logged_in_client.post(
-            reverse('update_booking', args=[self.booking.id]), 
+            reverse('update_booking', args=[self.booking.id]),
             booking_data, follow=True
         )
         self.assertEqual(response.status_code, 200)
