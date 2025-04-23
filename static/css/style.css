@@ -239,11 +239,8 @@
 }
 
 /* Sign In, Sign Out and Sign Up pages */
-
-#sign-in,
-#sign-out, 
-#sign-up {
-    height: calc(72vh - 4rem);
+#sign-allauth {
+    height: auto;
     position: relative;
     background: url("../images/flower-earrings.webp") no-repeat center center/cover;
     background-color: rgb(202, 90, 4);
@@ -251,13 +248,7 @@
     align-items: center;
 }
 
-#sign-up {
-    height: auto;
-}
-
- #sign-in h2,
- #sign-out h2,
- #sign-up h2 {
+#sign-allauth h2 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     width: 40%;
@@ -265,24 +256,18 @@
     padding: 0.5rem;
 }
 
-#sign-in .sign-in-text,
-#sign-out .sign-out-text,
-#sign-up .sign-up-text {
+#sign-allauth .sign-in-text,
+#sign-allauth .sign-out-text,
+#sign-allauth .sign-up-text {
     margin-top: 1.5rem;
-    background-color: rgba(243, 239, 222, 0.85);
+    background-color: rgba(231, 230, 224, 0.85);
     padding: 0.3rem;
     margin-bottom: 0px;
 }
 
-#sign-in form,
-#sign-up form {
+#sign-allauth form {
     background-color: rgba(243, 239, 222, 0.7);
     padding: 0.5rem;
-}
-
-#sign-up h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
 }
 
 .btn-signup,
@@ -530,7 +515,7 @@
         margin-left: 2rem;
     }
 
-    #sign-in h2 {
+    #sign-allauth h2 {
         width: 30%;
     }
 
@@ -581,12 +566,11 @@
         width: 30%;
     }
 
-    #sign-in h2 {
+    #sign-allauth h2 {
         width: 20%;
     }
 
-    #sign-out h2,
-    #sign-out .sign-out-text {
+    #sign-allauth .sign-out-text {
     width: 40%;
     }
 
