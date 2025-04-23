@@ -489,8 +489,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Automated Testing
 
-I have conducted a series of automated tests on my application.
-
 > [!NOTE]
 > I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
 
@@ -506,17 +504,6 @@ I have used Django's built-in unit testing framework to test the application fun
 
 - `python3 manage.py test name-of-app`
 
-To create the coverage report, I would then run the following commands:
-
-- `pip3 install coverage`
-- `pip3 freeze --local > requirements.txt`
-- `coverage run --omit=*/site-packages/*,*/migrations/*,*/__init__.py,env.py,manage.py test`
-- `coverage report`
-
-To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following commands:
-
-- `coverage html`
-- `python3 -m http.server`
 
 Below are the results from the full coverage report on my application that I've tested:
 
@@ -524,15 +511,9 @@ Below are the results from the full coverage report on my application that I've 
 
 #### Unit Test Issues
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this section to list any known issues you ran into while writing your Python unit tests. Remember to include screenshots (where possible), and a solution to the issue (if known). This can be used for both "fixed" and "unresolved" issues. Remove this sub-section entirely if you somehow didn't run into any issues while working with your tests.
-
-⚠️ --- END --- ⚠️
 
 ## Bugs
 
-⚠️ INSTRUCTIONS ⚠️
 
 Nobody likes bugs,... except the assessors! Projects seem more suspicious if a student doesn't properly track their bugs. If you're about to submit your project without any bugs listed below, you should ask yourself why you're doing this course in the first place, if you're able to build this entire application without running into any bugs. The best thing you can do for any project is to document your bugs! Not only does it show the true stages of development, but think of it as breadcrumbs for yourself in the future, should you encounter the same/similar bug again, it acts as a gentle reminder on what you did to fix the bug.
 
