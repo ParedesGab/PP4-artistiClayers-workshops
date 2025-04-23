@@ -543,12 +543,11 @@ This resulted in the same ID being assigned to multiple elements, violating the 
 
 ### Known Issues
 
-| Issue | Screenshot |
-| --- | --- |
-| On devices smaller than 375px, the page starts to have horizontal `overflow-x` scrolling. | ![screenshot](documentation/issues/overflow.png) |
-| When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. | ![screenshot](documentation/issues/section-header.png) |
-| Validation errors on "signup.html" coming from the Django Allauth package. | ![screenshot](documentation/issues/allauth.png) |
-| Lighthouse reported as an error "Uses third-party cookies" but these are new Chrome policies and cannot be removed that at the moment | ![screenshot](documentation/issues/allauth.png) |
+
+- On devices smaller than 375px, the page starts to have horizontal `overflow-x` scrolling. 
+- When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. 
+- Validation errors on "signup.html" coming from the Django Allauth package. 
+- Lighthouse reported as an error "Uses third-party cookies" but these are new Chrome policies and cannot be removed that at the moment 
 
 
 ## Deployment
