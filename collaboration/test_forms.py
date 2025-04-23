@@ -30,7 +30,7 @@ class TestContactForm(TestCase):
             msg="'first_name' was not provided, but the form is valid"
         )
         self.assertIn('first_name', form.errors)
-    
+
     def test_last_name_is_required(self):
         """ Test that the 'last_name' field is required """
         form_data = {
@@ -85,6 +85,9 @@ class TestContactForm(TestCase):
             'message': 'Hello!'
         }
         form = ContactForm(data=form_data)
-        self.assertFalse(form.is_valid(), msg="Form is valid with an invalid email")
+        self.assertFalse(form.is_valid(),
+                         msg="Form is valid with an invalid email"
+                         )
         self.assertIn('email', form.errors)
-        self.assertEqual(form.errors['email'], ['Enter a valid email address.'])
+        self.assertEqual(form.errors['email'],
+                         ['Enter a valid email address.'])
