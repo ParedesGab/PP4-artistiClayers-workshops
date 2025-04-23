@@ -396,10 +396,9 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Page | Mobile | Desktop |
 | --- | --- | --- |
 | Home | ![screenshot](documentation/lighthouse/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
-| --- | --- | --- |
 | About | ![screenshot](documentation/lighthouse/mobile-about.png) | ![screenshot](documentation/lighthouse/desktop-about.png) |
-| Workshops | ![screenshot](documentation/lighthouse/mobile-workshops.png) | ![screenshot](documentation/lighthouse/desktop-workshops.png) |
-| Workshop | ![screenshot](documentation/lighthouse/mobile-workshop.png) | ![screenshot](documentation/lighthouse/desktop-workshop.png) |
+| Workshops (see section: [Known-issues](#known-issues)) | ![screenshot](documentation/lighthouse/mobile-workshops.png) | ![screenshot](documentation/lighthouse/desktop-workshops.png) |
+| Workshop (see section: [Known-issues](#known-issues)) | ![screenshot](documentation/lighthouse/mobile-workshop.png) | ![screenshot](documentation/lighthouse/desktop-workshop.png) |
 | Contact | ![screenshot](documentation/lighthouse/mobile-contact.png) | ![screenshot](documentation/lighthouse/desktop-contact.png) |
 | Booking | ![screenshot](documentation/lighthouse/mobile-booking.png) | ![screenshot](documentation/lighthouse/desktop-booking.png) |
 | Update Booking | ![screenshot](documentation/lighthouse/mobile-update-booking.png) | ![screenshot](documentation/lighthouse/desktop-update-booking.png) |
