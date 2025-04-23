@@ -539,9 +539,8 @@ This resulted in the same ID being assigned to multiple elements, violating the 
 
 ### Unfixed Bugs
 
- 1. I ackknowdeled that for time constraints  Large or landscape phones */
-
-![screenshot](documentation/bugs/gh-issues-open.png)
+> [!IMPORTANT]
+> There are no remaining bugs that I am aware of, though, even after thorough testing, I cannot rule out the possibility.
 
 ### Known Issues
 
@@ -550,9 +549,7 @@ This resulted in the same ID being assigned to multiple elements, violating the 
 | On devices smaller than 375px, the page starts to have horizontal `overflow-x` scrolling. | ![screenshot](documentation/issues/overflow.png) |
 | When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. | ![screenshot](documentation/issues/section-header.png) |
 | Validation errors on "signup.html" coming from the Django Allauth package. | ![screenshot](documentation/issues/allauth.png) |
-
-> [!IMPORTANT]
-> There are no remaining bugs that I am aware of, though, even after thorough testing, I cannot rule out the possibility.
+| Lighthouse reported as an error "Uses third-party cookies" but these are new Chrome policies and cannot be removed that at the moment | ![screenshot](documentation/issues/allauth.png) |
 
 
 ## Deployment
