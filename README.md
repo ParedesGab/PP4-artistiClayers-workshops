@@ -154,48 +154,62 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 | Feature | Notes | Screenshot |
 | --- | --- | --- |
-| Logo | Navbar located at the top center of the page, present across all pages, and regardless of where the User is, if clicked it redirects to the homepage | ![screenshot](documentation/features/website-logo.png) |
+| Logo | Navbar located at the top center of the page, present across all pages, and regardless of where the User is, if clicked it redirects to the homepage. | ![screenshot](documentation/features/website-logo.png) |
 | Navbar | Navbar located below the ArtistiClayers logo, for tablets and larger devices, it is positioned at the top center of the page, and present across all pages. All four navigation links have a hover effect. Namely, a different color (orange) to indicate in which page the user is on, and a hover highlight to indicate that they are clickable. | ![screenshot](documentation/features/website-navigation-bar.png) |
 | Navbar | The navigation bar is responsive, and in mobiles it features a hamburger menu from Font Awesome on the right. | ![screenshot](documentation/features/website-navigation-bar-burgermenu-close.png) |
-| Navbar | When clicked, the hamburger menu reveals a drop-down with the navigation links displayed in the center of the page, and a different color (orange) indicates in which page the user is on| ![screenshot](documentation/features/website-navbar-burgermenu-open.png) |
-| Footer | Footer located at the bottom across all pages. Social media links have a hover effect and when clicked a new tab opens with the selected social media platform | ![screenshot](documentation/features/website-footer.png) |
-| Home Page | Vibrant homepage that communicates the website's purpose: unleash your artistic creativity through our offered polymer clay workshops. The background image showcases the potential of polymer clay, while the toucans add a fun, colorful, and eye-catching element.| ![screenshot](documentation/features/website-homepage.png) |
-| Home Page | The homepage features a prominent, vibrant orange button that directs users to our available workshops, revealing an intense purple hover effect for contrast and surprise. | ![screenshot](documentation/features/website-homepage-mobiles.png) |
-| Home Page | The homepage is responsive, as demonstrated in this mobile screenshot. | ![screenshot](documentation/features/website-homepage-mobiles.png) |
+| Navbar | When clicked, the hamburger menu reveals a drop-down with the navigation links displayed in the center of the page, and a different color (orange) indicates in which page the user is on. | ![screenshot](documentation/features/website-navbar-burgermenu-open.png) |
+| Footer | Footer located at the bottom across all pages. Social media links have a hover effect and when clicked a new tab opens with the selected social media platform. | ![screenshot](documentation/features/website-footer.png) |
+| Home Page | Vibrant homepage that communicates the website's purpose: unleash your artistic creativity through our offered polymer clay workshops. The background image showcases the potential of polymer clay, while the toucans add a fun, colorful, and eye-catching element. The homepage also features a prominent, vibrant orange button that directs users to our available workshops, revealing an intense purple hover effect for contrast and surprise. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/website-homepage.png) |
+| Home Page | The homepage is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-homepage-mobiles.png) |
+| Home Page | The homepage is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-homepage-tablets.png) |
 | Home Page | When the user logs in or registers, they receive a welcome message. | ![screenshot](documentation/features/website-homepage-message.png) |
-| About Page | The About page introduces the tutor with a text and image and highlights the experience and tutor's passion for polymer clay, also inviting the User to explore its colorful world and workshops for all skill levels. The banner image on the About page displays a variety of polymer clay creations, allowing users to see firsthand the material's colorful versatility and limitless potential.| ![screenshot](documentation/features/website-about.png) |
-| About Page | The About page is responsive, as demonstrated in this mobile screenshot. | ![screenshot](documentation/features/website-about-mobiles.png) |
-| Contact Page | The contact page displays the option for (register or not) sUsers to send collaboration requests which are later reviewed by the admin. | ![screenshot](documentation/features/website-contact.png) |
-| Contact Page | The contact page is responsive, as demonstrated in this mobile screenshot. | ![screenshot](documentation/features/website-contact-mobile.png) |
+| About Page | The About page introduces the tutor with a text and image and highlights the experience and tutor's passion for polymer clay, also inviting the User to explore its colorful world and workshops for all skill levels. The banner image on the About page displays a variety of polymer clay creations, allowing users to see firsthand the material's colorful versatility and limitless potential. The screenshot ilustrates responsiveness in laptops and larger devices.| ![screenshot](documentation/features/website-about.png) |
+| About Page | The About page is is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-about-mobiles.png) |
+| About Page | The About page is is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-about-tablets.png) |
+| Contact Page | The contact page displays the option for (register or not) Users to send collaboration requests which are later reviewed by the admin. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/website-contact.png) |
+| Contact Page | The contact page is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-contact-mobile.png) |
+| Contact Page | The contact page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-contact-tablets.png) |
 | Contact Page | Upon submitting the correct contact information, the User receives a confirmation message that their contact request has been received and they will be contacted within 2 working days. | ![screenshot](documentation/features/website-contact-message.png) |
-| Contact Page | All fields need to be filled out in order to submit the contact form | ![screenshot](documentation/features/website-contact-all-fields.png) |
-| Bookings Page | On the booking page, users first encounter a form for creating new bookings, distinguished by a background image. Below this, they can find a list of all their bookings. | ![screenshot](documentation/features/website-bookings.png) |
+| Contact Page | All fields need to be filled out in order to submit the contact form. | ![screenshot](documentation/features/website-contact-all-fields.png) |
+| Sign up Page | Authentication is handled by allauth, allowing users to register accounts. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/website-signup.png) |
+| Sign up Page | The Sign up page is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-signup-mobile.png) |
+| Sign up Page | The Sign up page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-signup-tablets.png) |
+| Sign in Page | Authentication is handled by allauth, allowing users to log in to their existing accounts. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/website-login.png) |
+| Sign in Page | Authentication is handled by allauth, if username and/or password are incorrect, the user receives the message tha "The username and/or password you specified are not correct." | ![screenshot](documentation/features/website-login-incorrect-credentials.png) |
+| Sign in Page | The Sign in page is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-signin-mobiles.png) |
+| Sign in Page | The Sign in page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-signin-tablets.png) |
+| Logout Page | Authentication is handled by allauth, allowing users to log out of their accounts. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/website-logout.png) |
+| Logout Page  | When the user logs out, they receive a goodbye message. | ![screenshot](documentation/features/website-logout-message.png) |
+| Logout Page  | The Logout page is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-logout-mobiles.png) |
+| Logout Page  | The Logout page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-logout-tablets.png) |
+| Bookings Page | On the booking page, users first encounter a form for creating new bookings, distinguished by a background image. Below this, they can find a list of all their bookings. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/website-bookings.png) |
 | Bookings Page | Logged-in users can book a workshop level by specifying the number of participants (0-10), selecting a date, and choosing one of three available times. All fields are mandatory. | ![screenshot](documentation/features/website-create-booking.png) |
 | Bookings Page | Upon submitting the correct booking information, the User receives a confirmation message of their booking, and the booking appears in the "My Bookings" section | ![screenshot](documentation/features/website-new-booking.png) |
 | Bookings Page | "My Bookings" displays booking information in a table, allowing users to update or delete upcoming bookings. These buttons are visually distinct for easy recognition. Today's and past bookings are also visually distinct for easy identification but they cannot be updated or deleted. | ![screenshot](documentation/features/website-my-bookings.png) |
-| Update Bookings Page | Logged-in users can update their bookings via the "Update booking" button or return to their booking list using the "My Bookings" button. | ![screenshot](documentation/features/website-update-booking.png) |
+| Bookings Page  | The Bookings page is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-bookings-mobiles.png) |
+| Bookings Page  | The Bookings page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-bookings-tablets.png) |
+| Update Bookings Page | Logged-in users can update their bookings via the "Update booking" button or return to their booking list using the "My Bookings" button. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/website-update-booking.png) |
 | Update Bookings Page | Upon updating the booking, the User receives a confirmation message of their update booking, and the updated booking appears in the "My Bookings" section | ![screenshot](documentation/features/website-updated-booking.png) |
-| Delete Bookings Page | Logged-in users can delete their bookings via the "Yes" button or return to their booking list using the "No" button. | ![screenshot](documentation/features/website-delete-booking.png) |
+| Update Bookings Page   | The Update Bookings page  is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-update-booking-mobiles.png) |
+| Update Bookings Page   | The Update Bookings page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-update-booking-tablets.png) |
+| Delete Bookings Page | Logged-in users can delete their bookings via the "Yes" button or return to their booking list using the "No" button. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/website-delete-booking.png) |
 | Delete Bookings Page  | After deleting a booking, the user receives a confirmation message, and the deleted booking is removed from the "My Bookings" section. | ![screenshot](documentation/features/website-deleted-booking.png) |
+| Delete Bookings Page   | The Delete Bookings page  is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-delete-booking-mobiles.png) |
+| Delete Bookings Page   | The Delete Bookings page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-delete-booking-tablets.png) |
+| 404 | The 404 error page will indicate when a user has navigated to a page that doesn't exist, replacing the default Heroku 404 page with one that ties into the site's feel but that it is yet distinctive, and it has a "Take me to Homepage" button. The screenshot ilustrates responsiveness in laptops and larger devices. | ![screenshot](documentation/features/404.png) |
+| 404 | The 404 page  is also responsive for mobiles as demonstrated in this screenshot. | ![screenshot](documentation/features/website-404-mobiles.png) |
+| 404 | The 404 page is also responsive for tablets as demonstrated in this screenshot. | ![screenshot](documentation/features/website-404-tablets.png) |
+| Heroku Deployment | The site is fully deployed to Heroku, making it accessible online and easy to manage. | ![screenshot](documentation/features/heroku.png) |
+
+| Create Post | Site owners can create/publish blog posts, including setting a featured image using Cloudinary, all from the Django admin dashboard. | ![screenshot](documentation/features/create-post.png) |
+| Update Post | Site owners can update/manage blog posts from the Django admin dashboard. | ![screenshot](documentation/features/update-post.png) |
+| Delete Post | Site owners can delete blog posts from the Django admin dashboard. | ![screenshot](documentation/features/delete-post.png) |
 
 
 | Workshops Page | The homepage displays basic information about blog posts, including image, title, author, date, and a brief excerpt. | ![screenshot](documentation/features/about.png) |
 | Workshop Page | Users can view the full blog post details, including any comments. | ![screenshot](documentation/features/view-post.png) |
 
 
-| Register | Authentication is handled by allauth, allowing users to register accounts. | ![screenshot](documentation/features/register.png) |
-| Login | Authentication is handled by allauth, allowing users to log in to their existing accounts. | ![screenshot](documentation/features/login.png) |
-| Login | Authentication is handled by allauth, if username or password is incorrect, the user receives the message tha "The username and/or password you specified are not correct." | ![screenshot](documentation/features/website-login-incorrect-credentials.png) |
-
-| Logout | Authentication is handled by allauth, allowing users to log out of their accounts. | ![screenshot](documentation/features/logout.png) |
-| Logout | When the user logs out, they receive a goodbye message. | ![screenshot](documentation/features/website-logout-message.png) |
-| Create Post | Site owners can create/publish blog posts, including setting a featured image using Cloudinary, all from the Django admin dashboard. | ![screenshot](documentation/features/create-post.png) |
-| Update Post | Site owners can update/manage blog posts from the Django admin dashboard. | ![screenshot](documentation/features/update-post.png) |
-| Delete Post | Site owners can delete blog posts from the Django admin dashboard. | ![screenshot](documentation/features/delete-post.png) |
-
-| User Feedback | Clear and obvious Django messages are used to provide feedback to user actions. | ![screenshot](documentation/features/messages.png) |
-| Heroku Deployment | The site is fully deployed to Heroku, making it accessible online and easy to manage. | ![screenshot](documentation/features/heroku.png) |
-| 404 | The 404 error page will indicate when a user has navigated to a page that doesn't exist, replacing the default Heroku 404 page with one that ties into the site's look and feel. | ![screenshot](documentation/features/404.png) |
 
 ### Future Features
 
