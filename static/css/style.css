@@ -154,6 +154,10 @@
     align-items: center;
 }
 
+.non-fixed-footer {
+    position: static;
+}
+
 .footer a, 
 .non-fixed-footer a {
     color: #1f0d06;
@@ -164,10 +168,6 @@
 .footer a:hover, 
 .non-fixed-footer a:hover {
     color:  #e44100;
-}
-
-.non-fixed-footer {
-    position: static;
 }
 
 /* About page  */
@@ -488,6 +488,18 @@
 .no-hand-cursor {
     cursor: default !important;
   }
+
+/*Media Query: Large or landscape phones */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .hero-text {
+        margin-top: 22rem;
+        margin-bottom:4rem;
+    }
+
+    .hero-image-container {
+        height: auto;
+    }
+}
 
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
