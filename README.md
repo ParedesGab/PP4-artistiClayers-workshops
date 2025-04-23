@@ -273,10 +273,11 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 ### GitHub Issues
 
 [GitHub Issues](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks.
+The remaining five open issues are currently in the Backlog.
 
-| Link | Screenshot |
-| --- | --- |
-| [![GitHub closed issues](https://img.shields.io/github/issues-closed/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/gh-issues-closed.png) |
+| Link | Screenshot | Notes |
+| --- | --- | --- |
+| [![GitHub closed issues](https://img.shields.io/github/issues-closed/ParedesGab/PP4-artistiClayers-workshops)](https://www.github.com/ParedesGab/PP4-artistiClayers-workshops/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/gh-issues-closed.png) | The remaining five open issues are currently in the Backlog. |
 
 ### GitHub Milestones
 
