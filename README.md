@@ -494,20 +494,17 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ### Python (Unit Testing)
 
-⚠️ INSTRUCTIONS ⚠️
-
-Adjust the code below (file names, function names, etc.) to match your own project files/folders. Use these notes loosely when documenting your own Python Unit tests, and remove/adjust where applicable.
-
-⚠️ SAMPLE ⚠️
-
 I have used Django's built-in unit testing framework to test the application functionality. In order to run the tests, I ran the following command in the terminal each time:
 
 - `python3 manage.py test name-of-app`
 
-
 Below are the results from the full coverage report on my application that I've tested:
 
-![screenshot](documentation/automation/html-coverage.png)
+- Automated testing was implemented for:
+    - Collaboration app (form) | ![screenshot](documentation/automation/testing-collaboration-form.png)
+    - Woskshop app (views and booking form) | ![screenshot](documentation/automation/testing-workshop-forms-and-views.png)
+    - About app (views) | ![screenshot](documentation/automation//testing-about-views.png)
+
 
 #### Unit Test Issues
 
