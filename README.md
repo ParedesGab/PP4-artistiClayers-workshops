@@ -805,25 +805,17 @@ There are no remaining major differences between the local version when compared
 
 - [ChatGPT](https://chatgpt.com) helped with code logic and explanations.
 
+- [CSS-Tricks](https://css-tricks.com/a-complete-guide-to-calc-in-css/) showed me how to use the CSS calc function.
 
+- [W3 Schools](https://www.w3schools.com/css/css3_mediaqueries_ex.asp) showed me the concept of max-width media queries.
 
-- [W3 Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) showed me how to use the setTimeout() method. 
+- The base.html code from [I Think Therefore I Blog](https://codeinstitute.net) was used as template for my base.html.
 
-- [W3 Schools](https://www.w3schools.com/jsref/prop_html_id.asp) showed me how to return the id property. 
-
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) showed me how to create elliptical corner radius used in the Control Area of the Memory Board Game section.
-
-- I got further clarificaion on the used of Parameters vs Arguments from the from the YouTube channel [Anna McDougall](https://www.youtube.com/watch?v=5o4P8lESTF0).
+- Despite significant customization, the HTML structure for update, delete and the bookings display derived from the html structure of the project [DjangoDogGroomers](https://github.com/petermcloughlin/DjangoDogGroomers/blob/main/booking/templates/booking/profile.html) from Peter Mcloughlin.
 
 - Stack Overflow solutions was also used to resolve doubts.
 
 - Text was checked with DeepL Write for spelling mistakes. 
-
-- I learned how to add other pages (e.g., home menu page, games indications and congratulations pages) with Javascript by reading the project of [Kristyna Wach](https://github.com/Cushione/four-seasons-memory-game) and testing it myself within my javascript code.
-
-- Inspiration for memory game logic comes from the YouTube Channels [developedbyed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=3095s) and [Victor Talamantes](https://www.youtube.com/watch?v=c0eigGnotm0). However, I did  not relied on them and customized it my way.
-
-
 
 
 ### Media
@@ -832,8 +824,8 @@ There are no remaining major differences between the local version when compared
 
 | Source | Notes |
 | --- | --- |
+| Website images | All website images belong to the developer Gabriela F. Paredes Rojas |
 | [favicon.io](https://favicon.io) | Generating the favicon |
-| [I Think Therefore I Blog](https://codeinstitute.net) | Sample images provided from the walkthrough projects |
 | [Font Awesome](https://fontawesome.com) | Icons used throughout the site |
 | [TinyPNG](https://tinypng.com) | Compressing images < 5MB |
 | [CloudConvert](https://cloudconvert.com/webp-converter) | Converting images to `.webp` |
