@@ -435,6 +435,8 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 - The website was checked across devices using the chrome extension [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en).
 
+- Responsiveness screenshot examples can be found in section [Existing-features](#existing-features)
+
 - In addition, it was manually checked in the following devices:
   - Huawei Y9 Prime 2019
   - Iphone XR
