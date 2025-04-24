@@ -40,7 +40,7 @@ Let's get claying! 🎉
 
 #### 2. Scope Plane
 ##### Features
-- A full list of [Features](#features) can be viewed in detail below.
+- A full list of [Existing-features](#existing-features) can be viewed in detail below.
 
 ##### Content Requirements
 - Booking workshop management (create, update, delete, and view).
@@ -257,6 +257,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ### Data Model
 
+I have used [Smartdraw](https://www.smartdraw.com/) to draw the ERD of my project.
+
 ![screenshot](documentation/erd.png)
 
 I have used `Mermaid` to generate an interactive ERD of my project.
@@ -364,7 +366,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Directory | File | URL | Screenshot |
 | --- | --- | --- | --- |
 | home | [index.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/home/templates/home/index.html) | [W3 home](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2F) | ![screenshot](documentation/validation/html-home-index.png) |
-| about | [about.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/tree/main/about/templates/about) | [W3 about](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fabout%2F) | ![screenshot](documentation/validation/html-about-about.png) |
+| about | [about.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/about/templates/about/about.html) | [W3 about](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fabout%2F) | ![screenshot](documentation/validation/html-about-about.png) |
 | workshop list | [workshop_list.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/workshop_list.html) | [W3 workshop list](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fworkshops%2F) | ![screenshot](documentation/validation/html-workshop-workshop-list.png) |
 | workshop beginner | [workshop_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/workshop_detail.html) | [W3 workshop beginner](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fworkshops%2Fworkshop%2F12%2F) | ![screenshot](documentation/validation/html-workshop-workshop-detail-beginner.png) |
 | workshop intermediate | [workshop_detail.html](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/templates/workshop/workshop_detail.html) | [W3 workshop intermediate](https://validator.w3.org/nu/?doc=https%3A%2F%2Fartisticlayers-d41862efab95.herokuapp.com%2Fworkshops%2Fworkshop%2F15%2F) | ![screenshot](documentation/validation/html-workshop-workshop-detail-intermediate.png) |
@@ -425,7 +427,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | workshop | [models.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/models.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/workshop/models.py) | ![screenshot](documentation/validation/py-workshop-models.png) |
 | workshop | [forms.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/forms.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/workshop/forms.py) | ![screenshot](documentation/validation/py-workshop-forms.png) |
 | workshop | [test_forms.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/test_forms.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/workshop/test_forms.py) | ![screenshot](documentation/validation/py-workshop-test-forms.png) |
-| workshop | [test_views.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/test-forms.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/workshop/test_views.py) | ![screenshot](documentation/validation/py-workshop-test-views.png) |
+| workshop | [test_views.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/test_views.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/workshop/test_views.py) | ![screenshot](documentation/validation/py-workshop-test-views.png) |
 | workshop | [urls.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/urls.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/workshop/urls.py) | ![screenshot](documentation/validation/py-workshop-urls.png) |
 | workshop | [views.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/workshop/views.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/workshop/views.py) | ![screenshot](documentation/validation/py-workshop-views.png) |
 | | [manage.py](https://github.com/ParedesGab/PP4-artistiClayers-workshops/blob/main/manage.py) | [PEP8 CI Link](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ParedesGab/PP4-artistiClayers-workshops/refs/heads/main/manage.py) | ![screenshot](documentation/validation/py--manage.png) | Notes (if applicable) |
@@ -450,8 +452,8 @@ The website was tested on the following browsers:
 | Browser | Screenshot example |
 | --- | --- |
 | Google Chrome | All screenshots from section [Existing-features](#existing-features) | 
-| Firefox | ![screenshot](documentation/responsiveness/firefox.png) | 
-| Microsof Edge | ![screenshot](documentation/responsiveness/microsoft-edge.png) | 
+| Firefox | ![screenshot](documentation/browser-compatibility/firefox.png) | 
+| Microsof Edge | ![screenshot](documentation/browser-compatibility/microsoft-edge.png) | 
 
 
 ## Lighthouse Audit
