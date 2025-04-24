@@ -818,11 +818,11 @@ There are no remaining major differences between the local version when compared
 
 - The base.html code from [I Think Therefore I Blog](https://codeinstitute.net) was used as template for my base.html.
 
-- Despite significant customization, the HTML structure for update, delete and the bookings display derived from the html structure of the project [DjangoDogGroomers](https://github.com/petermcloughlin/DjangoDogGroomers/blob/main/booking/templates/booking/profile.html) from Peter Mcloughlin.
+- Despite significant customization, the HTML structure for update, delete and the bookings display derived from the html structure of the project [DjangoDogGroomers](https://github.com/petermcloughlin/DjangoDogGroomers) from Peter Mcloughlin.
 
 - Stack Overflow solutions was also used to resolve doubts.
 
-- Text was checked with DeepL Write for spelling mistakes. 
+- Website text was checked with DeepL Write for spelling mistakes. 
 
 
 ### Media
