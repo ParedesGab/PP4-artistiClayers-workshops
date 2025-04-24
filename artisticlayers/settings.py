@@ -21,13 +21,6 @@ if os.path.isfile('env.py'):
 cloudinary.config(
     cloud_name='dil8usgbl',
     secure=True)
-# CLOUDINARY = {
-#     'cloud_name': os.environ.get('CLOUDINARY_CLOUD_NAME', 'your_cloud_name'),
-#     'api_key': os.environ.get('CLOUDINARY_API_KEY', 'your_api_key'),
-#     'api_secret': os.environ.get('CLOUDINARY_API_SECRET', 'your_api_secret'),
-# }
-
-# cloudinary.config(**CLOUDINARY)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

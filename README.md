@@ -18,8 +18,6 @@ Let's get claying! 🎉
 
 ---
 
-> [!IMPORTANT]
-> The examples in these templates are strongly influenced by the Code Institute walkthrough project called "I Think Therefore I Blog".
 
 ## UX
 
@@ -732,17 +730,39 @@ There are no remaining major differences between the local version when compared
 
 ### Content
 
+- [The Code institute ci-full-template](https://github.com/Code-Institute-Org/ci-full-template) was used to create the GitHub repository of the ArtistiClayers Workshops.
 
-| Source | Notes |
-| --- | --- |
-| [Markdown Builder](https://markdown.2bn.dev) | Help generating Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | "How to Write a Git Commit Message" |
-| [I Think Therefore I Blog](https://codeinstitute.net) | Code Institute walkthrough project inspiration |
-| [Bootstrap](https://getbootstrap.com) | Various components / responsive front-end framework |
-| [Cloudinary API](https://cloudinary.com) | Cloud storage for static/media files |
-| [Whitenoise](https://whitenoise.readthedocs.io) | Static file service |
-| [Python Tutor](https://pythontutor.com) | Additional Python help |
-| [ChatGPT](https://chatgpt.com) | Help with code logic and explanations |
+- [Markdown Builder](https://markdown.2bn.dev) helped generating Markdown files.
+
+- [I Think Therefore I Blog](https://codeinstitute.net) | Code Institute walkthrough project was used as guidance and inspiration.
+
+- [Bootstrap](https://getbootstrap.com) was used for responsive front-end framework.
+
+- [Cloudinary API](https://cloudinary.com) was used as Cloud storage for static/media files.
+
+- [Whitenoise](https://whitenoise.readthedocs.io) was used as the static file service.
+
+- [ChatGPT](https://chatgpt.com) helped with code logic and explanations.
+
+
+- [W3 Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) showed me how to use the setTimeout() method. 
+
+- [W3 Schools](https://www.w3schools.com/jsref/prop_html_id.asp) showed me how to return the id property. 
+
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) showed me how to create elliptical corner radius used in the Control Area of the Memory Board Game section.
+
+- I got further clarificaion on the used of Parameters vs Arguments from the from the YouTube channel [Anna McDougall](https://www.youtube.com/watch?v=5o4P8lESTF0).
+
+- Stack Overflow solutions was also used to resolve doubts.
+
+- Text was checked with DeepL Write for spelling mistakes. 
+
+- I learned how to add other pages (e.g., home menu page, games indications and congratulations pages) with Javascript by reading the project of [Kristyna Wach](https://github.com/Cushione/four-seasons-memory-game) and testing it myself within my javascript code.
+
+- Inspiration for memory game logic comes from the YouTube Channels [developedbyed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=3095s) and [Victor Talamantes](https://www.youtube.com/watch?v=c0eigGnotm0). However, I did  not relied on them and customized it my way.
+
+
+
 
 ### Media
 
