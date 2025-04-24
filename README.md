@@ -446,9 +446,12 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 ## Browser Compatibility
 
 The website was tested on the following browsers:
-- Google Chrome
-- Firefox
-- Microsof Edge
+
+| Browser | Screenshot example |
+| --- | --- |
+| Google Chrome | All screenshots from section [Existing-features](#existing-features) | 
+| Firefox | ![screenshot](documentation/responsiveness/firefox.png) | 
+| Microsof Edge | ![screenshot](documentation/responsiveness/microsoft-edge.png) | 
 
 
 ## Lighthouse Audit
