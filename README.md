@@ -259,6 +259,67 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ![screenshot](documentation/erd.png)
 
+I have used `Mermaid` to generate an interactive ERD of my project.
+
+```mermaid
+erDiagram
+    ABOUT {
+        int id PK
+        string title
+        string image
+        text description
+    }
+
+    CONTACTREQUEST {
+        int id PK
+        string first_name
+        string last_name
+        string email
+        text message
+        boolean read
+    }
+
+    LEVEL {
+        int id PK
+        string name
+    }
+
+    WORKSHOP {
+        int id PK
+        string name
+        text description
+        text excerpt
+        string image
+        boolean is_public
+        int level_id FK
+    }
+
+    BOOKING {
+        int id PK
+        datetime date_booked
+        date appointment_date
+        string appointment_time
+        int participants
+        boolean approved
+        int booked_by_id FK
+        int workshop_id FK
+    }
+
+    USER {
+        int id PK
+        string username
+        string email
+        string first_name
+        string last_name
+    }
+
+    LEVEL ||--o{ WORKSHOP : has
+    WORKSHOP ||--o{ BOOKING : "is booked in"
+    USER ||--o{ BOOKING : "makes"
+```
+
+source: [Mermaid](https://mermaid.live/edit#pako:eNqVVNtu4jAQ_RXLzxSVBEzIW8tmL6Jqulx2pVWkyCTTYJHYke10YSn_vg4ECKFVaZ6cOWfmnPGMvMGRiAG7GOQXRhNJs4Aj893d-7Mp2ux_yo9xjViMnkankNKS8QRpplO4iLKMJrWohpVGMahIslwzwffINqgOQ_9xejecjr2fM29ype4zk0qHnGaX4il9D4GMsrRhKwOlzszOhUiBciSBxg2jD94v7-E6fyf9Y_ZvfzyafPefPlvg_Rs8IrCKQOb6ozkcWmMqzIt5yqJzIym8QBoaO19HDev3vj_68fjtA-cx1aBZBrtDaMSWEJ-jiOa5MJkZcB2WgQvHdUJZ61wwp1KziOWUa3XZlsmV4qWuWebsfYTzdb2zA_hXyKVaiPzNrmcTb3zdsAoF8pqN-_TyNlbv9fXmRmxOm-SiBVWN7ao4h5G5KMBMVbdgWghwrbk3uBldgipJuIUzkMZ_bB6I3S0EWC_AOMMlL6ZyWdK2hkcLLSZrHmFXywJauMjL2VZPCnafaapM1EwNuxu8wu6g27ZtYvV6NiHdbqfvtPAau4S0HeIQYvct0h10bgfbFv4nhClw23Z6fTLo2lbfsTsWcaxdtT87cC8pRZEsjlKJLF1XCPAY5FAUXGO3Q3rb_6YteeU)
+
 
 ## Agile Development Process
 
@@ -743,6 +804,7 @@ There are no remaining major differences between the local version when compared
 - [Whitenoise](https://whitenoise.readthedocs.io) was used as the static file service.
 
 - [ChatGPT](https://chatgpt.com) helped with code logic and explanations.
+
 
 
 - [W3 Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) showed me how to use the setTimeout() method. 
